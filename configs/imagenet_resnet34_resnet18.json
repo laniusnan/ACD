@@ -1,0 +1,28 @@
+{
+  "dataset": "imagenet",
+  "teacher": "resnet34",
+  "student": "resnet18",
+  "method": "acd",
+  "seed": 3101,
+  "epochs": 100,
+  "batch_size": 256,
+  "workers": 4,
+  "lr": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "milestones": [
+    30,
+    60,
+    90
+  ],
+  "lr_decay": 0.1,
+  "temperature": 4.0,
+  "scale": 30.0,
+  "etf": false,
+  "ce_weight": 1.0,
+  "kd_weight": 1.0,
+  "augmentation": "single_view",
+  "standardization_eps": 1e-06,
+  "gradient_eps": 1e-12,
+  "evidence": "unverified_configuration"
+}

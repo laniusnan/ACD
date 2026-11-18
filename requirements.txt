@@ -1,0 +1,5 @@
+# Install torch and torchvision as a matching pair for your CUDA runtime.
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+Pillow>=9

@@ -1,0 +1,96 @@
+{
+  "scope": "New seed3201 reruns; not the manuscript main-table results",
+  "results": [
+    {
+      "pair": "res110_res32",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 73.50999999999999,
+        "samples": 10000,
+        "ce": 0.9451346753120422
+      },
+      "checkpoint_sha256": "611c3abf2b3122e86570f6471d46e475cc80ec832200e462a63a604b626f1406",
+      "status": "completed"
+    },
+    {
+      "pair": "res32x4_sv1",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 78.74,
+        "samples": 10000,
+        "ce": 0.977831937122345
+      },
+      "checkpoint_sha256": "b8e8a4bc797c8991d20f224e2440e2cc0a3aa6a791ef5a88d87ec5c900694a77",
+      "status": "completed"
+    },
+    {
+      "pair": "res32x4_sv2",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 80.07,
+        "samples": 10000,
+        "ce": 0.9057728467941284
+      },
+      "checkpoint_sha256": "fb486ae8d7f79be86c4c890ce8b70a7999f5e5cd8547176bb1c81c3c45238298",
+      "status": "completed"
+    },
+    {
+      "pair": "res50_mv1",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 69.45,
+        "samples": 10000,
+        "ce": 1.367039461517334
+      },
+      "checkpoint_sha256": "bea8b62cd3addca3c27ea7fd60ec8c712610a78307b46524ee3d0b4fd16277ab",
+      "status": "completed"
+    },
+    {
+      "pair": "res56_res20",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 71.08,
+        "samples": 10000,
+        "ce": 1.0072389501571655
+      },
+      "checkpoint_sha256": "9be20ff17bd49bf07574bad4b5b52a2fdaa93afbabf5812be5fcfefbaf86b04d",
+      "status": "completed"
+    },
+    {
+      "pair": "wrn402_wrn162",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 75.67,
+        "samples": 10000,
+        "ce": 0.8688899234771729
+      },
+      "checkpoint_sha256": "3784deec345a7f664c3035463b1af040b6f1bc597e2ad95225f45c2eb020ea70",
+      "status": "completed"
+    },
+    {
+      "pair": "wrn402_wrn401",
+      "seed": 3201,
+      "arm": "acd",
+      "epoch": 240,
+      "test": {
+        "top1": 74.67,
+        "samples": 10000,
+        "ce": 0.9230585551261902
+      },
+      "checkpoint_sha256": "fce6c730466bad0ebd5fc434904a38c45c1899848572dff726fcc5743447ecd9",
+      "status": "completed"
+    }
+  ]
+}

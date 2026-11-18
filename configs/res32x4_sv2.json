@@ -1,0 +1,29 @@
+{
+  "dataset": "cifar100",
+  "pair": "res32x4_sv2",
+  "teacher": "resnet32x4",
+  "student": "shufflenetv2",
+  "method": "acd",
+  "seed": 3201,
+  "epochs": 240,
+  "batch_size": 64,
+  "workers": 2,
+  "lr": 0.01,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "milestones": [
+    150,
+    180,
+    210
+  ],
+  "lr_decay": 0.1,
+  "temperature": 4.0,
+  "scale": 30.0,
+  "etf": false,
+  "ce_weight": 0.1,
+  "kd_weight": 0.9,
+  "augmentation": "double_view",
+  "standardization_eps": 1e-06,
+  "gradient_eps": 1e-12,
+  "evidence": "completed_rerun"
+}

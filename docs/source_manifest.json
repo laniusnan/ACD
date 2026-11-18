@@ -1,0 +1,46 @@
+{
+  "source_repository": "https://github.com/laniusnan/KD",
+  "commit": "f2e97f845b0c5f927441bcb2c932c14214b7323f",
+  "files": [
+    {
+      "destination": "acd/models/resnet.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/resnet.py",
+      "sha256": "7776ef927a874fc4e1ae05bd1ae786a972d4b1f1d8e49ac60b92187b93aafdf9"
+    },
+    {
+      "destination": "acd/models/mobilenetv1.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/mobilenetv1.py",
+      "sha256": "2a6bf8d9ad89222d6aa4bcea7c9eb55d956878290f13f8f912b2bd8f13dffb9a"
+    },
+    {
+      "destination": "acd/models/shufflenet_v1.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/shufflenet_v1.py",
+      "sha256": "9037e249e844ab44455165c995c2a1fb028135fe222383b25f95830a055191a9"
+    },
+    {
+      "destination": "acd/models/resnet50_cifar.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/resnet50_cifar.py",
+      "sha256": "b2e376a04b457e776a006860816bb826a881284df6fa08c3336af9d54d7dd55e"
+    },
+    {
+      "destination": "acd/models/shufflenet_v2.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/shufflenet_v2.py",
+      "sha256": "3c41a859415fdc98841a7f88cd6e49d83d96450bc2db568cf6432cb81711b477"
+    },
+    {
+      "destination": "acd/models/wrn.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/models/wrn.py",
+      "sha256": "c47e7f31bc1ee98354b99195b89a986ccc87b153952990835e9015dd72180640"
+    },
+    {
+      "destination": "acd/models/vgg.py",
+      "source": "CIFAR-100/Models/vgg.py",
+      "sha256": "10c76a9314e2d29e34844419e27afc4b3983928f75143876e1bc2803f29025ba"
+    },
+    {
+      "destination": "acd/augmentation.py",
+      "source": "reproductions/cifar100_acd_rerun_20261116/frozen/augmentation.py",
+      "sha256": "ebf2f3a868a4af88a0c68f31274e35a2cef298590fb783668b62cfb7a64c9eab"
+    }
+  ]
+}

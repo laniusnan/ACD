@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-18",
+  "runtime": {"python": "3.12", "torch": "2.9.0+cu126", "torchvision": "0.24.0+cu126", "numpy": "1.26.4"},
+  "method_tests": {"count": 4, "status": "passed", "coverage": ["all CIFAR architectures", "cosine rescaling invariance", "ETF Gram matrix", "exact KL decomposition", "finite backward and teacher detach"]},
+  "reference_parity": {"status": "passed", "comparison": "loss and backbone gradients exactly equal to archived seven-pair ACD implementation on fixed synthetic tensors"},
+  "real_data_smoke": {"dataset": "official CIFAR-100", "teacher": "resnet56", "student": "resnet20", "method": "acd", "steps": 1, "device": "cpu", "workers": 0, "loss": 5.28277063369751, "status": "passed_incomplete_engineering_check"},
+  "full_refactored_training": "not_run",
+  "imagenet_and_detection_benchmark_reproduction": "not_verified"
+}
