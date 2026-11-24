@@ -15,6 +15,11 @@ Two published CIFAR-100 Releases are the supported model entry points:
 - [`cifar100-head-controls-20261031`](https://github.com/laniusnan/ACD/releases/tag/cifar100-head-controls-20261031):
   ordinary-KD, cosine, and ETF head controls; see
   [`head_controls_publication.json`](head_controls_publication.json).
+- [`cifar100-seven-arms-res32x4-res8x4-20261118`](https://github.com/laniusnan/ACD/releases/tag/cifar100-seven-arms-res32x4-res8x4-20261118):
+  a fully verified, matched seven-arm ResNet32×4 → ResNet8×4 comparison
+  (KD, cosine/ETF heads, and SICD); see its
+  [release note](releases/cifar100-seven-arms-res32x4-res8x4-20261118.md)
+  and [`seven_arm_release_publication_20261124.json`](seven_arm_release_publication_20261124.json).
 
 Each release includes portable evaluation weights, SHA-256 checksums, source
 checkpoint provenance, and archived test metrics.  Use
