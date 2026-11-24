@@ -1,0 +1,109 @@
+% ACD supplementary-material draft. See supplementary/README.md before use.
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage[hidelinks]{hyperref}
+% \usepackage{graphicx} % Enable after uploading selected PDFs to Overleaf.
+\newcommand{\ACI}{\mathrm{ACI}}
+\newcommand{\SICD}{\mathrm{SICD}}
+\newcommand{\KL}{\mathrm{KL}}
+\title{Supplementary Material for\\Angular Conditional Distillation: Overcoming Classifier Geometry Mismatch}
+\author{Anonymous submission}
+\date{}
+\begin{document}
+\maketitle
+
+\paragraph{Scope and evidence policy.}
+This supplement documents reproducible CIFAR-100 evidence available with the accompanying code. A verified endpoint has a frozen configuration, checkpoint identity, and evaluation on all 10,000 official CIFAR-100 test images. Unless stated otherwise, results are single-seed endpoints, not confidence intervals or claims of universal improvement. Historical manuscript rows, incomplete runs, ImageNet, and detection are intentionally outside the new empirical claims in this supplement.
+
+\section{Implementation details}
+\subsection{Angular classifier interface}
+For feature $h$ and class-direction parameters $w_k$, the angular coordinate interface (ACI) is the bias-free cosine classifier
+\begin{equation}
+z_k=s\frac{h^\top w_k}{\lVert h\rVert_2\lVert w_k\rVert_2},\qquad s=30.
+\end{equation}
+The scale is fixed and directions remain trainable. Thus ACI is an interface choice, not a claim that ordinary optimization preserves ETF geometry. ETF initialization uses the simplex Gram target
+\begin{equation}
+\widehat W^\top\widehat W=\frac{C}{C-1}\left(I_C-\frac1C\mathbf1\mathbf1^\top\right),\quad \widehat W\in\mathbb R^{d\times C},\quad d\ge C-1.
+\end{equation}
+It changes only the initial condition. A separate rotating-ETF control learns a $d\times(C-1)$ orthonormal frame, projects its gradient onto the Stiefel tangent space, and retracts after each update; only this control preserves the simplex Gram geometry throughout training.
+
+\subsection{Standardized conditional distillation}
+For each sample, logits are standardized across all classes using sample standard deviation,
+\begin{equation}
+N(z)=\frac{z-\operatorname{mean}(z)}{\max(\operatorname{std}(z),\epsilon_s)},\qquad \epsilon_s=10^{-6}.
+\end{equation}
+The target logit participates in this standardization. With ground-truth class $y$ and $\tau=4$, SICD compares conditional non-target distributions while retaining the teacher non-target mass:
+\begin{equation}
+L_{\SICD}=\frac{\tau^2}{B}\sum_i(1-p_{t,i,y_i})\,\KL\!\left(\operatorname{softmax}(N(z_{t,i})_{\neg y_i}/\tau)\middle\|\operatorname{softmax}(N(z_{s,i})_{\neg y_i}/\tau)\right).
+\end{equation}
+Teacher logits are detached. The standardized full-KL reference uses the same normalization and temperature but retains all classes. For full ACD, gradient norms are measured over trainable backbone parameters, excluding the final classifier and including any shared feature lift. With $L_{\rm full}^{\rm std}$ denoting standardized full KL,
+\begin{align}
+r&=\operatorname{stopgrad}\left(\frac{\lVert\nabla_{\theta_b}L_{\rm full}^{\rm std}\rVert_2}{\max(\lVert\nabla_{\theta_b}L_{\SICD}\rVert_2,10^{-12})}\right),\\
+L&=w_{\rm CE}L_{\rm CE}+w_{\rm KD}\,rL_{\SICD}.
+\end{align}
+The ratio is detached and unclipped. It matches a gradient norm, not a gradient direction, and does not alone establish optimization stability.
+
+\section{CIFAR-100 protocol}
+Formal seven-arm runs use 240 epochs, batch size 64, SGD momentum 0.9, weight decay $5\times10^{-4}$, milestones 150/180/210 (factor 0.1), $\tau=4$, cosine scale 30, FP32, and weak/strong double-view augmentation. The official test set is excluded from recipe selection. For each pair, four bounded linear-KD candidates (learning rate $0.01$ or $0.05$; CE/KD weights $0.1/0.9$ or $0.5/0.5$) are screened for 60 epochs on a stratified student holdout; the top two continue to epoch 240. All formal arms are then retrained from scratch on all 50,000 training images using the selected shared pair recipe. This prevents per-method tuning inside a pair, but is not a global-optimality claim.
+
+\section{Matched seven-arm control: ResNet32$\times$4 $\rightarrow$ ResNet8$\times$4}
+All Table~\ref{tab:seven} students use the same teacher, seed 3301, epoch-240 endpoint, data ordering, augmentation, and selected recipe ($\mathrm{lr}=0.01$, $w_{\rm CE}/w_{\rm KD}=0.5/0.5$). Portable weights, configuration files, source hashes, and full-test verification are released.
+\begin{table}[h]
+\centering
+\caption{Official CIFAR-100 Top-1 (\%) for a matched single-seed study.}
+\label{tab:seven}
+\begin{tabular}{lr}\toprule
+Student classifier and objective & Top-1 \\\midrule
+Affine classifier + KD & 74.76 \\
+Cosine classifier + KD & 77.30 \\
+Cosine classifier, ETF initialization + KD & 77.07 \\
+Rotating ETF classifier + KD & 76.72 \\
+Cosine classifier + SICD & 76.58 \\
+Cosine classifier, ETF initialization + SICD & 77.50 \\
+Rotating ETF classifier + SICD & 77.37 \\\bottomrule
+\end{tabular}
+\end{table}
+The default cosine classifier changes Top-1 by $+2.54$ points versus affine KD. SICD changes Top-1 by $-0.72$, $+0.43$, and $+0.65$ points for default cosine, ETF-initialized cosine, and rotating ETF, respectively. The best endpoint (77.50\%) is 0.20 points above cosine KD. These mixed effects suggest an initialization-dependent interaction in this pair, not a uniformly additive benefit from each component. Replication across seeds and pairs is required.
+
+\section{Released frozen CIFAR-100 reruns}
+Table~\ref{tab:reruns} lists evaluation-ready ACD endpoints from the seed-3201 frozen rerun release. They are not matched KD comparisons and must not be merged with Table~\ref{tab:seven} or manuscript means.
+\begin{table}[h]
+\centering
+\caption{Released seed-3201 ACD endpoints, official CIFAR-100 Top-1 (\%).}
+\label{tab:reruns}
+\begin{tabular}{llr}\toprule
+Teacher & Student & Top-1 \\\midrule
+ResNet110 & ResNet32 & 73.51 \\
+ResNet32$\times$4 & ShuffleNetV1 & 78.74 \\
+ResNet32$\times$4 & ShuffleNetV2 & 80.07 \\
+CIFAR ResNet50 & MobileNetV1 & 69.45 \\
+ResNet56 & ResNet20 & 71.08 \\
+WRN40-2 & WRN16-2 & 75.67 \\
+WRN40-2 & WRN40-1 & 74.67 \\\bottomrule
+\end{tabular}
+\end{table}
+The rerun is a frozen reconstruction, not a bitwise recovery of historical SICD training source. Its portable weights omit optimizer and scheduler state and are evaluation artifacts, not resumable training checkpoints.
+
+\section{Artifacts, diagnostics, and limitations}
+The release provides seven student weights, the fixed teacher, per-arm configurations, selected-recipe record, SHA-256 checksums, and full-test verification. The repository also includes fixed-checkpoint oracle-calibration and local-gradient diagnostics. These can motivate the claim that classifier parameterization affects distributions and local KD signals, but do not prove end-to-end causality, universal gains, or semantic correctness of a diagnostic reference gradient.
+
+\subsection{Oracle scalar-calibration diagnostic}
+For a frozen teacher distribution $q_i=\operatorname{softmax}(z_{t,i}/4)$ and frozen student logits $z_{s,i}$, we solve independently for every test image
+\begin{equation}
+ \alpha_i^*=\arg\min_{\alpha\geq0}\;8\,\KL\!\left(q_i\middle\|\operatorname{softmax}(\alpha z_{s,i}/4)\right).
+\end{equation}
+The scalar is an oracle diagnostic that accesses teacher logits and is never used for training or deployment. The archived computation brackets the derivative on $[0,64]$, performs 40 bracket-expansion iterations if necessary and 60 bisection iterations, and checks the interior derivative residual. The positive constant 8 does not change $\alpha_i^*$.
+
+On the complete CIFAR-100 test set for the archived linear checkpoint (seed 2051, epoch 240), mean reported divergence changes from 1.2198 before calibration to 0.5575 afterwards; the ratio of means is 45.7\%. The calculation uses the same fixed teacher target before and after calibration, has no boundary-$\alpha=0$ solutions, and never increases an individual sample's objective. This demonstrates that per-image scalar rescaling does not fully account for discrepancy at that checkpoint. It does not identify the source of the residual.
+
+\subsection{Suggested supplementary figure set}
+The final selection should favor figures whose data and caption limits are recorded in the repository: (i) the oracle-calibration ECDF and paired-density panels, (ii) the fixed-direction parameterization/distribution/gradient diagnostic, and (iii) the matched seven-arm table. The Grad-CAM asset in the archive compares CE and KD baselines, so it requires that label and belongs only in a diagnostic supplement. Figure captions should state checkpoint identity, data split, and whether the visual is a fixed-state diagnostic or an end-to-end endpoint.
+
+No verified new ImageNet or detection endpoint is included. Strict ETF requires $d\ge C-1$; low-dimensional CIFAR students require a shared feature lift for ETF controls and must be labeled as lifted architectures. Gradient-norm matching adds an autograd computation during training, so unchanged inference structure does not imply equal training cost. Future multi-seed tables should report individual endpoints, configurations, seed, selection rule, sample count, and checkpoint hash.
+
+% Enable only after the final paper figure selection:
+% \begin{figure}[t]\centering
+% \includegraphics[width=\linewidth]{method.pdf}
+% \caption{ACI and SICD schematic; verify ETF wording before use.}\end{figure}
+\end{document}

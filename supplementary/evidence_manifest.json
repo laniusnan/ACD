@@ -1,0 +1,45 @@
+{
+  "format": "acd-supplement-evidence-v1",
+  "status": "draft_for_author_review",
+  "paper_source": "../docs/paper_source.json",
+  "claims": [
+    {
+      "id": "implementation",
+      "scope": "ACI, SICD, gradient-norm matching, ETF variants",
+      "sources": ["../acd/heads.py", "../acd/losses.py", "../docs/reproduction.md"],
+      "status": "code-verified"
+    },
+    {
+      "id": "seven_arm_res32x4_res8x4",
+      "scope": "one matched CIFAR-100 pair, seed 3301, epoch 240",
+      "sources": ["../configs/studies/cifar100_seven_arms_20261118.json", "../docs/seven_arm_training_20261118.md", "../docs/releases/cifar100-seven-arms-res32x4-res8x4-20261118.md"],
+      "status": "released_and_full_test_verified",
+      "release": "https://github.com/laniusnan/ACD/releases/tag/cifar100-seven-arms-res32x4-res8x4-20261118"
+    },
+    {
+      "id": "frozen_cifar_reruns",
+      "scope": "seven ACD-only seed-3201 endpoints",
+      "sources": ["../results/cifar100_rerun.json", "../docs/release_publication.json"],
+      "status": "released_and_full_test_verified",
+      "caveat": "Not matched KD comparisons and not manuscript main-table results."
+    },
+    {
+      "id": "mechanism_figures",
+      "scope": "fixed-checkpoint diagnostics",
+      "sources": ["../research_archive/figures/README.md"],
+      "status": "diagnostic_only",
+      "caveat": "They do not establish end-to-end causality or universal accuracy gains."
+    },
+    {
+      "id": "oracle_scalar_calibration",
+      "scope": "seed-2051 frozen linear checkpoint, all 10,000 CIFAR-100 test images",
+      "sources": ["../research_archive/figures/analysis_20261116/probe_cifar100_same_state.py", "../research_archive/figures/analysis_20261116/fig_oracle_calib_seed2051.json"],
+      "status": "diagnostic_only",
+      "reported_definition": "8 * KL at temperature 4, independently minimized over alpha >= 0 for each image",
+      "before_mean": 1.2198129667053796,
+      "after_mean": 0.5574744676439393,
+      "caveat": "Residual divergence does not by itself establish its cause."
+    }
+  ],
+  "excluded_from_claims": ["historical or user-transcribed rows without a complete checkpoint/configuration trail", "incomplete seven-arm queue entries", "ImageNet and detection tables without a verified local endpoint"]
+}

@@ -4,7 +4,7 @@ PyTorch implementation of the **Angular Coordinate Interface (ACI)** and **Scale
 
 ![ACI and SICD overview](figs/method.png)
 
-[Paper](acd_v1.pdf) · [Training guide](docs/usage.md) · [Model guide](docs/model_guide.md) · [Checkpoint coverage](docs/checkpoint_audit_20261118.md) · [Reproduction scope](docs/reproduction.md) · [Repository review](docs/repository_review.md)
+[Paper](acd_v1.pdf) · [Supplementary-material draft](supplementary/README.md) · [Training guide](docs/usage.md) · [Model guide](docs/model_guide.md) · [Checkpoint coverage](docs/checkpoint_audit_20261118.md) · [Reproduction scope](docs/reproduction.md) · [Repository review](docs/repository_review.md)
 
 ## Install
 
@@ -128,6 +128,7 @@ ACI uses a bias-free cosine student head with fixed scale and trainable classifi
 | `tools/` | Download/export weights, plot history, prepare/verify releases |
 | `figs/` | README graphics with PNG, SVG and PDF versions |
 | `results/` | Archived metrics and compact training histories |
+| `supplementary/` | Evidence-scoped LaTex draft and machine-readable claim manifest |
 | `docs/` | Usage, model guide, provenance, scope and validation |
 | `tests/` | Numerical invariants and training/evaluation workflow checks |
 
