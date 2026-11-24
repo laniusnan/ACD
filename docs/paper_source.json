@@ -1,0 +1,17 @@
+{
+  "retrieved_date": "2026-11-18",
+  "source_repository": "laniusnan/KD",
+  "source_branch": "master",
+  "source_commit": "c73091478077052389dc2d6ea4d30a8edbc21adc",
+  "fetched_head": "e5a7ceeace4c129af2b9f84fbd315eea410bed0b",
+  "source_path": "acd_v1.pdf",
+  "local_path": "acd_v1.pdf",
+  "sha256": "830096bfa65dcea4a2b4514343287a040e798f15cb61fe98213afdfb7bb7aa29",
+  "bytes": 2678695,
+  "pages": 10,
+  "title": "Angular Conditional Distillation: Overcoming Classifier Geometry Mismatch",
+  "authors": ["Xuefei Zhang", "Ruoqi Wang", "Lei Cui"],
+  "status": "Author-uploaded manuscript v1; public publication status not established",
+  "original_pdf_modified": false,
+  "latex_source_available": false
+}

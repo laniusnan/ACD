@@ -1,0 +1,157 @@
+{
+  "status": "completed",
+  "question": "component ablation",
+  "setup": {
+    "pair": "VGG13\u2192MobileNetV1",
+    "seed": 2102,
+    "epochs": [
+      1,
+      30,
+      120,
+      240
+    ],
+    "probe": "first 128 official CIFAR-100 test images",
+    "temperature": 4.0,
+    "pairing": "same interaction study and recorded initial backbone hash"
+  },
+  "trajectories": [
+    {
+      "label": "Linear KD",
+      "pair": "vgg13_mv1",
+      "seed": 2102,
+      "arm": "linear_kd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.892510414123535,
+          "conditional_tv_standardized": 0.10129407793283463
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 2.7031188011169434,
+          "conditional_tv_standardized": 0.06496031582355499
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 2.527322292327881,
+          "conditional_tv_standardized": 0.0626339241862297
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.5811145305633545,
+          "conditional_tv_standardized": 0.05180472135543823
+        }
+      ],
+      "initial": "a3267691ef62f7d3d000ff995205092818c1c0c5909fd26e17f50b862bc28d3c"
+    },
+    {
+      "label": "ACI + KL",
+      "pair": "vgg13_mv1",
+      "seed": 2102,
+      "arm": "cosine_kd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.38950252532959,
+          "conditional_tv_standardized": 0.10056860744953156
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 2.914680242538452,
+          "conditional_tv_standardized": 0.06794604659080505
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 2.5626425743103027,
+          "conditional_tv_standardized": 0.06247333064675331
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.7385027408599854,
+          "conditional_tv_standardized": 0.053023748099803925
+        }
+      ],
+      "initial": "a3267691ef62f7d3d000ff995205092818c1c0c5909fd26e17f50b862bc28d3c"
+    },
+    {
+      "label": "ACI + standardized full",
+      "pair": "vgg13_mv1",
+      "seed": 2102,
+      "arm": "cosine_standardized_full",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 8.298799514770508,
+          "conditional_tv_standardized": 0.09133414924144745
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 3.603783369064331,
+          "conditional_tv_standardized": 0.06585273891687393
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 3.0874881744384766,
+          "conditional_tv_standardized": 0.05965639650821686
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.6505038738250732,
+          "conditional_tv_standardized": 0.04841587319970131
+        }
+      ],
+      "initial": "a3267691ef62f7d3d000ff995205092818c1c0c5909fd26e17f50b862bc28d3c"
+    },
+    {
+      "label": "ACI + SICD",
+      "pair": "vgg13_mv1",
+      "seed": 2102,
+      "arm": "cosine_relation_matched",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 8.77534294128418,
+          "conditional_tv_standardized": 0.08457611501216888
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 3.4471898078918457,
+          "conditional_tv_standardized": 0.06301089376211166
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 3.1878838539123535,
+          "conditional_tv_standardized": 0.05836910009384155
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.565192461013794,
+          "conditional_tv_standardized": 0.046672675758600235
+        }
+      ],
+      "initial": "a3267691ef62f7d3d000ff995205092818c1c0c5909fd26e17f50b862bc28d3c"
+    }
+  ],
+  "sources_sha256": {
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__linear_kd/epoch_001.pth": "976afee8dc62a0901d7c93a8f43db2b2ea42fdc2cfe70e30bb453fb67744fd7b",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__linear_kd/epoch_030.pth": "d3454a96f627557a1a09ad083485740d0e479b3d27e1c6c6a11f9851787ddf6a",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__linear_kd/epoch_120.pth": "d058a51d533a3b1c777e295890bc5c0fa028043c0ffe55a4f245a7699678135c",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__linear_kd/epoch_240.pth": "a7fffdb6062b443919a5bef9f7b46d3103ffeb0ecbb126bc54390ab0b5ba491d",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_kd/epoch_001.pth": "928749f54fc47f65e98688b78bf398372a4b6aa975f13fc9a9c267261cd565aa",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_kd/epoch_030.pth": "db32ac9166f77704e69525c772324161dd8cab0baeb1dd55f8e49f4491c40c32",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_kd/epoch_120.pth": "95aaaa7ca7022005946c8b916ca3bdca6d82090069d8caa7d3dce582bfde76a1",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_kd/epoch_240.pth": "bab5ea03f8e27a14d726a8444706e36c74148a89be8a26f54e8d624ef31b2ed8",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_standardized_full/epoch_001.pth": "8ecf2020b43f348f21301ba8fbb9756f59711cb9c3b939c86d1013ef0e956e3b",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_standardized_full/epoch_030.pth": "44ca07f786ade261ba10dc11037fae4aa96b544bb0e7a4beecb7ff0b823020cb",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_standardized_full/epoch_120.pth": "62c7e49e57ce49ffb5fe504d8fd32a2d34baf113b25ee6efdf2be156a4f28b52",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_standardized_full/epoch_240.pth": "44b0f8120e78c18b2d862540e46fbd089e60d28ce6ea1be2b1d7b0fc4913180c",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_relation_matched/epoch_001.pth": "7dc510eaa20fd7b8fc11f39700450069983e48a4bbcc0703bdffc289ca4823b0",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_relation_matched/epoch_030.pth": "c8b9d03a7e543dd04c68e9e0d73d8eeafcd9fe34893873c39e04c3354b463a81",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_relation_matched/epoch_120.pth": "2664aba22728bbd623def414325dae3a20e47472918dc06a5fd857a2f297243c",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_mv1__s2102__cosine_relation_matched/epoch_240.pth": "e7cac6f7b7a0c24acc06e3844c6221a10d85f20ee970f9802d71dffa8197954b"
+  },
+  "limitations": [
+    "One heterogeneous pair and one seed; checkpoints are temporal observations, not independent repetitions.",
+    "The two axes are diagnostic discrepancies in different coordinate systems; neither is an official-test accuracy metric."
+  ]
+}

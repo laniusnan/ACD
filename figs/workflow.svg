@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="153pt" viewBox="0 0 684 153" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-18T07:09:38.083519</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 153 
+L 684 153 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.617 122.7924 
+L 154.233 122.7924 
+Q 159.813 122.7924 159.813 117.2484 
+L 159.813 32.9796 
+Q 159.813 27.4356 154.233 27.4356 
+L 13.617 27.4356 
+Q 8.037 27.4356 8.037 32.9796 
+L 8.037 117.2484 
+Q 8.037 122.7924 13.617 122.7924 
+z
+" clip-path="url(#p60ebf77ec4)" style="fill: #f3f7fb; stroke: #3366a3; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 183.807 122.7924 
+L 324.423 122.7924 
+Q 330.003 122.7924 330.003 117.2484 
+L 330.003 32.9796 
+Q 330.003 27.4356 324.423 27.4356 
+L 183.807 27.4356 
+Q 178.227 27.4356 178.227 32.9796 
+L 178.227 117.2484 
+Q 178.227 122.7924 183.807 122.7924 
+z
+" clip-path="url(#p60ebf77ec4)" style="fill: #f3f7fb; stroke: #3366a3; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 353.997 122.7924 
+L 494.613 122.7924 
+Q 500.193 122.7924 500.193 117.2484 
+L 500.193 32.9796 
+Q 500.193 27.4356 494.613 27.4356 
+L 353.997 27.4356 
+Q 348.417 27.4356 348.417 32.9796 
+L 348.417 117.2484 
+Q 348.417 122.7924 353.997 122.7924 
+z
+" clip-path="url(#p60ebf77ec4)" style="fill: #f3f7fb; stroke: #3366a3; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 524.187 122.7924 
+L 664.803 122.7924 
+Q 670.383 122.7924 670.383 117.2484 
+L 670.383 32.9796 
+Q 670.383 27.4356 664.803 27.4356 
+L 524.187 27.4356 
+Q 518.607 27.4356 518.607 32.9796 
+L 518.607 117.2484 
+Q 518.607 122.7924 524.187 122.7924 
+z
+" clip-path="url(#p60ebf77ec4)" style="fill: #f3f7fb; stroke: #3366a3; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243c58" x="18.918" y="55.9872" transform="rotate(-0 18.918 55.9872)">1  Download</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(18.918 84.332344)">Pair + teacher weights</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(18.918 103.199531)">SHA256 verified</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 163.768588 73.728 
+Q 169.579969 73.728 173.714299 73.728 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 169.314299 71.528 
+L 173.714299 73.728 
+L 169.314299 75.928 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243c58" x="189.108" y="55.9872" transform="rotate(-0 189.108 55.9872)">2  Train</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(189.108 84.332344)">Config + frozen teacher</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(189.108 102.182344)">latest.pth + history.jsonl</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 333.958588 73.728 
+Q 339.769969 73.728 343.904299 73.728 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 339.504299 71.528 
+L 343.904299 73.728 
+L 339.504299 75.928 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243c58" x="359.298" y="55.9872" transform="rotate(-0 359.298 55.9872)">3  Evaluate</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(359.298 85.349531)">Student or teacher</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(359.298 102.089648)">Top-1 / Top-5 / CE</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 504.148588 73.728 
+Q 509.959969 73.728 514.094299 73.728 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 509.694299 71.528 
+L 514.094299 73.728 
+L 509.694299 75.928 
+" style="fill: none; stroke: #687c8b; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243c58" x="529.488" y="55.9872" transform="rotate(-0 529.488 55.9872)">4  Share</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(529.488 84.332344)">Export model weights</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'" transform="translate(529.488 102.182344)">Model guide + manifest</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p60ebf77ec4">
+   <rect x="7.2" y="7.2" width="669.6" height="138.6"/>
+  </clipPath>
+ </defs>
+</svg>

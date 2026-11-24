@@ -1,0 +1,26 @@
+{
+  "repository": "laniusnan/ACD",
+  "tag": "cifar100-head-controls-20261031",
+  "url": "https://github.com/laniusnan/ACD/releases/tag/cifar100-head-controls-20261031",
+  "published_at": "2026-11-18T08:27:30Z",
+  "published": true,
+  "account": "laniusnan",
+  "asset_count": 33,
+  "asset_bytes": 119707828,
+  "assets_verified": "All 33 uploaded names, states, byte sizes and GitHub SHA256 digests match local files",
+  "students": 11,
+  "new_teachers": 1,
+  "reused_teachers": 3,
+  "source_code_commit": "cd7bc8a964991de677eb664756da35f2eaccbc4a",
+  "default_latest_release": "cifar100-rerun-20261116",
+  "local_source_changes_pushed": false,
+  "public_download_smoke": {
+    "authenticated": false,
+    "downloaded_published_script_and_manifest_verified": true,
+    "student": "ci_kd_res32x4_res8x4_s2051_e240.pth",
+    "new_teacher": "teacher_vgg13_cifar100.pth",
+    "reused_teacher": "teacher_resnet32x4_cifar100.pth",
+    "matching_configs_downloaded": 2,
+    "all_download_sha256_matches": true
+  }
+}

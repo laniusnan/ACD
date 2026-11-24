@@ -1,0 +1,13 @@
+{
+  "repository": "laniusnan/ACD",
+  "tag": "cifar100-rerun-20261116",
+  "url": "https://github.com/laniusnan/ACD/releases/tag/cifar100-rerun-20261116",
+  "published_at": "2026-11-18T07:18:31Z",
+  "published": true,
+  "asset_count": 24,
+  "asset_bytes": 169616666,
+  "assets_verified": "All expected names, uploaded states, sizes and available GitHub SHA256 digests match local files",
+  "download_smoke": "tools.download_models downloaded res56_res20 student from the published release and verified SHA256",
+  "source_code_commit": "cd7bc8a964991de677eb664756da35f2eaccbc4a",
+  "local_source_changes_pushed": false
+}

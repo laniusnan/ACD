@@ -1,0 +1,74 @@
+{
+  "design": "Standalone right panel: calibrated teacher-student class-score mismatch",
+  "identity": {
+    "seed": 2051,
+    "epoch": 240,
+    "release": "model-backup-20261027",
+    "release_student_path": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/last.pth",
+    "student_sha256": "7f8a5d67db946b80a6f3b4fe0841e609365f4cf94063892afc55c6affa847a7b",
+    "teacher_sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d",
+    "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+    "dataset": "CIFAR-100",
+    "split": "test",
+    "samples": 10000,
+    "ordering": "torchvision CIFAR100 test order; no shuffle or augmentation",
+    "data_sha256": {
+      "test": "4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864",
+      "meta": "a5d4786345c961390f865e93b434dbd5c6904ce880667e0cb888c97d449f28b9"
+    },
+    "sources_sha256": {
+      "paper_assets/acd_figures/analysis_20261116/probe_cifar100_same_state.py": "04466a9f3aa1a82de3633e6f34e14c1f63b21fbb7343cf45a385818934c18f93",
+      "reproductions/head_transfer_20261021/methods.py": "d569401dd450a264c4810536de6932409228afd0c5bc95d5cc3d627d8e439bea",
+      "reproductions/head_transfer_20261021/study.json": "4746ac56cf38a5e9873da879adbb44896ef56cdf75b2e713c19fef0d61b65151",
+      "reproductions/head_transfer_20261021/frozen/models/resnet.py": "7776ef927a874fc4e1ae05bd1ae786a972d4b1f1d8e49ac60b92187b93aafdf9"
+    },
+    "runtime": {
+      "python": "3.12.16",
+      "torch": "2.9.0+cu126",
+      "torchvision": "0.24.0+cu126",
+      "numpy": "1.26.4",
+      "device": "cpu",
+      "threads": 4,
+      "batch_size": 128
+    }
+  },
+  "temperature": 4.0,
+  "scalar_domain": "alpha >= 0",
+  "density_plot": {
+    "x": "(teacher_logits - mean_over_classes) / T",
+    "y": "alpha * (linear_student_logits - mean_over_classes) / T",
+    "color": "image-class count per hexagonal bin; logarithmic color normalization",
+    "gridsize": 90,
+    "shared_axis_limits": [
+      -3,
+      8
+    ],
+    "pairs_binned": 1000000,
+    "standard_deviation_normalization": false,
+    "sampling_or_quantile_clipping": false
+  },
+  "checks": {
+    "reconstructed_kl_max_absolute_error": {
+      "before": 1.7763568394002505e-14,
+      "after": 1.354472090042691e-14
+    },
+    "text_inside_canvas": true,
+    "all_samples_and_classes_plotted": true
+  },
+  "sources_sha256": {
+    "paper_assets/acd_figures/analysis_20261116/artifacts/cifar100_same_state_seed2051/report.json": "182cde3890384ef3cfd43a1372551c59d1276c64755dcff61cc380b07946c3b8",
+    "paper_assets/acd_figures/analysis_20261116/artifacts/cifar100_same_state_seed2051/inference.json": "a64de0b31c3573ca0f09d97fe8860ed503b471602174f77214fb2d96947fe374",
+    "paper_assets/acd_figures/analysis_20261116/artifacts/cifar100_same_state_seed2051/inference.npz": "d3a2990b41d05655224a88749352bf5cb04cc187e288065878ef2ad67e49c1a1",
+    "paper_assets/acd_figures/analysis_20261116/artifacts/cifar100_same_state_seed2051/oracle_arrays.npz": "03662cccdfdb8f5a4fb53946c2275d673d4e75f2426a01eb6028a0a737f37347"
+  },
+  "script_sha256": "c360e4978b31d071bfe811fe527464fdacd2773501cd01f763cae0b99faf0276",
+  "source_loader_sha256": "cec335ce2fa73341a5a7a021d7cc7870cc7ea75c75ae62ae1bd7c62fcc192727",
+  "matplotlib_version": "3.9.4",
+  "output_sha256": {
+    "fig_output_mismatch_right_cifar100_seed2051.png": "4dbf1fb0f0079a2a0d3668af224f1dc3807f19f0be8a601d8951b32e02494f55",
+    "fig_output_mismatch_right_cifar100_seed2051.pdf": "0dd20b21b974c9abf4cd7f6365b37f3ba43a2a73e5343178b4ee373a67d2aa94",
+    "fig_output_mismatch_right_cifar100_seed2051.svg": "c0987356425ec283394c107b94437634a0ef5a702cf1f4ba3a9c3f85ed8ac3ce"
+  },
+  "new_training_performed": false,
+  "new_inference_performed": false
+}

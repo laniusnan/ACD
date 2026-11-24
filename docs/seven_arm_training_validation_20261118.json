@@ -1,0 +1,43 @@
+{
+  "checked_at": 1794998969.5362308,
+  "cpu_tests": {
+    "command": "../KD/.venv/bin/python -B -m unittest discover -s tests -q",
+    "count": 32,
+    "status": "passed"
+  },
+  "gpu_preflight": {
+    "status": "passed",
+    "combinations": 77,
+    "maximum_etf_gram_error": 8.510484294389081e-07
+  },
+  "source_manifest_sha256": "8ed826599b5b183a5ebb706c1bd7d13c76a64605f4a31389e18ec3214a153ee7",
+  "initial_training_checkpoints": [
+    {
+      "job": "res32x4_res8x4__screen__lr005_ce05",
+      "gpu": 1,
+      "checkpoint": "/home/iaii2026/work/lanius/ACD/outputs/seven_arms_20261118/tuning/res32x4_res8x4/lr005_ce05/latest.pth",
+      "epoch": 3,
+      "validation": {
+        "top1": 39.1,
+        "top5": 72.24,
+        "ce": 2.433968200683594,
+        "samples": 5000
+      },
+      "resume_config_teacher_verified": true
+    },
+    {
+      "job": "res32x4_res8x4__screen__lr001_ce01",
+      "gpu": 0,
+      "checkpoint": "/home/iaii2026/work/lanius/ACD/outputs/seven_arms_20261118/tuning/res32x4_res8x4/lr001_ce01/latest.pth",
+      "epoch": 3,
+      "validation": {
+        "top1": 31.18,
+        "top5": 63.88,
+        "ce": 2.937525830078125,
+        "samples": 5000
+      },
+      "resume_config_teacher_verified": true
+    }
+  ],
+  "note": "Live progress continues beyond this receipt; no final result is claimed."
+}

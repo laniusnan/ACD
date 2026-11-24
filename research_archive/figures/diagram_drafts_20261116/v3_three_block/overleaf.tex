@@ -1,0 +1,40 @@
+% Preamble: \usepackage{graphicx}
+% Copy the PDFs from this version's figures/ directory into Overleaf's figs/.
+% Use ONE of the following alternatives. No extra labels are added to the image.
+
+% Alternative 1: the complete figure (recommended).
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figs/method_three_block.pdf}
+  \caption{Method overview. The upper-left block summarizes the selection of
+  standardized non-target conditional relations for distillation. ACI constructs
+  the student's angular readout; the ETF diagram illustrates optional
+  initialization only, with trainable directions thereafter. SICD keeps the
+  teacher frozen, standardizes class logits, and transfers teacher-weighted
+  non-target conditional distributions. The coefficient $a$ matches gradient
+  strength using a detached ratio of gradient norms. The input photograph is
+  real; feature grids and geometric arrows are schematic.}
+  \label{fig:method_overview}
+\end{figure*}
+
+% Alternative 2: assemble the three standalone blocks.
+% Widths/gap reproduce the renderer's 8.50 : 0.30 : 11.15 proportions.
+% \offinterlineskip prevents an extra text-line gap between the two left PDFs.
+% Uncomment this alternative after removing/commenting Alternative 1.
+% \begin{figure*}[t]
+%   \centering
+%   \begin{minipage}[b]{0.426065\textwidth}
+%     \offinterlineskip
+%     \includegraphics[width=\linewidth]{figs/objective.pdf}\par
+%     \vspace{0.035294\linewidth}
+%     \includegraphics[width=\linewidth]{figs/aci.pdf}
+%   \end{minipage}\hfill
+%   \begin{minipage}[b]{0.558897\textwidth}
+%     \includegraphics[width=\linewidth]{figs/sicd.pdf}
+%   \end{minipage}
+%   \caption{Method overview. ACI constructs the student's angular readout,
+%   with optional ETF initialization. SICD transfers standardized, teacher-weighted
+%   non-target conditional relations. The teacher is frozen, and only the student
+%   is updated. Feature grids and geometric arrows are schematic.}
+%   \label{fig:method_overview}
+% \end{figure*}

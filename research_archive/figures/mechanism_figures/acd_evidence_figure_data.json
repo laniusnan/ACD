@@ -1,0 +1,90 @@
+{
+  "ablation": {
+    "vgg13_mv1": {
+      "linear_kd": [
+        68.06,
+        67.5
+      ],
+      "cosine_kd": [
+        66.71,
+        66.48
+      ],
+      "cosine_relation_matched": [
+        69.7,
+        69.72
+      ],
+      "cosine_standardized_full": [
+        68.96,
+        68.99
+      ]
+    },
+    "vgg13_vgg8": {
+      "linear_kd": [
+        74.69,
+        74.08
+      ],
+      "cosine_kd": [
+        74.66,
+        74.93
+      ],
+      "cosine_relation_matched": [
+        75.49,
+        75.46
+      ],
+      "cosine_standardized_full": [
+        75.51,
+        75.58
+      ]
+    }
+  },
+  "external": {
+    "Cosine KD": {
+      "values": [
+        74.66,
+        74.93
+      ],
+      "kind": "cosine",
+      "provenance": "interaction"
+    },
+    "DKD": {
+      "values": [
+        74.87,
+        75.09
+      ],
+      "kind": "dkd",
+      "provenance": "reviewer"
+    },
+    "NCKD": {
+      "values": [
+        75.42
+      ],
+      "kind": "nckd",
+      "provenance": "reviewer"
+    },
+    "LSKD": {
+      "values": [
+        73.18
+      ],
+      "kind": "lskd",
+      "provenance": "author-recipe"
+    },
+    "ACD": {
+      "values": [
+        75.51,
+        75.58
+      ],
+      "kind": "acd",
+      "provenance": "interaction"
+    }
+  },
+  "plugin": {
+    "AT": {
+      "KL": 77.6,
+      "ACD": 78.97
+    },
+    "ReviewKD": {
+      "KL": 75.54,
+      "ACD": 75.6
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "probe_run": {
+    "status": "completed",
+    "finished_at": "2026-11-16T06:13:05.302812+00:00",
+    "seconds": 64.00328324802103,
+    "device": "cpu",
+    "threads": 4,
+    "source_sha256": "ba58076ea1d0bb2949fe07e6019d73fd2777c7db420307bec0d1ef6bc4800c7a",
+    "training_started": false
+  },
+  "sources": {
+    "ce_final": {
+      "path": "reproductions/imagenet1k_acd_20261113/runs/I0_seed3101_baseline_20261114/latest.pth",
+      "sha256": "3519ca20e94e375f27b00703eb8e51c2bfcd86a1a222faf6293a8e42ead4bc56",
+      "stored_epoch_field": 100,
+      "identity": {
+        "arm": "I0",
+        "config": {
+          "status": "frozen_after_real_data_preflight",
+          "pair": "resnet50_mobilenet_v2",
+          "seed": 3101,
+          "epochs": 100,
+          "batch_size": 256,
+          "workers": 8,
+          "learning_rate": 0.05,
+          "momentum": 0.9,
+          "weight_decay": 0.0001,
+          "milestones": [
+            30,
+            60,
+            90
+          ],
+          "lr_decay": 0.1,
+          "temperature": 4.0,
+          "cosine_scale": 30.0,
+          "ce_weight": 1.0,
+          "kd_weight": 1.0,
+          "precision": "fp32",
+          "standardization_epsilon": 1e-06,
+          "gradient_epsilon": 1e-12,
+          "gradient_ratio_clipping": null,
+          "sicd_reference_status": "unverified_reconstruction_do_not_use_for_paper_runs",
+          "input": "single_view_224_bilinear_imagenet_normalization",
+          "evaluation": "final_checkpoint_full_50000_validation_no_best_selection",
+          "freeze_evidence": {
+            "time": "2026-11-14T05:27:31.001168+00:00",
+            "initial_launch_arms": [
+              "I0",
+              "I2"
+            ],
+            "scope": "new_ImageNet_protocol_not_historical_SICD_reproduction",
+            "candidate_protocol_sha256": "4ebed3fce04c429dc719e04fbaef4f601566acc3d594dc47f0fe3edc08a66a7c",
+            "source_sha256": "83efa98a5c02dfeff3892c165584fc07a320cef4d95210c97ad2eb546f5e1106",
+            "data_audit_sha256": "d2bd7ceb0affb60c02a175851f11e6ffa3a0bb19e467baa7e006272c4d0a9b6a",
+            "reports": [
+              {
+                "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu0/preflight.json",
+                "sha256": "5a960f3e11746568217cfba731bb804027280a55cfd1ca945a342832732c333e"
+              },
+              {
+                "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu1/preflight.json",
+                "sha256": "a7416011227ed9d5d13033cd6b517473cf3bc7e013a15567f7c8fe31b4f8f2e7"
+              }
+            ],
+            "student_validation_used_for_selection": false,
+            "sicd_reference_verified": false
+          }
+        },
+        "source_sha256": "83efa98a5c02dfeff3892c165584fc07a320cef4d95210c97ad2eb546f5e1106",
+        "data_audit_sha256": "d2bd7ceb0affb60c02a175851f11e6ffa3a0bb19e467baa7e006272c4d0a9b6a",
+        "teacher": {
+          "path": "resnet50-0676ba61.pth",
+          "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+          "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+          "enum": "ResNet50_Weights.IMAGENET1K_V1",
+          "transform": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)"
+        },
+        "initial": {
+          "backbone_sha256": "5bf0612c931a82eb39e257e3f839698a436944730da6e74c3390d8cfb79c596b",
+          "linear_head_sha256": "24b51ec848d11436c6c2c989ff2d3c344ef9bf858a06cf65124e010d424ea8fa",
+          "feature_dimension": 1280
+        },
+        "environment": {
+          "python": "3.12.16 (main, Nov 11 2026, 00:15:59) [Clang 23.1.3 ]",
+          "torch": "2.9.0+cu126",
+          "torchvision": "0.24.0+cu126",
+          "numpy": "1.26.4",
+          "cuda_runtime": "12.6",
+          "cuda_available": true,
+          "gpu_names": [
+            "NVIDIA A100 80GB PCIe",
+            "NVIDIA A100 80GB PCIe"
+          ]
+        }
+      }
+    },
+    "kd_pilot": {
+      "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu0/I2_preflight_resume.pth",
+      "sha256": "580a2c8b9351b8a34a5a8028370b911e66fc2c5c7b49326faa53a76f8d07b1cf",
+      "stored_epoch_field": 1,
+      "identity": {
+        "kind": "real_data_preflight_only",
+        "arm": "I2",
+        "source_sha256": "83efa98a5c02dfeff3892c165584fc07a320cef4d95210c97ad2eb546f5e1106"
+      }
+    },
+    "acd_pilot": {
+      "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu1/I7_preflight_resume.pth",
+      "sha256": "484013f0b7dc30b9fc5cbc658fe92727d3a52c8192487cfa4294eadb09d55112",
+      "stored_epoch_field": 1,
+      "identity": {
+        "kind": "real_data_preflight_only",
+        "arm": "I7",
+        "source_sha256": "83efa98a5c02dfeff3892c165584fc07a320cef4d95210c97ad2eb546f5e1106"
+      }
+    },
+    "teacher": {
+      "path": "resnet50-0676ba61.pth",
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+      "enum": "ResNet50_Weights.IMAGENET1K_V1",
+      "transform": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)"
+    },
+    "pilot_updates": 210,
+    "pilot_epoch_field_is_checkpoint_replay_marker": true,
+    "pilot_reports": [
+      {
+        "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu0/preflight.json",
+        "sha256": "5a960f3e11746568217cfba731bb804027280a55cfd1ca945a342832732c333e"
+      },
+      {
+        "path": "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu1/preflight.json",
+        "sha256": "a7416011227ed9d5d13033cd6b517473cf3bc7e013a15567f7c8fe31b4f8f2e7"
+      }
+    ]
+  },
+  "historical_summary": {
+    "path": "reproductions/head_story_visuals_20261027/artifacts/relations.json",
+    "sha256": "45b8878375e9d0cfd9174e91228d987088cadd0732edb707a50169ba04c38114",
+    "replotted_saved_aggregates_only": true
+  },
+  "artifact_sha256": {
+    "status.json": "727926d9771678d3512ef99c2ed1367c5ffc33583e4bc15719ca8b5143fbbba2",
+    "samples.json": "a1a76686ce8149a4a88dd0b3a7f6a9b6c74fb9963c01bf43aac406c13b72e311",
+    "sources.json": "beed94b4218bdf4a2db093504081ad6f26d8fa7d2d745e35a6e1bf8743085b17",
+    "features.npz": "2c56e93feb77aace4dc0d7eaaa52478ab13546fdcf02b6212b095de3a26cd508",
+    "oracle_same_state.json": "05f628040c654cc13899a822afd743f5d03d2aed16cf0bcbc8d6d28958f60b44",
+    "parameterization.json": "b131eec2c2b6dc5d8a48a23e7b2bfb3aa3aa3a15fde60523e9add947a3037756",
+    "gradient_sources.json": "72f144e42fc52e328f5902e16916faf7f23be71e7dde6cccde10940ea745b328",
+    "conditional_dependency.json": "a676e7655034f13cea81f7233b1423ece845b220267c85a1cad8db22101a1245",
+    "backbone_gradients.json": "de6d79d39db2bd281432930dfebbca656ba86ee95024b7292ca420b057db92fa"
+  },
+  "script_sha256": {
+    "probe.py": "ba58076ea1d0bb2949fe07e6019d73fd2777c7db420307bec0d1ef6bc4800c7a",
+    "render.py": "3fbe381d53f7a1585134a4f322379e4ed7c4140c03099e92d7b7316afa0cb8ae"
+  },
+  "output_sha256": {
+    "fig_oracle_calib.pdf": "f10d7850728b8cb29caeecdcbaec067202ef322b24ec62e3829eed2639403918",
+    "fig_oracle_calib.svg": "73e02ffdfadfb975a3f642ffbecbb8259bf5352b9efaf7f5be3b106715508835",
+    "fig_oracle_calib.png": "d566549086262782a94b93e2bf2c64fdbc1badecf4f1d70fa8354278dc48d3c8",
+    "fig_oracle_same_state.pdf": "280fed13f9d9c4fe44213334734bbcf220e90aa59a4838de119fc3051906ffbb",
+    "fig_oracle_same_state.svg": "ef895ea907ecc761e2dab60e192ad249af547ccf32bdde140ba7f14b5cc52fac",
+    "fig_oracle_same_state.png": "41aba291dad709442199d650f8b93f9878fdf296f5126ec6003b74b28705c0aa",
+    "fig_tsne_pilot.pdf": "55a3f5d32f83cab05504b966aa4210eba3d2a02f88ebe41fb87653af2ff1b971",
+    "fig_tsne_pilot.svg": "11d91d1941101b495d3344286f795c4e6bda0097f2be7ffaf9ee6adad6daad7f",
+    "fig_tsne_pilot.png": "77a824e4e951121ffb36822d11dbdf5f779a43473a027fb552b90287a560770c",
+    "fig_representation_pilot.pdf": "5d7e65d35762d1f60912ede63d060cde83a679cc3d6d4aa74c77677a9a6fae08",
+    "fig_representation_pilot.svg": "2b088d6396d7dafff6014eed79fa7ffc2620f38ad04138e47794acad2c45cd0c",
+    "fig_representation_pilot.png": "f266dc0bb617eeb83010b4fc7a4040670513b31eab1e544b6dced56ca4f45845",
+    "fig_tsne_sensitivity.pdf": "d69acfb636ac99739ce74c5da4b67bc04efc5e2c6d47ffe522bdb0e8208ee5aa",
+    "fig_tsne_sensitivity.svg": "e0722aafc51de42cb7f241ff0547526ba46b830ed3efff2a307a16a518aba7d2",
+    "fig_tsne_sensitivity.png": "64d521e7a56c3fe74dc3dbba7bc89d59f598dad28ec70841c0d220178d0b08a7",
+    "fig_gradient_conflict.pdf": "b047e74528a294644361ba7ca219feba9f117d0d55dc0cd5785fcd0ca892d778",
+    "fig_gradient_conflict.svg": "03e67c193871a12450db1ec1f9a6f6767cf0fce188b08356581df456cd9185bb",
+    "fig_gradient_conflict.png": "b516f71a43515bd17fc99df1de2c54f15965ab74d6053cdbda430981ad45ab5d",
+    "fig_gradient_conflict_pilot.pdf": "95aa548e172452710a20a006ad26f4feffa7f094b18ddf96b2bcea70371a8325",
+    "fig_gradient_conflict_pilot.svg": "5a30a2d6c85dc5fa8179b81aef9884359289264a5166d78e5f6e7508496fb21e",
+    "fig_gradient_conflict_pilot.png": "376202477031b784668818253e2663ec32783b4fae19fb61155a4d0cdd746be4",
+    "fig_parameterization.pdf": "5ac705e70e7e3d14eafb4d5ad3f3dac2cc1591d56860e68a41eced5bbdda0fda",
+    "fig_parameterization.svg": "31bf2b5a86790abacfef52eb76f4cb31fdc7a804f48133e45270560df240aee2",
+    "fig_parameterization.png": "c107dea50b69b8053de76e53416110573186eddc3771fdfe9e15e8ed56c2c472",
+    "fig_gradient_sources.pdf": "0c935714ac9e0a9c9d2fb2fef8ea07ed48666929fa4002dd4b310b9506d5c70b",
+    "fig_gradient_sources.svg": "dbdb2bd843779a28c29d0d23ee6d4c16d6f0b2df8913e9efc9c770e19b472405",
+    "fig_gradient_sources.png": "f146fdc8bbd37464ae151eeeaac2acd96b953e0fd465c5816cb780250508fdd5",
+    "fig_conditional_dependency.pdf": "d410e99abdb90b4c07ff48edb37b21ea7be26f6fc428ef66ff5d306982d5edcc",
+    "fig_conditional_dependency.svg": "f3b41084b9db3d81cd7b8a0ff22af2886eaeec3e74861b25547c0f462f46bf70",
+    "fig_conditional_dependency.png": "f9fd9919268f2cb05729b0594b1f054c06ebb195847155a3df837c195419d3d1",
+    "overview.png": "94815068ac01e837cded88b1a926b76a7a52a8adf4b09d3bc05974afbb68692e",
+    "results_summary.json": "4c08e72ff07728138e7d333734d7d68fc241239d233bb429f8355ab7885b91b1"
+  },
+  "plot_requirements_sha256": "b2ec8ef0358b7ba2b2d3acb84b7bdd63a41ce0ee212937bd35f75ff7496bc247",
+  "numerical_checks": {
+    "kl_decomposition_max_abs_error": 2.6950663922775675e-14,
+    "standardization_affine_max_abs_error": 1.3322676295501878e-14,
+    "angular_standardization_cancellation_max_abs_error": 2.842170943040401e-14,
+    "raw_conditional_target_intervention_max_tv": 0.0
+  },
+  "no_training_performed": true
+}

@@ -1,0 +1,177 @@
+{
+  "status": "completed",
+  "question": "output-loss replacement",
+  "setup": {
+    "pipelines": [
+      "AT: ResNet32\u00d74\u2192ShuffleNetV1",
+      "ReviewKD: WRN40-2\u2192WRN40-1"
+    ],
+    "seed": 2101,
+    "epochs": [
+      1,
+      30,
+      120,
+      240
+    ],
+    "probe": "first 128 official CIFAR-100 test images per pipeline",
+    "temperature": 4.0
+  },
+  "trajectories": [
+    {
+      "label": "AT + cosine KL",
+      "pair": "res32x4_sv1",
+      "seed": 2101,
+      "arm": "at_cosine_kl",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 5.929408550262451,
+          "conditional_tv_standardized": 0.09002237021923065
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 1.9396147727966309,
+          "conditional_tv_standardized": 0.054918449372053146
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 1.421173095703125,
+          "conditional_tv_standardized": 0.04773837327957153
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.1958309412002563,
+          "conditional_tv_standardized": 0.040982943028211594
+        }
+      ],
+      "initial": {
+        "backbone": "0336e0b8fb885ecc9d7290152c101d565da8e89766f09c862dba5531b8ee83ef",
+        "linear_head": "367d35d280822c9a3fefb461cb522f0d58bfd6b70a83626652a987d10561d9e0",
+        "head": "linear"
+      }
+    },
+    {
+      "label": "AT + SICD",
+      "pair": "res32x4_sv1",
+      "seed": 2101,
+      "arm": "at_cosine_sicd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.531503677368164,
+          "conditional_tv_standardized": 0.08365960419178009
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 2.0941576957702637,
+          "conditional_tv_standardized": 0.052273813635110855
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 1.626660704612732,
+          "conditional_tv_standardized": 0.046448491513729095
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.3330737352371216,
+          "conditional_tv_standardized": 0.036583062261343
+        }
+      ],
+      "initial": {
+        "backbone": "0336e0b8fb885ecc9d7290152c101d565da8e89766f09c862dba5531b8ee83ef",
+        "linear_head": "367d35d280822c9a3fefb461cb522f0d58bfd6b70a83626652a987d10561d9e0",
+        "head": "linear"
+      }
+    },
+    {
+      "label": "ReviewKD + cosine KL",
+      "pair": "wrn402_wrn401",
+      "seed": 2101,
+      "arm": "review_cosine_kl",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 9.272186279296875,
+          "conditional_tv_standardized": 0.09228068590164185
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 3.118804693222046,
+          "conditional_tv_standardized": 0.06270469725131989
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 3.048016309738159,
+          "conditional_tv_standardized": 0.06057976931333542
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.5523391962051392,
+          "conditional_tv_standardized": 0.044561147689819336
+        }
+      ],
+      "initial": {
+        "model": "da48dbf6e2aee01a617682614ab823259b046aa309ce9156efbdf7cf8923a05d",
+        "backbone": "cd71926b56b5ece2b186371cf94ec1d11ac5f5801287946b5b07292ddacd06ef",
+        "adapter": "6831100ac04862144fe6315d94fb2e2eb610e2b1dadbe531754eede5c76867f1",
+        "teacher": "138657ca72ec66e84f4fe97c3e4169ea01aceaa48ece862f7f633953ef00f9c7"
+      }
+    },
+    {
+      "label": "ReviewKD + SICD",
+      "pair": "wrn402_wrn401",
+      "seed": 2101,
+      "arm": "review_cosine_sicd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 12.2014741897583,
+          "conditional_tv_standardized": 0.09237008541822433
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 3.8419084548950195,
+          "conditional_tv_standardized": 0.05656885728240013
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 3.9965293407440186,
+          "conditional_tv_standardized": 0.050492338836193085
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 2.7406036853790283,
+          "conditional_tv_standardized": 0.04067746549844742
+        }
+      ],
+      "initial": {
+        "model": "da48dbf6e2aee01a617682614ab823259b046aa309ce9156efbdf7cf8923a05d",
+        "backbone": "cd71926b56b5ece2b186371cf94ec1d11ac5f5801287946b5b07292ddacd06ef",
+        "adapter": "6831100ac04862144fe6315d94fb2e2eb610e2b1dadbe531754eede5c76867f1",
+        "teacher": "138657ca72ec66e84f4fe97c3e4169ea01aceaa48ece862f7f633953ef00f9c7"
+      }
+    }
+  ],
+  "sources_sha256": {
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_kl/epoch_001.pth": "a0ea2d2a193f3bb5afcd885dbfbfdb8b77a60d9f30e945226d6708cb5c6b24f4",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_kl/epoch_030.pth": "88b4d011e09bf668470eb92e9fd21b00f3afe739ce0a0e3e54625141cb93d7ac",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_kl/epoch_120.pth": "2c9e7e6e789167750cc4241ffa33220efe7eeacbd764dd86e4af251e427b08ec",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_kl/epoch_240.pth": "d0cb3968e6e5da13389ad2cbd4a67e727b7c3e4555e3166cdb46c8cfe540ebc8",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_sicd/epoch_001.pth": "9015a0c6c24359e53c4d00e9f3c6564afc740fd121ae12b1145825003623c60f",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_sicd/epoch_030.pth": "ac4ad85ac984555de509eeab735ff801644cd84a9abd847c0958232503b45c73",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_sicd/epoch_120.pth": "7b46cefad4186bd0240add004393424afcc947df3e7d9b9a88b256f2102200fd",
+    "reproductions/acd_at_res32x4_sv1_priority_20261111/artifacts/res32x4_sv1__s2101__at_cosine_sicd/epoch_240.pth": "9d82a407f5d1c6bd45f0d1e910e993742ca451aa05cae0b764ddb836e89b0752",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_kl/epoch_001.pth": "97cadc3589dbd3267e0d58e428b30b323dfa15feca7475ccfa3fac509bec93c1",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_kl/epoch_030.pth": "00ced23e9ffbb652fe078dd9d8220fd2b10a9c46718f35da5e333172b43b60eb",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_kl/epoch_120.pth": "db718d6a505f77910ac6e10e3ec2eee65e7d9107b63299b628bc5964d5fd711d",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_kl/epoch_240.pth": "cb37a8398f59faed6db9c142021937e7ea9f63e572735078e8ef9abf0173df00",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_sicd/epoch_001.pth": "4fc114d83239feb33d77843e5eee94fbfa2af4bd38c9b2e706a8c6830271b37a",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_sicd/epoch_030.pth": "cb0d8440216f0f0ef8030dd484cb60cc2c655091aba159877fab6ded74409ac3",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_sicd/epoch_120.pth": "bbec0bf1fa01bf64802feaa4b9f8fc37be57060e9069dc5eb2f5bbe11591fc2a",
+    "reproductions/acd_reviewkd_wrn_priority_20261110/artifacts/wrn402_wrn401__s2101__review_cosine_sicd/epoch_240.pth": "211cd3c3a48cd6bdeb501dab8562ed5118b8faf03ca1358b7009f63b8d02a8ef"
+  },
+  "limitations": [
+    "One seed per pipeline; the two feature pipelines and teacher\u2013student pairs have different scales, so their absolute locations should not be ranked against each other.",
+    "The two axes are diagnostic discrepancies, not official-test accuracy."
+  ]
+}

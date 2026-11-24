@@ -1,0 +1,190 @@
+{
+  "checked_at": "2026-11-16T11:16:41.668802+00:00",
+  "training_seal_unchanged": true,
+  "active_policy_unchanged": true,
+  "historical_optimizer_recipe_matches": [
+    {
+      "pair": "res56_res20",
+      "recipe": {
+        "lr": 0.05,
+        "ce_weight": 0.5,
+        "kd_weight": 0.5
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2051__linear/config.json",
+      "source_sha256": "b33740bdc48d50882e036b638cbbd21b8cbbbb9e32a030b2942f4e875afd8d2f"
+    },
+    {
+      "pair": "res110_res32",
+      "recipe": {
+        "lr": 0.05,
+        "ce_weight": 0.5,
+        "kd_weight": 0.5
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2051__linear/config.json",
+      "source_sha256": "4e31b3f968f88a54c04446482d2c49ddd7b53bda4020ef3cde9e6296bf2d03e2"
+    },
+    {
+      "pair": "wrn402_wrn162",
+      "recipe": {
+        "lr": 0.05,
+        "ce_weight": 0.5,
+        "kd_weight": 0.5
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2051__linear/config.json",
+      "source_sha256": "01fd186e71d8759a3a1256fcdeb3fd7a2dcc126f0cb139e0c87afbfe768e3ac5"
+    },
+    {
+      "pair": "wrn402_wrn401",
+      "recipe": {
+        "lr": 0.05,
+        "ce_weight": 0.5,
+        "kd_weight": 0.5
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2051__linear/config.json",
+      "source_sha256": "bcebd00be335e60a0eec929dc983669aa7ef43009e65346914ec30d03262581e"
+    },
+    {
+      "pair": "res32x4_sv1",
+      "recipe": {
+        "lr": 0.01,
+        "ce_weight": 0.1,
+        "kd_weight": 0.9
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/kd-head-models-20261031-final/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res32x4_sv1.json",
+      "source_sha256": "d78f0164ce998b72d14c5e4c2180bd57faf2f9923be37565c4120e2d2ec7681e"
+    },
+    {
+      "pair": "res50_mv1",
+      "recipe": {
+        "lr": 0.01,
+        "ce_weight": 0.1,
+        "kd_weight": 0.9
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/kd-head-models-20261031-final/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res50_mv1.json",
+      "source_sha256": "44988049a7cbdbbc7176847aad47f512e87936e5617db45d9bbb587bd7be3637"
+    },
+    {
+      "pair": "res32x4_sv2",
+      "recipe": {
+        "lr": 0.01,
+        "ce_weight": 0.1,
+        "kd_weight": 0.9
+      },
+      "matched_historical_fields": [
+        "lr",
+        "ce_weight",
+        "kd_weight",
+        "epochs",
+        "batch_size",
+        "momentum",
+        "weight_decay",
+        "temperature",
+        "milestones",
+        "lr_decay"
+      ],
+      "historical_source": "paper_assets/acd_tables/main_results_20261116/release_recovery/restored/kd-head-models-20261031-final/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res32x4_sv2.json",
+      "source_sha256": "e581decc35ad8f8a2ddb251daef07bd1e51f4c3cf5c92de7a7aa308892e4b894"
+    }
+  ],
+  "acd_parameters": {
+    "temperature": 4.0,
+    "angular_scale": 30.0,
+    "head_initialization": "normalized paired linear weights; directions trainable; no ETF or feature lifting",
+    "standardization": {
+      "axis": "all classes per sample",
+      "correction": 1,
+      "epsilon": 1e-06
+    },
+    "gradient_matching": {
+      "reference": "standardized full KL",
+      "parameters": "all trainable student parameters except classifier",
+      "epsilon": 1e-12,
+      "ratio_clip": null,
+      "detach_ratio": true,
+      "unused_gradients": "error"
+    }
+  },
+  "historical_sicd_source_parity": false,
+  "note": "ACD parameters are the already frozen new-run implementation, not recovered historical SICD source. No training hyperparameters changed in this scheduling revision.",
+  "acd_only_compute_hours": 38.64108430207125,
+  "requested_jobs": 7,
+  "allowed_seeds": [
+    3201
+  ],
+  "allowed_arms": [
+    "acd"
+  ],
+  "deployment": "User confirmed. Automatic review still rejected termination; deployed --wait-for-prior-controller in tmux acd-only-handoff, waiting for old schedulers to exit naturally after current ACD. No process termination or training reset. Runtime status: artifacts/acd_only_handoff.json."
+}

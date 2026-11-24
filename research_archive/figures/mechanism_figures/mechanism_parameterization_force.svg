@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="690" viewBox="0 0 1600 690" role="img">
+<title>Parameterization changes both probability weights and KD force</title><desc>Read-only checkpoint probe  /  VGG13 → MobileNetV1  /  linear KD seed 2102  /  128 fixed official-test images</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#627381"/></marker></defs>
+<rect width="1600" height="100%" fill="white"/>
+<text x="45" y="45" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#172B3A">Parameterization changes both probability weights and KD force</text>
+<text x="45" y="75" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Read-only checkpoint probe  /  VGG13 → MobileNetV1  /  linear KD seed 2102  /  128 fixed official-test images</text>
+<text x="45" y="124" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#172B3A">(a) Exact mechanism</text>
+<rect x="45" y="148" width="485" height="273" rx="8" fill="#F5F7F9" stroke="none"/>
+<text x="70" y="188" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#172B3A">zₖ = r aₖ cos θₖ + bₖ</text>
+<text x="70" y="227" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#172B3A">pₖ = softmax(z/T)ₖ</text>
+<text x="70" y="260" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#172B3A">∇ₕ LKD = T Σₖ (pₖ − qₖ) aₖuₖ</text>
+<rect x="70" y="286" width="186" height="91" rx="8" fill="#FFF5E9" stroke="none"/>
+<rect x="274" y="286" width="220" height="91" rx="8" fill="#F3EEF8" stroke="none"/>
+<text x="163" y="319" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" text-anchor="middle" fill="#D88A2D">Scale / norms</text>
+<text x="163" y="350" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#172B3A">r, aₖ change pₖ</text>
+<text x="384" y="319" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" text-anchor="middle" fill="#8B71AB">Bias</text>
+<text x="384" y="350" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#172B3A">bₖ changes pₖ</text>
+<text x="70" y="403" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">aₖ also rescales each gradient basis vector uₖ.</text>
+<text x="584" y="124" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#172B3A">(b) Fixed directions → output deformation</text>
+<text x="584" y="151" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Hold ĥ and ŵₖ fixed; continuously inject r·aₖ and bₖ.</text>
+<line x1="620" y1="211" x2="620" y2="389" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="620" y1="389" x2="1050" y2="389" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="615" y1="389.0" x2="620" y2="389.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="608" y="395.0" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.0</text>
+<line x1="615" y1="317.8" x2="620" y2="317.8" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="608" y="323.8" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.1</text>
+<line x1="615" y1="246.6" x2="620" y2="246.6" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="608" y="252.6" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.2</text>
+<text x="620" y="196" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">mean non-target total variation</text>
+<rect x="690" y="259.69489789009094" width="50" height="129.30510210990906" rx="3" fill="#D88A2D" stroke="none"/>
+<text x="715" y="248.69489789009094" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#D88A2D">0.182</text>
+<text x="715" y="416" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">angular → scale</text>
+<rect x="830" y="386.90163348801434" width="50" height="2.0983665119856596" rx="3" fill="#8B71AB" stroke="none"/>
+<text x="855" y="375.90163348801434" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#8B71AB">0.003</text>
+<text x="855" y="416" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">scale → raw bias</text>
+<rect x="970" y="259.5998992919922" width="50" height="129.4001007080078" rx="3" fill="#B94D58" stroke="none"/>
+<text x="995" y="248.5998992919922" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#B94D58">0.182</text>
+<text x="995" y="416" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">angular → raw</text>
+<text x="1108" y="124" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#172B3A">(c) Raw gradient force is not only rescaled</text>
+<text x="1108" y="151" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Cosine to standardized-logit reference; mean over 128 images.</text>
+<line x1="1140" y1="211" x2="1140" y2="389" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="1140" y1="389" x2="1500" y2="389" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="1135" y1="389.0" x2="1140" y2="389.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1128" y="395.0" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.00</text>
+<line x1="1135" y1="333.375" x2="1140" y2="333.375" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1128" y="339.375" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.25</text>
+<line x1="1135" y1="277.75" x2="1140" y2="277.75" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1128" y="283.75" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.50</text>
+<line x1="1135" y1="222.125" x2="1140" y2="222.125" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1128" y="228.125" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#627381">0.75</text>
+<rect x="1176" y="288.89526703953743" width="38" height="100.10473296046257" rx="2" fill="#357DB2" stroke="none"/>
+<text x="1195" y="278.89526703953743" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#357DB2">0.45</text>
+<text x="1195" y="417" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">angular</text>
+<rect x="1263" y="263.801457375288" width="38" height="125.19854262471199" rx="2" fill="#D88A2D" stroke="none"/>
+<text x="1282" y="253.801457375288" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#D88A2D">0.56</text>
+<text x="1282" y="417" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">scale</text>
+<rect x="1350" y="289.0086706876755" width="38" height="99.99132931232452" rx="2" fill="#8B71AB" stroke="none"/>
+<text x="1369" y="279.0086706876755" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#8B71AB">0.45</text>
+<text x="1369" y="417" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">bias</text>
+<rect x="1437" y="263.71108987927437" width="38" height="125.28891012072563" rx="2" fill="#B94D58" stroke="none"/>
+<text x="1456" y="253.71108987927437" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#B94D58">0.56</text>
+<text x="1456" y="417" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#627381">raw</text>
+<text x="1140" y="444" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#B94D58">Raw force norm / reference = 14.7×</text>
+<line x1="45" y1="579" x2="1555" y2="579" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="45" y="599" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">Mathematical claim: scale/norms and bias enter pₖ; class norms also enter the gradient basis. No claim that they rotate θₖ.</text>
+<text x="45" y="622" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">Measured: this checkpoint probe shows substantial scale-driven conditional-distribution deformation; its bias contribution is small here.</text>
+<text x="45" y="645" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">The standardized-logit gradient is a diagnostic reference, not semantic ground truth or proof of globally conflicting optimization.</text>
+</svg>

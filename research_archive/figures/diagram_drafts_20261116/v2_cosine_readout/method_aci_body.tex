@@ -1,0 +1,45 @@
+\subsection{Angular Coordinate Interface (ACI)}
+\label{subsec:aci}
+Motivated by the classifier geometry mismatch identified in our
+analysis, we introduce an Angular Coordinate Interface (ACI) that
+separates the student's directional class relations from
+magnitude- and bias-dependent score modulation.
+ACI modifies only the student classifier; the pre-trained teacher
+remains frozen and retains its original classification head.
+
+\subsubsection{Cosine Classifier}
+A conventional affine classifier combines angular similarity
+with feature magnitudes, class-weight norms, and additive biases.
+To remove these factors from the student readout, we replace
+its affine head with a bias-free cosine classifier.
+Given a student feature $\mathbf{h}$ and the weight vector
+$\mathbf{w}_k$ for class $k$, the angular logit is
+\begin{equation}
+    \tilde{z}_k
+    = s \cdot
+    \frac{\mathbf{w}_k^\top \mathbf{h}}
+    {\|\mathbf{w}_k\|_2 \|\mathbf{h}\|_2}
+    = s \cos\theta_k,
+    \label{eq:aci_logit}
+\end{equation}
+where $\theta_k$ is the angle between the feature and the
+class-weight vector, and $s>0$ is a fixed scale shared across
+samples and classes.
+
+Feature normalization removes sample-dependent magnitude
+scaling, while class-weight normalization removes
+class-specific multiplicative factors. Omitting the bias
+further eliminates additive class-specific offsets.
+Unlike a global temperature adjustment, ACI therefore changes
+the score parameterization rather than merely rescaling
+the resulting logits.
+
+For nonzero vectors, the resulting scores are invariant to
+positive rescaling of the feature or individual class weights,
+while both feature and class-weight directions remain learnable.
+Thus, ACI makes the student scores depend only on angular
+relations and the shared scale, without requiring direct
+teacher--student feature alignment.
+These scores support both label-supervised learning and the
+subsequent SICD objective: ACI defines the student output
+interface, whereas SICD specifies the distillation signal.

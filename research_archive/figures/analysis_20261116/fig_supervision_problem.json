@@ -1,0 +1,12 @@
+{
+  "kind": "analytical_probability_space_illustration",
+  "temperature": 1,
+  "teacher_target_probability": 0.6,
+  "conditional_distribution": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "max_decomposition_error": 2.220446049250313e-16,
+  "notes": "No all-class standardization; not empirical training evidence."
+}

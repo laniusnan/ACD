@@ -1,9 +1,95 @@
 {
   "date": "2026-11-18",
-  "runtime": {"python": "3.12", "torch": "2.9.0+cu126", "torchvision": "0.24.0+cu126", "numpy": "1.26.4"},
-  "method_tests": {"count": 4, "status": "passed", "coverage": ["all CIFAR architectures", "cosine rescaling invariance", "ETF Gram matrix", "exact KL decomposition", "finite backward and teacher detach"]},
-  "reference_parity": {"status": "passed", "comparison": "loss and backbone gradients exactly equal to archived seven-pair ACD implementation on fixed synthetic tensors"},
-  "real_data_smoke": {"dataset": "official CIFAR-100", "teacher": "resnet56", "student": "resnet20", "method": "acd", "steps": 1, "device": "cpu", "workers": 0, "loss": 5.28277063369751, "status": "passed_incomplete_engineering_check"},
-  "full_refactored_training": "not_run",
-  "imagenet_and_detection_benchmark_reproduction": "not_verified"
+  "runtime": {
+    "python": "3.12",
+    "torch": "2.9.0+cu126",
+    "torchvision": "0.24.0+cu126",
+    "numpy": "1.26.4"
+  },
+  "method_tests": {
+    "count": 10,
+    "status": "passed",
+    "coverage": [
+      "all CIFAR architectures",
+      "cosine rescaling invariance",
+      "ETF Gram matrix",
+      "exact KL decomposition",
+      "finite backward and teacher detach",
+      "float64 ETF at minimum dimension",
+      "infeasible or affine ETF rejection",
+      "nonfinite cosine-scale rejection",
+      "standardized relation affine invariance",
+      "standardized backbone norm matching with a parameter iterator",
+      "retained target dependence through standardization"
+    ]
+  },
+  "reference_parity": {
+    "status": "passed",
+    "comparison": "loss and backbone gradients exactly equal to archived seven-pair ACD implementation on fixed synthetic tensors"
+  },
+  "real_data_smoke": {
+    "dataset": "official CIFAR-100",
+    "teacher": "exported teacher_resnet56_cifar100.pth",
+    "student": "resnet20",
+    "method": "acd",
+    "steps": 1,
+    "device": "cpu",
+    "workers": 0,
+    "loss": 5.28277063369751,
+    "status": "passed_incomplete_engineering_check"
+  },
+  "full_refactored_training": "not_run; one real-data optimizer step and synthetic resume integration checks only",
+  "imagenet_and_detection_benchmark_reproduction": "not_verified",
+  "behavior_preservation": {
+    "methods": [
+      "ce",
+      "kd",
+      "angular_kd",
+      "standardized_full",
+      "conditional",
+      "acd"
+    ],
+    "maximum_absolute_difference": 0.0,
+    "scope": "Fixed synthetic FP32 tensors, existing no-ETF cosine-head path"
+  },
+  "workflow_tests": {
+    "count": 12,
+    "status": "passed",
+    "coverage": [
+      "test-only dataset construction",
+      "student and teacher CLI evaluation",
+      "top1 top5 CE metrics",
+      "empty evaluation rejection",
+      "weights-only loading and identity validation",
+      "incomplete resume rejection",
+      "resume equivalence after interruption",
+      "completed resume to a new directory",
+      "existing output protection",
+      "download SHA256 and corrupt-file handling",
+      "multiple head variants and reused teacher selection",
+      "per-release URLs and matching config download"
+    ]
+  },
+  "imagenet_example_learning_rate": 0.1,
+  "release_verification": "release_verification.json",
+  "release": {
+    "tag": "cifar100-rerun-20261116",
+    "students": 7,
+    "teachers": 5,
+    "samples_per_model": 10000,
+    "student_top1_matches": 7,
+    "verified_weight_bytes": 169588408,
+    "compatible_source_commit": "cd7bc8a964991de677eb664756da35f2eaccbc4a"
+  },
+  "head_control_release": {
+    "tag": "cifar100-head-controls-20261031",
+    "students": 11,
+    "new_teachers": 1,
+    "reused_teachers": 3,
+    "samples_per_new_model": 10000,
+    "student_top1_matches": 11,
+    "verified_weight_bytes": 119618917,
+    "verification": "head_controls_verification.json",
+    "compatible_source_commit": "cd7bc8a964991de677eb664756da35f2eaccbc4a"
+  }
 }

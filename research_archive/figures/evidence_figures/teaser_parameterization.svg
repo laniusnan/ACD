@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="580" viewBox="0 0 1400 580" role="img">
+<title>Fixed angular relations, different class supervision</title><desc>Checkpoint evidence  /  ViT-T → ResNet8×4  /  seed 2102  /  first 256 CIFAR-100 test images</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#627381"/></marker></defs>
+<rect width="1400" height="100%" fill="white"/>
+<text x="40" y="43" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#172B3A">Fixed angular relations, different class supervision</text>
+<text x="40" y="75" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Checkpoint evidence  /  ViT-T → ResNet8×4  /  seed 2102  /  first 256 CIFAR-100 test images</text>
+<text x="40" y="124" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#172B3A">(a) Linear-logit components</text>
+<rect x="40" y="153" width="382" height="227" rx="8" fill="#F5F7F9" stroke="none"/>
+<text x="65" y="197" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="600" text-anchor="start" fill="#172B3A">zₖ = ‖h‖ ‖wₖ‖ cos θₖ + bₖ</text>
+<circle cx="69" cy="238" r="5" fill="#357DB2"/>
+<text x="85" y="244" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="start" fill="#357DB2">Direction</text>
+<text x="388" y="244" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" text-anchor="end" fill="#172B3A">cos θₖ</text>
+<circle cx="69" cy="285" r="5" fill="#D88A2D"/>
+<text x="85" y="291" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="start" fill="#D88A2D">Magnitude</text>
+<text x="388" y="291" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" text-anchor="end" fill="#172B3A">‖h‖ ‖wₖ‖</text>
+<circle cx="69" cy="332" r="5" fill="#8B71AB"/>
+<text x="85" y="338" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="start" fill="#8B71AB">Class bias</text>
+<text x="388" y="338" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" text-anchor="end" fill="#172B3A">bₖ</text>
+<text x="42" y="414" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Same checkpoint and input;</text>
+<text x="42" y="443" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">introduce radial terms, then bias.</text>
+<text x="42" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">No teacher–student feature alignment.</text>
+<text x="470" y="124" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#172B3A">(b) Leading alternative changes</text>
+<text x="470" y="155" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Non-target top-1 change (%)</text>
+<line x1="510" y1="180" x2="510" y2="407" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="510" y1="407" x2="885" y2="407" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="498" y="413.0" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">0</text>
+<line x1="506" y1="407.0" x2="510" y2="407.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="498" y="345.0" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">10</text>
+<line x1="506" y1="339.0" x2="510" y2="339.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="498" y="277.0" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">20</text>
+<line x1="506" y1="271.0" x2="510" y2="271.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="498" y="209.0" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">30</text>
+<line x1="506" y1="203.0" x2="510" y2="203.0" stroke="#DCE3E8" stroke-width="1.5"/>
+<rect x="547" y="287.46875" width="46" height="119.53125" rx="2" fill="#D88A2D" stroke="none"/>
+<text x="570" y="275.46875" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#D88A2D">17.6</text>
+<rect x="611" y="252.9375" width="46" height="154.0625" rx="2" fill="#8B71AB" stroke="none"/>
+<text x="634" y="240.9375" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#8B71AB">22.7</text>
+<text x="602" y="438" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#172B3A">Teacher</text>
+<rect x="735" y="223.71875" width="46" height="183.28125" rx="2" fill="#D88A2D" stroke="none"/>
+<text x="758" y="211.71875" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#D88A2D">27.0</text>
+<rect x="799" y="401.6875" width="46" height="5.3125" rx="2" fill="#8B71AB" stroke="none"/>
+<text x="822" y="389.6875" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#8B71AB">0.8</text>
+<text x="790" y="438" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#172B3A">Student</text>
+<circle cx="538" cy="474" r="5" fill="#D88A2D"/>
+<text x="552" y="480" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#172B3A">+ Magnitude</text>
+<circle cx="731" cy="474" r="5" fill="#8B71AB"/>
+<text x="745" y="480" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#172B3A">+ Bias</text>
+<text x="948" y="124" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#172B3A">(c) Top-5 set retention</text>
+<text x="948" y="155" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Mean non-target top-5 overlap (%)</text>
+<text x="948" y="211" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Teacher · magnitude</text>
+<rect x="948" y="221" width="310" height="10" rx="3" fill="#EAEFF2" stroke="none"/>
+<rect x="948" y="221" width="275.12502365112306" height="10" rx="3" fill="#D88A2D" stroke="none"/>
+<text x="1345" y="233" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="end" fill="#D88A2D">88.8</text>
+<text x="948" y="276" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Teacher · bias</text>
+<rect x="948" y="286" width="310" height="10" rx="3" fill="#EAEFF2" stroke="none"/>
+<rect x="948" y="286" width="249.69533615112306" height="10" rx="3" fill="#8B71AB" stroke="none"/>
+<text x="1345" y="298" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="end" fill="#8B71AB">80.5</text>
+<text x="948" y="341" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Student · magnitude</text>
+<rect x="948" y="351" width="310" height="10" rx="3" fill="#EAEFF2" stroke="none"/>
+<rect x="948" y="351" width="270.5234375" height="10" rx="3" fill="#D88A2D" stroke="none"/>
+<text x="1345" y="363" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="end" fill="#D88A2D">87.3</text>
+<text x="948" y="406" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Student · bias</text>
+<rect x="948" y="416" width="310" height="10" rx="3" fill="#EAEFF2" stroke="none"/>
+<rect x="948" y="416" width="307.09375" height="10" rx="3" fill="#8B71AB" stroke="none"/>
+<text x="1345" y="428" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="end" fill="#8B71AB">99.1</text>
+<text x="948" y="486" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Full track = 100% retained</text>
+<line x1="40" y1="514" x2="1360" y2="514" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="40" y="534" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Magnitude: angular → dot-product scores. Bias: dot-product → full logits. Comparisons are sequential, not additive effects.</text>
+<text x="40" y="558" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Observed sensitivity does not establish that angular ordering is correct, or that KD gradients conflict.</text>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "name": "cifar100_acd_rerun_20261116",
+  "status": "new_frozen_reconstruction_not_historical_source_reproduction",
+  "purpose": "Fill seven missing standalone ACD pairs with freshly paired controls",
+  "pairs": ["res56_res20", "res110_res32", "wrn402_wrn162", "wrn402_wrn401", "res32x4_sv1", "res50_mv1", "res32x4_sv2"],
+  "seeds": [3201, 3202, 3203],
+  "arms": ["acd", "linear_kd", "angular_kd", "angular_full"],
+  "epochs": 240,
+  "batch_size": 64,
+  "workers": 2,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "milestones": [150, 180, 210],
+  "lr_decay": 0.1,
+  "recipes": {
+    "homogeneous": {"lr": 0.05, "ce_weight": 0.5, "kd_weight": 0.5},
+    "heterogeneous": {"lr": 0.01, "ce_weight": 0.1, "kd_weight": 0.9}
+  },
+  "temperature": 4.0,
+  "angular_scale": 30.0,
+  "head_initialization": "normalized paired linear weights; directions trainable; no ETF or feature lifting",
+  "standardization": {"axis": "all classes per sample", "correction": 1, "epsilon": 0.000001},
+  "conditional_weight": "teacher non-target mass after full-class standardization and softmax at T",
+  "gradient_matching": {"reference": "standardized full KL", "parameters": "all trainable student parameters except classifier", "epsilon": 1e-12, "ratio_clip": null, "detach_ratio": true, "unused_gradients": "error"},
+  "augmentation": "50k weak plus 50k strong views; frozen repository RandAugment(n=2,m=10), m is ignored by that historical implementation",
+  "precision": "float32",
+  "tf32": false,
+  "evaluation": "teacher preflight and student final epoch240 checkpoint only; official 10000 test images",
+  "gpu_allowlist": [0],
+  "automatic_failure_retries": 0,
+  "old_results_merged": false
+}

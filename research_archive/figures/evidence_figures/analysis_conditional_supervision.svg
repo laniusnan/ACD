@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="675" viewBox="0 0 1400 675" role="img">
+<title>Which supervision should be retained?</title><desc>Analysis  /  exact loss decomposition plus existing component interventions</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#627381"/></marker></defs>
+<rect width="1400" height="100%" fill="white"/>
+<text x="40" y="43" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#172B3A">Which supervision should be retained?</text>
+<text x="40" y="75" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Analysis  /  exact loss decomposition plus existing component interventions</text>
+<text x="40" y="124" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#172B3A">(a) Separate confidence from alternatives</text>
+<rect x="40" y="155" width="605" height="82" rx="8" fill="#F5F7F9" stroke="none"/>
+<text x="63" y="187" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#172B3A">p = softmax(N(zₜ) / T),  q = softmax(N(zₛ) / T)</text>
+<text x="63" y="219" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172B3A">N(z) = (z − mean(z)) / std(z)</text>
+<text x="48" y="279" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start" fill="#172B3A">KL(p ‖ q) = B + (1 − pᵧ) R</text>
+<rect x="40" y="305" width="286" height="111" rx="8" fill="#F5F0F8" stroke="none"/>
+<rect x="344" y="305" width="301" height="111" rx="8" fill="#EDF6F2" stroke="none"/>
+<text x="61" y="339" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#8B71AB">B · Target confidence</text>
+<text x="61" y="370" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Bernoulli KL</text>
+<text x="61" y="399" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">[pᵧ, 1 − pᵧ] vs. [qᵧ, 1 − qᵧ]</text>
+<text x="363" y="339" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#23856D">R · Non-target relation</text>
+<text x="363" y="370" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Conditional KL(p⁻ ‖ q⁻)</text>
+<text x="363" y="399" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">p⁻ₖ = pₖ / (1 − pᵧ),  k ≠ y</text>
+<text x="47" y="457" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#23856D">SICD retains the weighted conditional term.</text>
+<text x="47" y="492" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Training includes T² and detached gradient matching.</text>
+<text x="47" y="521" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Target information still enters through normalization</text>
+<text x="47" y="550" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">and the teacher non-target mass (1 − pᵧ).</text>
+<text x="708" y="124" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#172B3A">(b) Component value is an empirical question</text>
+<text x="708" y="158" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">VGG13 → MobileNetV1 · seed 2101 · cosine head</text>
+<text x="708" y="185" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">45k train / 5k student holdout · epoch 240</text>
+<text x="708" y="258" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#357DB2">Ordinary KD</text>
+<circle cx="1192.0125" cy="252" r="7" fill="#357DB2"/>
+<text x="1204.0125" y="258" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#357DB2">68.62</text>
+<text x="708" y="314" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#7B8793">Full standardized</text>
+<circle cx="1253.2375" cy="308" r="7" fill="#7B8793"/>
+<text x="1265.2375" y="314" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#7B8793">71.78</text>
+<text x="708" y="370" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#8B71AB">Confidence only *</text>
+<circle cx="1112.9625" cy="364" r="7" fill="#8B71AB"/>
+<text x="1124.9625" y="370" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#8B71AB">64.54</text>
+<text x="708" y="426" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#23856D">Conditional only *</text>
+<circle cx="1268.7375" cy="420" r="7" fill="#23856D"/>
+<text x="1280.7375" y="426" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#23856D">72.58</text>
+<text x="708" y="482" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#172B3A">Full + norm control †</text>
+<circle cx="1281.5249999999999" cy="476" r="7" fill="#172B3A"/>
+<text x="1293.5249999999999" y="482" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#172B3A">73.24</text>
+<line x1="1025" y1="503" x2="1335" y2="503" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="1025.0" y1="503" x2="1025.0" y2="510" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1025.0" y="535" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#627381">60</text>
+<line x1="1121.875" y1="503" x2="1121.875" y2="510" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1121.875" y="535" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#627381">65</text>
+<line x1="1218.75" y1="503" x2="1218.75" y2="510" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1218.75" y="535" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#627381">70</text>
+<line x1="1315.625" y1="503" x2="1315.625" y2="510" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1315.625" y="535" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#627381">75</text>
+<text x="1180.0" y="566" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#627381">Holdout Top-1 (%)</text>
+<line x1="40" y1="585" x2="1360" y2="585" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="40" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">* Component gradient norm matched to full standardized KD. † Full standardized gradient norm matched to ordinary KD (different reference).</text>
+<text x="40" y="629" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Relation: +0.80 pp vs. full; −0.66 pp vs. the separate norm control. Teacher saw the holdout images. One seed; no significance claim.</text>
+<text x="40" y="653" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">The 5k holdout is not the official test set. Results support a bounded component comparison, not universally harmful confidence.</text>
+</svg>

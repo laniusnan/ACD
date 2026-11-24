@@ -1,0 +1,45 @@
+\paragraph{Angular Coordinate Interface (ACI).}
+The preceding analysis motivates separating directional category relations from
+the magnitudes and offsets introduced by a classifier's parameterization.
+Let $\mathbf{h}_s(x)\in\mathbb{R}^{d_s}$ denote the student feature and
+$\mathbf{w}_{s,k}$ the classifier weight for class $k$. A conventional affine
+readout mixes these quantities:
+\begin{equation}
+  \begin{aligned}
+    z^{\mathrm{lin}}_{s,k}
+    &= \mathbf{w}_{s,k}^{\top}\mathbf{h}_s+b_{s,k}\\
+    &= \|\mathbf{h}_s\|_2\|\mathbf{w}_{s,k}\|_2
+      \cos\theta_{s,k}+b_{s,k}.
+  \end{aligned}
+  \label{eq:aci_affine}
+\end{equation}
+ACI replaces this student readout with a bias-free cosine classifier.
+We normalize each sample feature and each class-weight vector independently:
+\begin{equation}
+  \begin{aligned}
+    \hat{\mathbf{h}}_s&=\frac{\mathbf{h}_s}{\|\mathbf{h}_s\|_2},\qquad
+    \hat{\mathbf{w}}_{s,k}=\frac{\mathbf{w}_{s,k}}{\|\mathbf{w}_{s,k}\|_2},\\
+    z_{s,k}&=s\,\hat{\mathbf{w}}_{s,k}^{\top}\hat{\mathbf{h}}_s
+            =s\cos\theta_{s,k},
+  \end{aligned}
+  \label{eq:aci_cosine}
+\end{equation}
+where $s>0$ is shared across samples and classes and is fixed to $30$ in our
+implementation; numerical denominator protection is omitted for clarity.
+For nonzero vectors outside the denominator-protection regime, positive
+rescaling of a feature or an individual class weight leaves this readout
+unchanged. Thus, feature magnitudes and class-specific weight norms no longer
+directly modulate the forward scores, while the feature and class directions
+remain learnable. This is a classifier parameterization, not an additional
+cosine-attraction loss: neither a fixed class-anchor arrangement nor an ETF
+constraint is imposed.
+
+ACI modifies only the student head; the frozen teacher retains its original
+classifier. The two models communicate through their class-indexed output
+vectors, without requiring equal feature dimensions or direct feature alignment.
+The student scores feed the label cross-entropy objective and the subsequent
+SICD branch, which standardizes outputs and selects conditional non-target
+supervision. ACI therefore specifies the student readout, whereas SICD specifies
+the distillation signal. We do not assume that normalization eliminates teacher
+parameterization effects, keeps raw feature norms constant, or guarantees
+compatible CE and KD gradients.

@@ -1,0 +1,20 @@
+{
+  "source": "Teacher/student architectures and reference accuracies supplied by the user in the conversation on 2026-11-16.",
+  "reference_accuracy_scope": "User-supplied reference values; not established as evaluations of the local teacher/student checkpoints.",
+  "comparison_status": "Draft benchmark layouts. Local results are provisionally mapped by architecture pair; matching to the reference-table training protocol remains to be audited.",
+  "homogeneous": [
+    {"key": "res56_res20", "teacher": "ResNet56", "teacher_top1": 72.40, "student": "ResNet20", "student_top1": 65.79},
+    {"key": "res110_res32", "teacher": "ResNet110", "teacher_top1": 74.31, "student": "ResNet32", "student_top1": 67.92},
+    {"key": "res32x4_res8x4", "teacher": "ResNet32×4", "teacher_top1": 79.42, "student": "ResNet8×4", "student_top1": 72.48},
+    {"key": "wrn402_wrn162", "teacher": "WRN-40-2", "teacher_top1": 75.59, "student": "WRN-16-2", "student_top1": 71.12},
+    {"key": "wrn402_wrn401", "teacher": "WRN-40-2", "teacher_top1": 75.59, "student": "WRN-40-1", "student_top1": 69.54},
+    {"key": "vgg13_vgg8", "teacher": "VGG13", "teacher_top1": 74.64, "student": "VGG8", "student_top1": 68.19}
+  ],
+  "heterogeneous": [
+    {"key": "res32x4_sv1", "teacher": "ResNet32×4", "teacher_top1": 79.42, "student": "ShuffleNetV1", "student_top1": 69.43},
+    {"key": "wrn402_sv1", "teacher": "WRN-40-2", "teacher_top1": 75.59, "student": "ShuffleNetV1", "student_top1": 69.43},
+    {"key": "vgg13_mv1", "teacher": "VGG13", "teacher_top1": 74.64, "student": "MobileNetV1", "student_top1": 60.09},
+    {"key": "res50_mv1", "teacher": "ResNet50", "teacher_top1": 79.33, "student": "MobileNetV1", "student_top1": 60.09},
+    {"key": "res32x4_sv2", "teacher": "ResNet32×4", "teacher_top1": 79.42, "student": "ShuffleNetV2", "student_top1": 73.50}
+  ]
+}

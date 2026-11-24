@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" role="img">
+<title>Matched raw KD and ACD checkpoint trajectories</title><desc>Phase-plane trajectories compare standardized non-target relation discrepancy and raw-logit KL at four matched checkpoints.</desc>
+<rect width="1040" height="760" fill="white"/>
+<line x1="145.00" y1="630.00" x2="965.00" y2="630.00" stroke="#9EABB5" stroke-width="1.1"/>
+<line x1="145.00" y1="55.00" x2="145.00" y2="630.00" stroke="#9EABB5" stroke-width="1.1"/>
+<line x1="145.00" y1="55.00" x2="145.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="145.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.000</text>
+<line x1="145.00" y1="630.00" x2="965.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="634.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">0.00</text>
+<line x1="309.00" y1="55.00" x2="309.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="309.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.023</text>
+<line x1="145.00" y1="515.00" x2="965.00" y2="515.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="519.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">1.86</text>
+<line x1="473.00" y1="55.00" x2="473.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="473.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.045</text>
+<line x1="145.00" y1="400.00" x2="965.00" y2="400.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="404.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">3.72</text>
+<line x1="637.00" y1="55.00" x2="637.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="637.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.068</text>
+<line x1="145.00" y1="285.00" x2="965.00" y2="285.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="289.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">5.58</text>
+<line x1="801.00" y1="55.00" x2="801.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="801.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.091</text>
+<line x1="145.00" y1="170.00" x2="965.00" y2="170.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="174.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">7.44</text>
+<line x1="965.00" y1="55.00" x2="965.00" y2="630.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="965.00" y="653.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#52616B">0.113</text>
+<line x1="145.00" y1="55.00" x2="965.00" y2="55.00" stroke="#DCE3E8" stroke-width="1"/>
+<text x="133.00" y="59.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#52616B">9.29</text>
+<text x="555.00" y="695.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#172B3A">Standardized non-target relation discrepancy</text>
+<text x="35" y="342.50" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#172B3A" transform="rotate(-90 35 342.50)">Raw-logit KL discrepancy</text>
+<path d="M 877.14 141.74 L 614.53 462.78 L 597.71 473.65 L 519.44 532.19" fill="none" stroke="#B94D58" stroke-width="3"/>
+<circle cx="877.14" cy="141.74" r="7" fill="#B94D58" stroke="white" stroke-width="1.5"/>
+<text x="887.14" y="132.74" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#B94D58">e1</text>
+<circle cx="614.53" cy="462.78" r="7" fill="#B94D58" stroke="white" stroke-width="1.5"/>
+<text x="624.53" y="453.78" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#B94D58">e30</text>
+<circle cx="597.71" cy="473.65" r="7" fill="#B94D58" stroke="white" stroke-width="1.5"/>
+<text x="607.71" y="464.65" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#B94D58">e120</text>
+<circle cx="519.44" cy="532.19" r="7" fill="#B94D58" stroke="white" stroke-width="1.5"/>
+<text x="529.44" y="523.19" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#B94D58">e240</text>
+<text x="531.44" y="552.19" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start" fill="#B94D58">Raw KD</text>
+<path d="M 805.15 116.61 L 620.98 407.06 L 576.19 439.00 L 494.94 527.89" fill="none" stroke="#23856D" stroke-width="3"/>
+<circle cx="805.15" cy="116.61" r="7" fill="#23856D" stroke="white" stroke-width="1.5"/>
+<text x="815.15" y="107.61" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#23856D">e1</text>
+<circle cx="620.98" cy="407.06" r="7" fill="#23856D" stroke="white" stroke-width="1.5"/>
+<text x="630.98" y="398.06" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#23856D">e30</text>
+<circle cx="576.19" cy="439.00" r="7" fill="#23856D" stroke="white" stroke-width="1.5"/>
+<text x="586.19" y="430.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#23856D">e120</text>
+<circle cx="494.94" cy="527.89" r="7" fill="#23856D" stroke="white" stroke-width="1.5"/>
+<text x="504.94" y="518.89" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#23856D">e240</text>
+<text x="506.94" y="547.89" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start" fill="#23856D">ACD</text>
+<circle cx="175" cy="28" r="6" fill="#B94D58"/>
+<text x="186.00" y="33.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#52616B">raw KD</text>
+<circle cx="325" cy="28" r="6" fill="#23856D"/>
+<text x="336.00" y="33.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#52616B">ACD</text>
+</svg>

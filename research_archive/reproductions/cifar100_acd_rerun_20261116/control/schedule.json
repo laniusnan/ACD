@@ -1,0 +1,14 @@
+{
+  "reason": "User requested only ACD, one seed, retaining the previously organized and sealed recipes on 2026-11-16",
+  "allowed_seeds": [3201],
+  "cancelled_seeds": [3202, 3203],
+  "allowed_arms": ["acd"],
+  "deferred_arms": ["linear_kd", "angular_kd", "angular_full"],
+  "expected_jobs": 7,
+  "cancelled_jobs": 56,
+  "deferred_jobs": 21,
+  "gpu": 0,
+  "preserve_active_training": true,
+  "training_protocol": "../protocol.json",
+  "handoff_marker": "acd-only-handoff-20261116: user requested only ACD with seed3201; preserve training recipes and do not launch the old comparison queue"
+}

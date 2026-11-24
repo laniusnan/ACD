@@ -1,0 +1,26 @@
+% Preamble: \usepackage{graphicx}
+% Copy this version's PDFs from figures/ to Overleaf's figs/ directory.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figs/method_horizontal.pdf}
+  \caption{Method overview. ACI constructs the student's angular readout;
+  the ETF configuration illustrates optional initialization, with trainable
+  directions thereafter. SICD keeps the teacher frozen, standardizes class
+  logits, and transfers teacher-weighted non-target conditional distributions.
+  The coefficient $r$ matches gradient strength using a detached gradient-norm
+  ratio. The input photograph is real; feature grids and geometric arrows
+  are schematic.}
+  \label{fig:method_overview}
+\end{figure*}
+
+% Loss definitions used in the figure.
+\begin{equation}
+    \mathcal{L}_{\text{ACD}} = \mathcal{L}_{\text{CE}} + \lambda \cdot r \cdot \mathcal{L}_{\text{SICD}}.
+\end{equation}
+\begin{equation}
+    \mathcal{L}_{\mathrm{SICD}}
+    = \tau^2 (1-p_y)\,
+      D_{\mathrm{KL}}\!\bigl(p^{-y} \| q^{-y}\bigr).
+    \label{eq:sicd}
+\end{equation}

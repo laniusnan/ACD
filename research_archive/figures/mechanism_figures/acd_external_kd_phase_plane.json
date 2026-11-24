@@ -1,0 +1,188 @@
+{
+  "status": "completed",
+  "question": "external objective comparison",
+  "setup": {
+    "pair": "VGG13\u2192VGG8",
+    "epochs": [
+      1,
+      30,
+      120,
+      240
+    ],
+    "probe": "first 128 official CIFAR-100 test images",
+    "temperature": 4.0
+  },
+  "trajectories": [
+    {
+      "label": "Cosine KL",
+      "pair": "vgg13_vgg8",
+      "seed": 2102,
+      "arm": "cosine_kd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 5.999783515930176,
+          "conditional_tv_standardized": 0.09149948507547379
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 1.6707466840744019,
+          "conditional_tv_standardized": 0.056953322142362595
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 1.6025961637496948,
+          "conditional_tv_standardized": 0.05622539669275284
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 1.0234158039093018,
+          "conditional_tv_standardized": 0.044248491525650024
+        }
+      ],
+      "initial": "f1d524826ec0f7a8b194047b76235b6dfce5bb55cd06b0e2926741f3b7f38d2c"
+    },
+    {
+      "label": "DKD",
+      "pair": "vgg13_vgg8",
+      "seed": 2102,
+      "arm": "cosine_dkd",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 6.505265235900879,
+          "conditional_tv_standardized": 0.08514117449522018
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 1.683104157447815,
+          "conditional_tv_standardized": 0.05168857052922249
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 1.475372314453125,
+          "conditional_tv_standardized": 0.04859765246510506
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 0.9292501211166382,
+          "conditional_tv_standardized": 0.04020893573760986
+        }
+      ],
+      "initial": "f1d524826ec0f7a8b194047b76235b6dfce5bb55cd06b0e2926741f3b7f38d2c"
+    },
+    {
+      "label": "NCKD",
+      "pair": "vgg13_vgg8",
+      "seed": 2101,
+      "arm": "cosine_nckd_matched",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.00760555267334,
+          "conditional_tv_standardized": 0.08585945516824722
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 2.2183899879455566,
+          "conditional_tv_standardized": 0.05544482171535492
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 2.3202037811279297,
+          "conditional_tv_standardized": 0.053557589650154114
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 2.139312267303467,
+          "conditional_tv_standardized": 0.042545538395643234
+        }
+      ],
+      "initial": "16a9436ae3b64b6e1acdec50aac58ae15a8c5b52b02617529361c56fb4ca4ae0"
+    },
+    {
+      "label": "LSKD",
+      "pair": "vgg13_vgg8",
+      "seed": 2101,
+      "arm": "cosine_lskd_source_recipe",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.5634355545043945,
+          "conditional_tv_standardized": 0.09408506751060486
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 3.688891887664795,
+          "conditional_tv_standardized": 0.06855671107769012
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 3.387418746948242,
+          "conditional_tv_standardized": 0.06427866220474243
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 2.3004181385040283,
+          "conditional_tv_standardized": 0.046151891350746155
+        }
+      ],
+      "initial": "16a9436ae3b64b6e1acdec50aac58ae15a8c5b52b02617529361c56fb4ca4ae0"
+    },
+    {
+      "label": "ACD",
+      "pair": "vgg13_vgg8",
+      "seed": 2102,
+      "arm": "cosine_relation_matched",
+      "rows": [
+        {
+          "epoch": 1,
+          "raw_kl": 7.152475357055664,
+          "conditional_tv_standardized": 0.08576854318380356
+        },
+        {
+          "epoch": 30,
+          "raw_kl": 2.28450083732605,
+          "conditional_tv_standardized": 0.05562005192041397
+        },
+        {
+          "epoch": 120,
+          "raw_kl": 2.258510112762451,
+          "conditional_tv_standardized": 0.053021907806396484
+        },
+        {
+          "epoch": 240,
+          "raw_kl": 2.1743388175964355,
+          "conditional_tv_standardized": 0.04323982819914818
+        }
+      ],
+      "initial": "f1d524826ec0f7a8b194047b76235b6dfce5bb55cd06b0e2926741f3b7f38d2c"
+    }
+  ],
+  "sources_sha256": {
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_kd/epoch_001.pth": "6e6f8f88287beb6fc4e8adcbb5e455a6cce3ae677134d300643701f95705f377",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_kd/epoch_030.pth": "9740ddfa90c4404578781973ba1dcd82e72dfe6651b34c4b55fd26f893abf73b",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_kd/epoch_120.pth": "a6b533b7f5520b0cb468700e3db36bb4dbbcf77f6300634ff86234b804162e79",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_kd/epoch_240.pth": "662fd93ea807dfa5acc6bb0b07e4f6e1f6fd69d82a0957cfa4dff215085c2fe1",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2102__cosine_dkd/epoch_001.pth": "3169f5b8a1b0dd455380c12234af9079446303d4f2de5c4249f668c2b39a0183",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2102__cosine_dkd/epoch_030.pth": "0011801aead0fb398b04d029b3c1033ddde72f57b5167fe43d105c182522f45f",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2102__cosine_dkd/epoch_120.pth": "b82cb02b2b72fb15eee9db38b5f3ab6b4763347384ccabe8bfcc8702560ac987",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2102__cosine_dkd/epoch_240.pth": "09894f9c2d76103ba8d66ed6049d93671cb22f0ec57eb04cd900c395db04ac74",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_nckd_matched/epoch_001.pth": "cd3a726d2ef1abaa6e52e770f479826ad4b06450fb0e9e9e075738f76b893a8b",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_nckd_matched/epoch_030.pth": "4442cbfa1889b056157230b34570eb57b85fdd468696c3248e22678faf9adde9",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_nckd_matched/epoch_120.pth": "568c94ac4ef0a63bdff347cd3af547590246918de2e4fcb48c8da2c9b891e7e1",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_nckd_matched/epoch_240.pth": "a6c31a441b243b81a35e3ae4548dba274bfda26dbf4be0892d9718e61f4dd35c",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_lskd_source_recipe/epoch_001.pth": "fd49845a1c5ad81f4796c083f3e9e1a4e215a5cd3938bd33bcc36d30951c8575",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_lskd_source_recipe/epoch_030.pth": "7e9112f2e8c79ad2057fb7ab1541680c95fae2fd07bc68b53ff17979162dc1c1",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_lskd_source_recipe/epoch_120.pth": "0c99afd6fa81c9d5d65a3746a08249b9d0c9290ec5f10e5be7ca2b7be360d1b1",
+    "reproductions/cvpr_reviewer_minimal_ready_20261106/artifacts/vgg13_vgg8__s2101__cosine_lskd_source_recipe/epoch_240.pth": "ddd8fd347ec37011aef01254a8ae7927b184131133fc445c068ca4feff111d84",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_relation_matched/epoch_001.pth": "d97e44a595578daf3412158f249711cb93f9f4786468ed11f55ea109deb95bbc",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_relation_matched/epoch_030.pth": "4f324859de249b91dc9aa2d0bed6aee7ef8fd9e54687c9ad5523322b7cf0f38f",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_relation_matched/epoch_120.pth": "5094bf5fda276c43616b9af696d46eb2d4aad81944f86bbedc60801598969ff3",
+    "reproductions/acd_cnn_interaction_20261109/artifacts/vgg13_vgg8__s2102__cosine_relation_matched/epoch_240.pth": "89a805c068347eec4c9b4e695a7be2512b8b8c4c541418169a206e18d3b8484d"
+  },
+  "limitations": [
+    "The five methods are drawn from different registrations, seeds, and in LSKD's case a source recipe. This is descriptive only, not a fair comparison or ranking.",
+    "The two axes are diagnostic discrepancies, not official-test accuracy."
+  ]
+}

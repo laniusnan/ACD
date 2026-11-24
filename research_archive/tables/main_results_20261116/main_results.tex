@@ -1,0 +1,100 @@
+% Evidence-bounded manuscript draft. Tables are provided in tables.tex.
+% ImageNet text is a progress snapshot, not a completed ACD benchmark claim.
+% CIFAR numerical results are reconciled from retained historical records.
+% Recovery audit: all 11 pairs have completed historical ordinary-KD head studies
+% (52 records in the 2026-10-27 catalog). See historical_results.md and
+% historical_head_tables.tex. Those runs do not use SICD and are not ACD cells.
+
+\subsection{Main Results}
+
+\paragraph{Homogeneous Distillation on CIFAR-100.}
+Table~\ref{tab:cifar_homo} organizes the homogeneous benchmark into
+six teacher--student pairs from the ResNet, WideResNet, and VGG families.
+Among the currently reconciled local results, ACD obtains $78.36\%$
+Top-1 accuracy on ResNet32$\times$4 $\to$ ResNet8$\times$4 and
+$75.48\%$ on VGG13 $\to$ VGG8. The former is a three-seed archived
+mean, while the latter averages two paired runs.
+The recorded ResNet comparison reports $77.40\%$ for DKD.
+Other benchmark cells remain unfilled pending result recovery and
+protocol verification; the reference teacher/student accuracies
+are not substituted for local checkpoint evaluations.
+
+\paragraph{Heterogeneous Distillation on CIFAR-100.}
+Table~\ref{tab:cifar_hetero} organizes five cross-family pairs,
+covering ResNet/WRN teachers with ShuffleNet students and VGG/ResNet
+teachers with MobileNetV1 students.
+The available ACD results are $78.86\%$ on WRN40-2 $\to$
+ShuffleNetV1 and $69.71\%$ on VGG13 $\to$ MobileNetV1,
+each based on two archived runs.
+For the other three pairs, newly supplied historical screenshot
+transcriptions provide relation-only and ETF-initialized readings,
+shown separately in Table~\ref{tab:etf_user_reported}.
+Their evaluation protocol and equivalence to the ACD configuration
+remain to be verified, so they are not merged with the archived means.
+Results obtained by combining ACD with
+feature-distillation pipelines are reported separately in
+Table~\ref{tab:dropin}.
+
+\paragraph{Controlled Comparisons.}
+The two VGG comparisons in Table~\ref{tab:cifar_paired} provide
+paired evidence within the broader benchmark layout.
+ACD exceeds affine-head KD by $1.09$ percentage points on
+VGG13 $\to$ VGG8 and $1.93$ percentage points on
+VGG13 $\to$ MobileNetV1; both seeds show positive gains.
+On the latter pair, ACD also exceeds angular-head KL by $3.12$
+percentage points and full standardized KL by $0.74$ percentage points.
+In contrast, full standardized KL remains slightly better on
+VGG13 $\to$ VGG8 ($75.55\%$ versus $75.48\%$).
+These controlled findings indicate pair-dependent benefits and do not
+establish superiority across all eleven benchmark pairs.
+
+% Provisional historical evidence; verify run metadata before submission.
+\paragraph{Historical ETF-Initialization Comparison.}
+Table~\ref{tab:etf_user_reported} preserves five user-reported comparisons
+between relation-only supervision and its ETF-initialized variant.
+The reported differences are $-0.50$, $+0.24$, $-0.10$, $+0.84$, and
+$+0.30$ percentage points, giving an unweighted mean of $+0.16$ points.
+Three pairs improve and two decline, suggesting pair-dependent benefits
+rather than a uniform gain. The evaluation split, checkpoint selection,
+number of runs, and matching of training configurations remain unverified;
+these records are therefore kept separate from the reconciled ACD means
+and do not establish statistical significance or the proposed geometric mechanism.
+
+\paragraph{Results on ImageNet-1K.}
+Table~\ref{tab:imagenet} records the currently available baseline results
+for ResNet50 $\to$ MobileNetV2. The pretrained teacher obtains
+$76.146\%$ Top-1 and $92.872\%$ Top-5 accuracy on the complete
+50,000-image validation set. The CE-trained student reaches
+$68.662\%$ Top-1 and $88.798\%$ Top-5 accuracy after 100 epochs.
+Final ordinary-KD and verified full-run ACD results are not yet available
+in this snapshot. These baselines establish the large-scale evaluation
+setting; an ACD scalability conclusion requires the completed matched
+distillation experiments.
+
+\subsection{ACD in Existing Distillation Pipelines}
+
+We examine compatibility with feature-based distillation by replacing
+the output-level KL term in AT and ReviewKD-style pipelines while
+keeping their feature objectives and adapters fixed.
+Table~\ref{tab:dropin} separates the effect of replacing the loss on an
+existing angular head from the joint change of the classifier and loss.
+On ResNet32$\times$4 $\to$ ShuffleNetV1, replacing angular-head KL
+with SICD improves the AT pipeline from $77.60\%$ to $78.97\%$,
+a gain of $1.37$ percentage points; the gain over the affine-head
+AT+KL baseline is $1.67$ percentage points.
+For ReviewKD-style distillation on WRN40-2 $\to$ WRN40-1,
+the corresponding loss-only gain is $0.06$ percentage points
+($75.54\%$ to $75.60\%$), while the final result remains
+$0.14$ percentage points below the affine-head baseline.
+These single-seed pilots demonstrate that conditional output supervision
+can be incorporated into existing feature-distillation pipelines,
+with benefits that vary across settings.
+
+Replacing KL with SICD on the same angular classifier preserves the
+student inference model. However, the implemented gradient-norm
+matching requires additional training computation: the archived
+controlled benchmark records $30.04$ ms per update for matched
+conditional distillation versus $15.09$ ms for angular-head KL.
+Accordingly, these experiments support compatibility and selected
+accuracy gains, rather than universal improvements or unchanged
+training cost.

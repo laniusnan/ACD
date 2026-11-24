@@ -1,0 +1,70 @@
+{
+  "scope": "Fixed-checkpoint CPU forward-only probe; no training",
+  "samples": 1024,
+  "indices": "First 1024 official CIFAR-100 test images, indices 0\u20131023",
+  "temperature": 4,
+  "standardization": "Per-image all-class sample SD, correction=1",
+  "seed": 3201,
+  "epoch": 240,
+  "etf_initialization": false,
+  "models": [
+    {
+      "pair": "res56_res20",
+      "label": "ResNet56 \u2192 ResNet20",
+      "checkpoint_sha256": "9be20ff17bd49bf07574bad4b5b52a2fdaa93afbabf5812be5fcfefbaf86b04d",
+      "teacher_sha256": "d3aada68eef26ea583b52ddbae71c8e3ed22b1a9a81ab296927b08f510c249ff",
+      "tv_mean": 0.057908170219889143,
+      "tv_median": 0.05637956038117409,
+      "tv_q25": 0.049801201559603214,
+      "tv_q75": 0.06457123719155788,
+      "weighted_conditional_kl_mean": 0.17095228911057347,
+      "probe_student_top1": 70.8984375,
+      "probe_teacher_top1": 71.38671875
+    },
+    {
+      "pair": "res110_res32",
+      "label": "ResNet110 \u2192 ResNet32",
+      "checkpoint_sha256": "611c3abf2b3122e86570f6471d46e475cc80ec832200e462a63a604b626f1406",
+      "teacher_sha256": "844dd015e4ec997c0705e97d2b2d058554525827278575d20c2da093854b9ab6",
+      "tv_mean": 0.05778927377104992,
+      "tv_median": 0.05647258833050728,
+      "tv_q25": 0.05000751279294491,
+      "tv_q75": 0.06480114720761776,
+      "weighted_conditional_kl_mean": 0.17056415247134282,
+      "probe_student_top1": 73.92578125,
+      "probe_teacher_top1": 73.92578125
+    },
+    {
+      "pair": "wrn402_wrn162",
+      "label": "WRN40-2 \u2192 WRN16-2",
+      "checkpoint_sha256": "3784deec345a7f664c3035463b1af040b6f1bc597e2ad95225f45c2eb020ea70",
+      "teacher_sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491",
+      "tv_mean": 0.0612396913311386,
+      "tv_median": 0.05988848954439163,
+      "tv_q25": 0.0525816036388278,
+      "tv_q75": 0.06810244917869568,
+      "weighted_conditional_kl_mean": 0.19297492183250142,
+      "probe_student_top1": 76.3671875,
+      "probe_teacher_top1": 76.66015625
+    },
+    {
+      "pair": "wrn402_wrn401",
+      "label": "WRN40-2 \u2192 WRN40-1",
+      "checkpoint_sha256": "fce6c730466bad0ebd5fc434904a38c45c1899848572dff726fcc5743447ecd9",
+      "teacher_sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491",
+      "tv_mean": 0.061603961203218205,
+      "tv_median": 0.06009954214096069,
+      "tv_q25": 0.052620913833379745,
+      "tv_q75": 0.06864028610289097,
+      "weighted_conditional_kl_mean": 0.19561746431645588,
+      "probe_student_top1": 75.0,
+      "probe_teacher_top1": 76.66015625
+    }
+  ],
+  "limitations": [
+    "No same-recipe baseline or standardized-full control is included.",
+    "Across-pair discrepancies cannot rank method effectiveness: teachers and tasks differ.",
+    "Single trained seed per pair; image variability is not run uncertainty.",
+    "Probe subset, not full-test accuracy evaluation."
+  ]
+}

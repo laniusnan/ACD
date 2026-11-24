@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="690" viewBox="0 0 1600 690" role="img">
+<title>Raw KD can pull a student along a parameterization-sensitive force</title><desc>Local virtual-update view  /  same fixed sample, checkpoint, teacher target, and student feature state  /  arrows are −∇ₕL</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#627381"/></marker></defs>
+<rect width="1600" height="100%" fill="white"/>
+<text x="45" y="45" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#172B3A">Raw KD can pull a student along a parameterization-sensitive force</text>
+<text x="45" y="75" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Local virtual-update view  /  same fixed sample, checkpoint, teacher target, and student feature state  /  arrows are −∇ₕL</text>
+<text x="45" y="124" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#172B3A">(a) Measured-gradient construction</text>
+<rect x="45" y="149" width="570" height="168" rx="8" fill="#F5F7F9" stroke="none"/>
+<text x="70" y="190" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#357DB2">e₁ = standardized-logit reference gradient</text>
+<text x="70" y="226" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#B94D58">e₂ = raw-KL residual orthogonal to e₁</text>
+<text x="70" y="265" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Every arrow starts from the same student feature hₛ.</text>
+<text x="70" y="292" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#172B3A">Its direction is an SGD force −∇ₕL, projected onto [e₁,e₂].</text>
+<text x="720" y="124" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#172B3A">(b) Counterfactual forces at fixed ĥ, ŵ, and teacher target</text>
+<text x="720" y="151" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Only the score parameterization used by the student loss changes.</text>
+<line x1="720" y1="400" x2="1510" y2="400" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="1120" y1="210" x2="1120" y2="555" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="1505" y="429" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">reference-aligned force</text>
+<text x="1105" y="205" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#627381">parameterization residual</text>
+<line x1="1120" y1="400" x2="1148.2823804379468" y2="414.624680597428" stroke="#357DB2" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="1148.2823804379468" cy="414.624680597428" r="5" fill="#357DB2"/>
+<text x="1168.2823804379468" y="451.624680597428" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#357DB2">angular scores</text>
+<text x="1168.2823804379468" y="473.624680597428" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#627381">cos=0.51</text>
+<line x1="1120" y1="400" x2="1336.0259059239588" y2="255.0" stroke="#D88A2D" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="1336.0259059239588" cy="255.0" r="5" fill="#D88A2D"/>
+<text x="1356.0259059239588" y="226.0" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#D88A2D">+ scale / norms</text>
+<text x="1356.0259059239588" y="248.0" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#627381">cos=0.58</text>
+<line x1="1120" y1="400" x2="1148.2878516956066" y2="414.67156130066354" stroke="#8B71AB" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="1148.2878516956066" cy="414.67156130066354" r="5" fill="#8B71AB"/>
+<text x="1168.2878516956066" y="418.67156130066354" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#8B71AB">+ bias only</text>
+<text x="1168.2878516956066" y="440.67156130066354" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#627381">cos=0.51</text>
+<line x1="1120" y1="400" x2="1335.9802116220033" y2="258.7374603649181" stroke="#B94D58" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="1335.9802116220033" cy="258.7374603649181" r="5" fill="#B94D58"/>
+<text x="1355.9802116220033" y="254.7374603649181" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#B94D58">raw logits</text>
+<text x="1355.9802116220033" y="276.7374603649181" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#627381">cos=0.59</text>
+<line x1="1120" y1="400" x2="1430" y2="400" stroke="#357DB2" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="1280" y="382" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#357DB2">idealized reference axis</text>
+<rect x="720" y="570" width="700" height="48" rx="8" fill="#FFF6F6" stroke="none"/>
+<text x="740" y="592" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#B94D58">Measured local result: raw logits are ≈14.7× stronger</text>
+<text x="740" y="612" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#B94D58">than the standardized reference on average.</text>
+<line x1="45" y1="579" x2="1555" y2="579" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="45" y="599" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">This is not a full-training trajectory: it is a one-state virtual-gradient diagnostic with no parameter update committed.</text>
+<text x="45" y="622" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">The selected sample is the median raw/reference cosine on the fixed probe—not chosen by accuracy or visual effect.</text>
+<text x="45" y="645" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">A future multi-checkpoint trajectory figure must separately show whether ACD changes these forces over training.</text>
+</svg>

@@ -1,0 +1,280 @@
+{
+  "format": "acd-release-v1",
+  "tag": "cifar100-rerun-20261116",
+  "source_repository": "laniusnan/KD",
+  "archive": "reproductions/cifar100_acd_rerun_20261116",
+  "download_base_url": "https://github.com/laniusnan/ACD/releases/download/cifar100-rerun-20261116",
+  "selection": "final_epoch_240_single_seed_3201_no_etf",
+  "models": [
+    {
+      "filename": "acd_res110_res32_s3201_e240.pth",
+      "sha256": "56832823e6cbdd15beb5f6c27bf5814649b81cdc7c5aaa0e83a36b4f25803b16",
+      "size_bytes": 1968647,
+      "model_config": {
+        "architecture": "resnet32",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "res110_res32",
+      "teacher": "resnet110",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 73.50999999999999,
+        "samples": 10000,
+        "ce": 0.9451346753120422
+      },
+      "config_file": "res110_res32.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "611c3abf2b3122e86570f6471d46e475cc80ec832200e462a63a604b626f1406"
+    },
+    {
+      "filename": "acd_res32x4_sv1_s3201_e240.pth",
+      "sha256": "28a15fbd5bbd302a74d20639d3ec988e676e121e8f4b48c6fc795da84ceccc70",
+      "size_bytes": 3989401,
+      "model_config": {
+        "architecture": "shufflenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "res32x4_sv1",
+      "teacher": "resnet32x4",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 78.74,
+        "samples": 10000,
+        "ce": 0.977831937122345
+      },
+      "config_file": "res32x4_sv1.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "b8e8a4bc797c8991d20f224e2440e2cc0a3aa6a791ef5a88d87ec5c900694a77"
+    },
+    {
+      "filename": "acd_res32x4_sv2_s3201_e240.pth",
+      "sha256": "4b9e94e0cf84ab819dfc9aa21ee76f99f632db3867990377f7c0159d97722a8d",
+      "size_bytes": 5593251,
+      "model_config": {
+        "architecture": "shufflenetv2",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "res32x4_sv2",
+      "teacher": "resnet32x4",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 80.07,
+        "samples": 10000,
+        "ce": 0.9057728467941284
+      },
+      "config_file": "res32x4_sv2.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "fb486ae8d7f79be86c4c890ce8b70a7999f5e5cd8547176bb1c81c3c45238298"
+    },
+    {
+      "filename": "acd_res50_mv1_s3201_e240.pth",
+      "sha256": "7b1c7deb3bf035597ba702a75135cb63813cdfda7eeba882103921a8d2df5b59",
+      "size_bytes": 6763609,
+      "model_config": {
+        "architecture": "mobilenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "res50_mv1",
+      "teacher": "resnet50",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 69.45,
+        "samples": 10000,
+        "ce": 1.367039461517334
+      },
+      "config_file": "res50_mv1.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "bea8b62cd3addca3c27ea7fd60ec8c712610a78307b46524ee3d0b4fd16277ab"
+    },
+    {
+      "filename": "acd_res56_res20_s3201_e240.pth",
+      "sha256": "31ebf1301f6604d4d951f829868634901c1898eb0e249d80c080819f401947fb",
+      "size_bytes": 1163185,
+      "model_config": {
+        "architecture": "resnet20",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "res56_res20",
+      "teacher": "resnet56",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 71.08,
+        "samples": 10000,
+        "ce": 1.0072389501571655
+      },
+      "config_file": "res56_res20.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "9be20ff17bd49bf07574bad4b5b52a2fdaa93afbabf5812be5fcfefbaf86b04d"
+    },
+    {
+      "filename": "acd_wrn402_wrn162_s3201_e240.pth",
+      "sha256": "c93b2307d1785bb31f4d8aa31e79e875fdc31f4c75bef0b7257323f594857b55",
+      "size_bytes": 2850359,
+      "model_config": {
+        "architecture": "wrn_16_2",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "wrn402_wrn162",
+      "teacher": "wrn_40_2",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 75.67,
+        "samples": 10000,
+        "ce": 0.8688899234771729
+      },
+      "config_file": "wrn402_wrn162.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "3784deec345a7f664c3035463b1af040b6f1bc597e2ad95225f45c2eb020ea70"
+    },
+    {
+      "filename": "acd_wrn402_wrn401_s3201_e240.pth",
+      "sha256": "3933f3fbe78aa578dc1da9f6dc5482c7e74af8cbfe605ffe41bb1146f1fa7c06",
+      "size_bytes": 2369411,
+      "model_config": {
+        "architecture": "wrn_40_1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "pair": "wrn402_wrn401",
+      "teacher": "wrn_40_2",
+      "seed": 3201,
+      "epoch": 240,
+      "etf": false,
+      "archived_test": {
+        "top1": 74.67,
+        "samples": 10000,
+        "ce": 0.9230585551261902
+      },
+      "config_file": "wrn402_wrn401.json",
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "fce6c730466bad0ebd5fc434904a38c45c1899848572dff726fcc5743447ecd9"
+    },
+    {
+      "filename": "teacher_resnet110_cifar100.pth",
+      "sha256": "2652f276d4f0fb10ddd6809197f502c3669b0eb35ff501d4e0c541cf887feace",
+      "size_bytes": 7203341,
+      "model_config": {
+        "architecture": "resnet110",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "844dd015e4ec997c0705e97d2b2d058554525827278575d20c2da093854b9ab6",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet110.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "844dd015e4ec997c0705e97d2b2d058554525827278575d20c2da093854b9ab6"
+    },
+    {
+      "filename": "teacher_resnet32x4_cifar100.pth",
+      "sha256": "a11f9a1a95f8eae0d09bd4660ba1c91eded8d20c874ff56c9a496cd040d7b5ea",
+      "size_bytes": 29845491,
+      "model_config": {
+        "architecture": "resnet32x4",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet32x4.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d"
+    },
+    {
+      "filename": "teacher_resnet50_cifar100.pth",
+      "sha256": "d9365973e091567e5c607dd4142d71c3a2283453cf82a28b40a91ef473fd2b0b",
+      "size_bytes": 95140907,
+      "model_config": {
+        "architecture": "resnet50",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "85fbaa4269f3344abb2a9a505bcce57afb88af025b2b02f2621a9c9b60f6c9c7",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet50.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "85fbaa4269f3344abb2a9a505bcce57afb88af025b2b02f2621a9c9b60f6c9c7"
+    },
+    {
+      "filename": "teacher_resnet56_cifar100.pth",
+      "sha256": "d7b51f778b0bda0f3d2cc2b5ba493c3dab03f68e07a4d8e4dbda76042e4b58ad",
+      "size_bytes": 3578987,
+      "model_config": {
+        "architecture": "resnet56",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "d3aada68eef26ea583b52ddbae71c8e3ed22b1a9a81ab296927b08f510c249ff",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet56.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "d3aada68eef26ea583b52ddbae71c8e3ed22b1a9a81ab296927b08f510c249ff"
+    },
+    {
+      "filename": "teacher_wrn_40_2_cifar100.pth",
+      "sha256": "10aab78a3be2fbae831df1e039264831a414cfd6a8c9db506a2c07db16658bb9",
+      "size_bytes": 9121819,
+      "model_config": {
+        "architecture": "wrn_40_2",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_wrn_40_2.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491"
+    }
+  ]
+}

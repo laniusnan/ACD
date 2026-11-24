@@ -1,0 +1,2482 @@
+{
+  "study": "head_transfer_20261021",
+  "recovered_on": "2026-11-16",
+  "snapshot_started_at": "2026-10-27T06:34:55.177991+00:00",
+  "snapshot_finished_at": "2026-10-27T06:34:55.848764+00:00",
+  "completed_records": [
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res110_res32__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res110_res32__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res110_res32",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.55",
+      "completed_reloaded_top1": 74.55,
+      "heartbeat_at": "2026-10-22T03:39:39.776634+00:00",
+      "finished_at": "2026-10-22T03:39:41.258182+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "9240938c801ad95ef9f0b5b902c5a6db4ac644653a65a32b3d344d5aefe4cd0c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res110_res32__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res110_res32__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res110_res32",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.73",
+      "completed_reloaded_top1": 74.73,
+      "heartbeat_at": "2026-10-22T00:29:47.829695+00:00",
+      "finished_at": "2026-10-22T00:29:49.270829+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "cad7b1e5aa3b44b211a7da2b467f0b54e4eb07401c9fcfa91187ee3e6d7a2da7",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res110_res32__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res110_res32__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res110_res32",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.19",
+      "completed_reloaded_top1": 74.19,
+      "heartbeat_at": "2026-10-26T10:28:40.928386+00:00",
+      "finished_at": "2026-10-26T10:28:45.197257+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "b74b703043e2f5ec137fdb4d61a3806886981bec131487ee9ba3747512271ff2",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res110_res32__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res110_res32__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res110_res32",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.05",
+      "completed_reloaded_top1": 74.05,
+      "heartbeat_at": "2026-10-22T04:30:05.844655+00:00",
+      "finished_at": "2026-10-22T04:30:07.311091+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "7a4ee31b99552fe5d3622e6f2396d8b69ba90581b8806d831a027edc4624e5f6",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2052__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res110_res32__s2053__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res110_res32__s2053__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res110_res32",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.31",
+      "completed_reloaded_top1": 74.31,
+      "heartbeat_at": "2026-10-22T04:27:08.432387+00:00",
+      "finished_at": "2026-10-22T04:27:09.886277+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "f60b4c1523fdee64ace299d0eed3d1fb831a23c45d6e03b5c1e25b56f7d0df2e",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res110_res32__s2053__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "76.99",
+      "completed_reloaded_top1": 76.99,
+      "heartbeat_at": "2026-10-21T07:47:51.885250+00:00",
+      "finished_at": "2026-10-21T07:47:53.304214+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "7eab0aa0d36cb38eb7881e9bd7689f94341a93333c833c722b467f3586bddf48",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine_etf/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2051__cosine_etf",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.42",
+      "completed_reloaded_top1": 77.42,
+      "heartbeat_at": "2026-10-21T10:15:55.395068+00:00",
+      "finished_at": "2026-10-21T10:15:56.843818+00:00",
+      "error_last_line": "null",
+      "head": "cosine_etf",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "091e52716d04a0b5842a79abfb870863a5e0b12142710cf35a3f09ad3263a4e5",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine_etf/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.18",
+      "completed_reloaded_top1": 75.18,
+      "heartbeat_at": "2026-10-21T04:53:03.835519+00:00",
+      "finished_at": "2026-10-21T04:53:05.238273+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "1a2829e24dd0912010bb8711972013b6d61fd5b350927b0a880c78dc8241ee65",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.44",
+      "completed_reloaded_top1": 77.44,
+      "heartbeat_at": "2026-10-21T06:36:46.618833+00:00",
+      "finished_at": "2026-10-21T06:36:48.047136+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "7241bd0ecebb72291e39551690660e6fb2b06e523f2f9a2413de12805fde3972",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__cosine_etf/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2052__cosine_etf",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.18",
+      "completed_reloaded_top1": 77.18,
+      "heartbeat_at": "2026-10-21T09:00:29.346158+00:00",
+      "finished_at": "2026-10-21T09:00:31.158644+00:00",
+      "error_last_line": "null",
+      "head": "cosine_etf",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "63fd698b4111922997560a00de5cc666e2d7a37a8f99d00d29547e748904f743",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__cosine_etf/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.72",
+      "completed_reloaded_top1": 74.72,
+      "heartbeat_at": "2026-10-21T04:13:02.151039+00:00",
+      "finished_at": "2026-10-21T04:13:03.581987+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "f389469bfa0930bc140faeffd765143b720cd62c119433d80a9ca26939b85ed4",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2052__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2053__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.4",
+      "completed_reloaded_top1": 77.4,
+      "heartbeat_at": "2026-10-21T06:37:08.621134+00:00",
+      "finished_at": "2026-10-21T06:37:10.071303+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "8c1016e699fbaf400066cded8628b985335cbecce2f8207eb73ff699c5e43db6",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__cosine_etf/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2053__cosine_etf",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.33",
+      "completed_reloaded_top1": 77.33,
+      "heartbeat_at": "2026-10-21T09:01:12.927938+00:00",
+      "finished_at": "2026-10-21T09:01:14.350377+00:00",
+      "error_last_line": "null",
+      "head": "cosine_etf",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "d62d303cb63330dff5a569fee97e93693a3c1c5dfcd8f8746a85a0174f39d827",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__cosine_etf/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2053__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.94",
+      "completed_reloaded_top1": 74.94,
+      "heartbeat_at": "2026-10-21T04:12:59.143395+00:00",
+      "finished_at": "2026-10-21T04:13:00.547330+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "854800ed28b5a7ce48083ba2f538ca328fab8f893641939dbf1c0a3c1649f171",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2053__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2054__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2054,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.32",
+      "completed_reloaded_top1": 77.32,
+      "heartbeat_at": "2026-10-21T15:01:12.884747+00:00",
+      "finished_at": "2026-10-21T15:01:14.280653+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "7e785fd95ee1dd9f87d3419f296d2cfe3e5f47e7b12df6ab9cfb453ff325a10a",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__cosine_etf/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2054__cosine_etf",
+      "method": "null",
+      "variant": "null",
+      "seed": 2054,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.52",
+      "completed_reloaded_top1": 77.52,
+      "heartbeat_at": "2026-10-21T17:24:34.895091+00:00",
+      "finished_at": "2026-10-21T17:24:36.290751+00:00",
+      "error_last_line": "null",
+      "head": "cosine_etf",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "94d40bb491141f876950e2630163a7a3dadcb37ebcb0c589675eba07f78b481e",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__cosine_etf/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2054__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2054,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.81",
+      "completed_reloaded_top1": 74.81,
+      "heartbeat_at": "2026-10-21T12:37:41.527706+00:00",
+      "finished_at": "2026-10-21T12:37:42.906698+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "4efec767429215707709c97b0a0f7a986780825e88642fbaa3fcbf138a925e44",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2054__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2055__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2055,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.12",
+      "completed_reloaded_top1": 77.12,
+      "heartbeat_at": "2026-10-21T13:46:36.723055+00:00",
+      "finished_at": "2026-10-21T13:46:38.134204+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "28088913cdaa05f9cf4ed2ed81f11145501febb55456d6d5277e71356f0ac422",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__cosine_etf/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2055__cosine_etf",
+      "method": "null",
+      "variant": "null",
+      "seed": 2055,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.28",
+      "completed_reloaded_top1": 77.28,
+      "heartbeat_at": "2026-10-21T16:10:15.558193+00:00",
+      "finished_at": "2026-10-21T16:10:16.976063+00:00",
+      "error_last_line": "null",
+      "head": "cosine_etf",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "65c2056267d5428386a14210a656184747d129211bf7d4ed8d7f27380aa8870d",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__cosine_etf/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_res8x4__s2055__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2055,
+      "pair": "res32x4_res8x4",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.28",
+      "completed_reloaded_top1": 75.28,
+      "heartbeat_at": "2026-10-21T11:22:49.185938+00:00",
+      "finished_at": "2026-10-21T11:22:50.596663+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "97704a7a48b3aa69955adc78c40f0e5ef1b31863bc4d6564f75911eda40264c7",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2055__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv1__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.62",
+      "completed_reloaded_top1": 75.62,
+      "heartbeat_at": "2026-10-25T01:31:12.180001+00:00",
+      "finished_at": "2026-10-25T01:31:16.408213+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "4b01850d4ecf113d4df55769dbef8ea32787444148e5203ec56f0e3bd2efa3d1",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv1__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.19",
+      "completed_reloaded_top1": 74.19,
+      "heartbeat_at": "2026-10-24T20:29:37.377388+00:00",
+      "finished_at": "2026-10-24T20:29:41.689280+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "ab8e62395f6ddf11a86f3f46fc279169c7e9f956eaffb52e1f3e3527c6fc8b76",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv1__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res32x4_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.98",
+      "completed_reloaded_top1": 75.98,
+      "heartbeat_at": "2026-10-26T23:19:17.268396+00:00",
+      "finished_at": "2026-10-26T23:19:21.494844+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "0f1d638bffdf6e0825808358f9e6447c36f5b8bbb6ee5bbd2a55e5921a3247c1",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv1__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res32x4_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.91",
+      "completed_reloaded_top1": 72.91,
+      "heartbeat_at": "2026-10-26T17:30:43.821177+00:00",
+      "finished_at": "2026-10-26T17:30:48.015365+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "6f170f7316e725680a28d765b9879105528fffdaab51fbe749bb23089bb3bc6c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv1__s2052__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv2__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv2__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_sv2",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.58",
+      "completed_reloaded_top1": 74.58,
+      "heartbeat_at": "2026-10-26T06:33:58.097909+00:00",
+      "finished_at": "2026-10-26T06:33:59.594232+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "c79a84939cbf4775916b0285066eb0dd92463ea28ffa050465377cc24c77c8c7",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv2__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res32x4_sv2__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res32x4_sv2__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res32x4_sv2",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.6",
+      "completed_reloaded_top1": 72.6,
+      "heartbeat_at": "2026-10-25T15:03:03.380982+00:00",
+      "finished_at": "2026-10-25T15:03:04.854888+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "d7ede043f8044861b0db2476126ca9e87523a38f71ff0daac5f1aa1dcfc0a8fb",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_sv2__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res50_mv1__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res50_mv1__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res50_mv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "58.72",
+      "completed_reloaded_top1": 58.72,
+      "heartbeat_at": "2026-10-25T10:15:28.783671+00:00",
+      "finished_at": "2026-10-25T10:15:33.041492+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "4f83c5c7dc73d0ab2032ec2ae5baebdf4cfd2901c40ddca57675b466b855a6cc",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res50_mv1__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res50_mv1__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res50_mv1__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res50_mv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "58.53",
+      "completed_reloaded_top1": 58.53,
+      "heartbeat_at": "2026-10-25T06:54:44.547803+00:00",
+      "finished_at": "2026-10-25T06:54:45.940747+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "fe9c64ff623d4b26464f54612e779fda2a3cbdf40d1aba854df6daad11b40ca3",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res50_mv1__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.48",
+      "completed_reloaded_top1": 72.48,
+      "heartbeat_at": "2026-10-21T21:26:13.749250+00:00",
+      "finished_at": "2026-10-21T21:26:15.216989+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "87f1b2c2ae4b188f8c00c0843d6944ed6aff95909c43ba768176917c308e7016",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.26",
+      "completed_reloaded_top1": 72.26,
+      "heartbeat_at": "2026-10-21T19:24:35.756685+00:00",
+      "finished_at": "2026-10-21T19:24:37.198857+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "92913470dd0f037db4807e9c2af9067955677fb961343e4099d3cc0baf02f309",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.39",
+      "completed_reloaded_top1": 72.39,
+      "heartbeat_at": "2026-10-21T21:23:10.331477+00:00",
+      "finished_at": "2026-10-21T21:23:11.739504+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "2623a579c39f97ec9acc0c019ef39f1272aa348f6e97392d658ebf8196edb527",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.02",
+      "completed_reloaded_top1": 72.02,
+      "heartbeat_at": "2026-10-21T19:22:48.936423+00:00",
+      "finished_at": "2026-10-21T19:22:50.341950+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "d27d5eda5b136f6409f93854f4e5a7f24f67868e82a53132be5304755cadd3b4",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2052__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2053__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2053__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.56",
+      "completed_reloaded_top1": 72.56,
+      "heartbeat_at": "2026-10-21T21:23:08.122970+00:00",
+      "finished_at": "2026-10-21T21:23:09.550113+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "c662fe9be993b3ecdef8c48c2f8d08a078fe6b9ba4d8594d8df3984154912717",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2053__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2053__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2053__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2053,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.18",
+      "completed_reloaded_top1": 72.18,
+      "heartbeat_at": "2026-10-21T19:21:14.998297+00:00",
+      "finished_at": "2026-10-21T19:21:16.468897+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "e1582b4a53c5d4fcce929ded2318a0aa45936ba90a3bccfda8e766538881df8c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2053__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2054__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2054__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2054,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.5",
+      "completed_reloaded_top1": 72.5,
+      "heartbeat_at": "2026-10-22T01:24:34.694316+00:00",
+      "finished_at": "2026-10-22T01:24:36.132144+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "da0dee6ad877647981ba9b0eacf335b2bf76911edac54d30c9fbaee832c4536c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2054__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2054__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2054__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2054,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.19",
+      "completed_reloaded_top1": 72.19,
+      "heartbeat_at": "2026-10-21T23:22:34.975723+00:00",
+      "finished_at": "2026-10-21T23:22:36.424520+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "f295bf2992ecb8ffc713f27f283d3f1267bc4c1e0db321bef4e0b4ad29367a3b",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2054__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2055__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2055__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2055,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "72.33",
+      "completed_reloaded_top1": 72.33,
+      "heartbeat_at": "2026-10-22T01:21:31.819193+00:00",
+      "finished_at": "2026-10-22T01:21:33.201002+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "6b35905fbb0882c232f9bcbd7d9d8cc349accfbeefdf3eee790a42c1803c0137",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2055__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res56_res20__s2055__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res56_res20__s2055__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2055,
+      "pair": "res56_res20",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "71.68",
+      "completed_reloaded_top1": 71.68,
+      "heartbeat_at": "2026-10-21T23:18:47.488578+00:00",
+      "finished_at": "2026-10-21T23:18:48.943921+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "c90eda83e90633b2eb494e063f8cf8a1c9b27a1dd22e6dff50c49f0fa385a24a",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res56_res20__s2055__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/vgg13_mv1__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "vgg13_mv1__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "vgg13_mv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "58.24",
+      "completed_reloaded_top1": 58.24,
+      "heartbeat_at": "2026-10-25T03:37:05.790986+00:00",
+      "finished_at": "2026-10-25T03:37:11.944360+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "8fcb78c41e62df9e73fcceeeb14ad6116c67c9d142f954fad13d7469e8340a3b",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_mv1__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/vgg13_mv1__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "vgg13_mv1__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "vgg13_mv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "59.12",
+      "completed_reloaded_top1": 59.12,
+      "heartbeat_at": "2026-10-25T01:28:48.893910+00:00",
+      "finished_at": "2026-10-25T01:28:50.323075+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "a95f05aae6ec830f59de8dbdfd718b1029e401ea7659db5fde13832c4f257286",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_mv1__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "vgg13_vgg8__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "vgg13_vgg8",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.13",
+      "completed_reloaded_top1": 75.13,
+      "heartbeat_at": "2026-10-22T06:50:06.569741+00:00",
+      "finished_at": "2026-10-22T06:50:08.061892+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "12bfbbe5274ff2fc92f8434b353708fe21b655292891e82a36a42cf2238d999c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "vgg13_vgg8__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "vgg13_vgg8",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "74.45",
+      "completed_reloaded_top1": 74.45,
+      "heartbeat_at": "2026-10-22T05:14:11.207632+00:00",
+      "finished_at": "2026-10-22T05:14:12.628326+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "e1cb297dc580c35572ac076516047b4236794610bd4f07f08f06d5ff86b1d08c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_sv1__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_sv1__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.41",
+      "completed_reloaded_top1": 75.41,
+      "heartbeat_at": "2026-10-25T10:07:56.485210+00:00",
+      "finished_at": "2026-10-25T10:08:00.508876+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "7c420754f771803c946a5a91527f3c39ed5561c162b886718631b98b4d8fef5c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_sv1__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_sv1__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_sv1__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_sv1",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "73.48",
+      "completed_reloaded_top1": 73.48,
+      "heartbeat_at": "2026-10-25T06:03:21.000137+00:00",
+      "finished_at": "2026-10-25T06:03:27.235742+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "83dd1d68667e6b1349c2fa7701723e517a9a18603bc6ba8523e0546c9662e029",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_sv1__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn162__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_wrn162",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.37",
+      "completed_reloaded_top1": 77.37,
+      "heartbeat_at": "2026-10-22T07:56:24.058700+00:00",
+      "finished_at": "2026-10-22T07:56:25.487432+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "88e13271746de01829c6bb06a45d64af06fc136db19197528389032e959000dd",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn162__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_wrn162",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "76.82",
+      "completed_reloaded_top1": 76.82,
+      "heartbeat_at": "2026-10-22T06:10:25.293437+00:00",
+      "finished_at": "2026-10-22T06:10:26.744752+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "0a259a5224dee398ef29f9212177a1ca898c6808bbcbe2d2ba88272062b98799",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn162__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "wrn402_wrn162",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "77.04",
+      "completed_reloaded_top1": 77.04,
+      "heartbeat_at": "2026-10-26T11:32:07.078078+00:00",
+      "finished_at": "2026-10-26T11:32:11.340684+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "38876f05ef4ea3e4bf6300ae547cebed1d1013cf07f6edef713f662699da9a90",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn162__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "wrn402_wrn162",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "76.26",
+      "completed_reloaded_top1": 76.26,
+      "heartbeat_at": "2026-10-26T09:02:18.581790+00:00",
+      "finished_at": "2026-10-26T09:02:22.798353+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "ec8f0ba64141c9f2e61efafc3c8097363658490f77163bc982f53cf4990beb46",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn162__s2052__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2051__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn401__s2051__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_wrn401",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.77",
+      "completed_reloaded_top1": 75.77,
+      "heartbeat_at": "2026-10-24T15:42:37.411676+00:00",
+      "finished_at": "2026-10-24T15:42:38.858330+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "6de446a0593b0ec593165609020dd1cc45fbb166c56fe4cbe5d12e1d7b7c8d3d",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2051__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2051__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn401__s2051__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2051,
+      "pair": "wrn402_wrn401",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.15",
+      "completed_reloaded_top1": 75.15,
+      "heartbeat_at": "2026-10-22T07:59:42.406770+00:00",
+      "finished_at": "2026-10-22T07:59:44.582388+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "3e1da705d8ac164e2ceada9037b029405277c03ae469422bfdf4d091730ad43c",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2051__linear/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2052__cosine/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn401__s2052__cosine",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "wrn402_wrn401",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.22",
+      "completed_reloaded_top1": 75.22,
+      "heartbeat_at": "2026-10-26T18:43:05.918380+00:00",
+      "finished_at": "2026-10-26T18:43:10.147007+00:00",
+      "error_last_line": "null",
+      "head": "cosine",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "ecf5564d38193de2f907057ae157cc0fc6963eeb81fc424a31cd43f0ee4d5069",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2052__cosine/status.json"
+    },
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "wrn402_wrn401__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": 2052,
+      "pair": "wrn402_wrn401",
+      "status": "completed",
+      "epoch": 240,
+      "last_top1": "75.29",
+      "completed_reloaded_top1": 75.29,
+      "heartbeat_at": "2026-10-26T15:18:27.597407+00:00",
+      "finished_at": "2026-10-26T15:18:31.600259+00:00",
+      "error_last_line": "null",
+      "head": "linear",
+      "original_status_available_locally": false,
+      "original_status_tracked_at_scan": false,
+      "original_status_sha256_at_scan": "94c73972a91eb653bfcdfdcf0d4513e4a07db7ddb46fbae893f090e5dd8fb5b2",
+      "restored_status_path": "release_recovery/restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/wrn402_wrn401__s2052__linear/status.json"
+    }
+  ],
+  "completed_record_count": 52,
+  "pairs": {
+    "res56_res20": {
+      "pair": "ResNet56 → ResNet20",
+      "group": "homogeneous",
+      "completed_record_count": 10,
+      "paired_seeds": [
+        2051,
+        2052,
+        2053,
+        2054,
+        2055
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            72.26,
+            72.02,
+            72.18,
+            72.19,
+            71.68
+          ],
+          "n": 5,
+          "mean": 72.066,
+          "sample_sd": 0.2329806858947754,
+          "mean_display": "72.07",
+          "sd_display": "0.23"
+        },
+        "cosine": {
+          "values": [
+            72.48,
+            72.39,
+            72.56,
+            72.5,
+            72.33
+          ],
+          "n": 5,
+          "mean": 72.452,
+          "sample_sd": 0.09148770409186144,
+          "mean_display": "72.45",
+          "sd_display": "0.09"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          0.22,
+          0.37,
+          0.38,
+          0.31,
+          0.65
+        ],
+        "n": 5,
+        "mean": 0.386,
+        "sample_sd": 0.16071714283174648,
+        "mean_display": "0.39",
+        "sd_display": "0.16"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055
+          ],
+          "values": [
+            72.26,
+            72.02,
+            72.18,
+            72.19,
+            71.68
+          ],
+          "n": 5,
+          "mean": 72.066,
+          "sample_sd": 0.2329806858947754,
+          "mean_display": "72.07",
+          "sd_display": "0.23"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055
+          ],
+          "values": [
+            72.48,
+            72.39,
+            72.56,
+            72.5,
+            72.33
+          ],
+          "n": 5,
+          "mean": 72.452,
+          "sample_sd": 0.09148770409186144,
+          "mean_display": "72.45",
+          "sd_display": "0.09"
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    },
+    "res110_res32": {
+      "pair": "ResNet110 → ResNet32",
+      "group": "homogeneous",
+      "completed_record_count": 5,
+      "paired_seeds": [
+        2051,
+        2052
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            74.73,
+            74.05
+          ],
+          "n": 2,
+          "mean": 74.39,
+          "sample_sd": 0.48083261120685233,
+          "mean_display": "74.39",
+          "sd_display": "0.48"
+        },
+        "cosine": {
+          "values": [
+            74.55,
+            74.19
+          ],
+          "n": 2,
+          "mean": 74.37,
+          "sample_sd": 0.2545584412271571,
+          "mean_display": "74.37",
+          "sd_display": "0.25"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          -0.18,
+          0.14
+        ],
+        "n": 2,
+        "mean": -0.02,
+        "sample_sd": 0.2262741699796952,
+        "mean_display": "-0.02",
+        "sd_display": "0.23"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052,
+            2053
+          ],
+          "values": [
+            74.73,
+            74.05,
+            74.31
+          ],
+          "n": 3,
+          "mean": 74.36333333333333,
+          "sample_sd": 0.34312291286554053,
+          "mean_display": "74.36",
+          "sd_display": "0.34"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            74.55,
+            74.19
+          ],
+          "n": 2,
+          "mean": 74.37,
+          "sample_sd": 0.2545584412271571,
+          "mean_display": "74.37",
+          "sd_display": "0.25"
+        }
+      },
+      "unpaired_records": [
+        "res110_res32__s2053__linear"
+      ],
+      "retained_later_acd": null
+    },
+    "res32x4_res8x4": {
+      "pair": "ResNet32×4 → ResNet8×4",
+      "group": "homogeneous",
+      "completed_record_count": 15,
+      "paired_seeds": [
+        2051,
+        2052,
+        2053,
+        2054,
+        2055
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            75.18,
+            74.72,
+            74.94,
+            74.81,
+            75.28
+          ],
+          "n": 5,
+          "mean": 74.986,
+          "sample_sd": 0.23870483866063544,
+          "mean_display": "74.99",
+          "sd_display": "0.24"
+        },
+        "cosine": {
+          "values": [
+            76.99,
+            77.44,
+            77.4,
+            77.32,
+            77.12
+          ],
+          "n": 5,
+          "mean": 77.254,
+          "sample_sd": 0.1923018460649819,
+          "mean_display": "77.25",
+          "sd_display": "0.19"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          1.81,
+          2.72,
+          2.46,
+          2.51,
+          1.84
+        ],
+        "n": 5,
+        "mean": 2.268,
+        "sample_sd": 0.41613699667297066,
+        "mean_display": "2.27",
+        "sd_display": "0.42"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055
+          ],
+          "values": [
+            75.18,
+            74.72,
+            74.94,
+            74.81,
+            75.28
+          ],
+          "n": 5,
+          "mean": 74.986,
+          "sample_sd": 0.23870483866063544,
+          "mean_display": "74.99",
+          "sd_display": "0.24"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055
+          ],
+          "values": [
+            76.99,
+            77.44,
+            77.4,
+            77.32,
+            77.12
+          ],
+          "n": 5,
+          "mean": 77.254,
+          "sample_sd": 0.1923018460649819,
+          "mean_display": "77.25",
+          "sd_display": "0.19"
+        },
+        "cosine_etf": {
+          "seeds": [
+            2051,
+            2052,
+            2053,
+            2054,
+            2055
+          ],
+          "values": [
+            77.42,
+            77.18,
+            77.33,
+            77.52,
+            77.28
+          ],
+          "n": 5,
+          "mean": 77.346,
+          "sample_sd": 0.1303073290340954,
+          "mean_display": "77.35",
+          "sd_display": "0.13"
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": {
+        "ACD": "78.36",
+        "acd_runs": 3,
+        "source": "extended_cifar_archived_means: ResNet32×4 → ResNet8×4",
+        "DKD": "77.40"
+      }
+    },
+    "wrn402_wrn162": {
+      "pair": "WRN-40-2 → WRN-16-2",
+      "group": "homogeneous",
+      "completed_record_count": 4,
+      "paired_seeds": [
+        2051,
+        2052
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            76.82,
+            76.26
+          ],
+          "n": 2,
+          "mean": 76.54,
+          "sample_sd": 0.3959797974644666,
+          "mean_display": "76.54",
+          "sd_display": "0.40"
+        },
+        "cosine": {
+          "values": [
+            77.37,
+            77.04
+          ],
+          "n": 2,
+          "mean": 77.205,
+          "sample_sd": 0.2333452377915607,
+          "mean_display": "77.21",
+          "sd_display": "0.23"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          0.55,
+          0.78
+        ],
+        "n": 2,
+        "mean": 0.665,
+        "sample_sd": 0.16263455967290594,
+        "mean_display": "0.67",
+        "sd_display": "0.16"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            76.82,
+            76.26
+          ],
+          "n": 2,
+          "mean": 76.54,
+          "sample_sd": 0.3959797974644666,
+          "mean_display": "76.54",
+          "sd_display": "0.40"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            77.37,
+            77.04
+          ],
+          "n": 2,
+          "mean": 77.205,
+          "sample_sd": 0.2333452377915607,
+          "mean_display": "77.21",
+          "sd_display": "0.23"
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    },
+    "wrn402_wrn401": {
+      "pair": "WRN-40-2 → WRN-40-1",
+      "group": "homogeneous",
+      "completed_record_count": 4,
+      "paired_seeds": [
+        2051,
+        2052
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            75.15,
+            75.29
+          ],
+          "n": 2,
+          "mean": 75.22,
+          "sample_sd": 0.09899494936611665,
+          "mean_display": "75.22",
+          "sd_display": "0.10"
+        },
+        "cosine": {
+          "values": [
+            75.77,
+            75.22
+          ],
+          "n": 2,
+          "mean": 75.495,
+          "sample_sd": 0.38890872965260115,
+          "mean_display": "75.50",
+          "sd_display": "0.39"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          0.62,
+          -0.07
+        ],
+        "n": 2,
+        "mean": 0.275,
+        "sample_sd": 0.4879036790187178,
+        "mean_display": "0.28",
+        "sd_display": "0.49"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            75.15,
+            75.29
+          ],
+          "n": 2,
+          "mean": 75.22,
+          "sample_sd": 0.09899494936611665,
+          "mean_display": "75.22",
+          "sd_display": "0.10"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            75.77,
+            75.22
+          ],
+          "n": 2,
+          "mean": 75.495,
+          "sample_sd": 0.38890872965260115,
+          "mean_display": "75.50",
+          "sd_display": "0.39"
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    },
+    "vgg13_vgg8": {
+      "pair": "VGG13 → VGG8",
+      "group": "homogeneous",
+      "completed_record_count": 2,
+      "paired_seeds": [
+        2051
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            74.45
+          ],
+          "n": 1,
+          "mean": 74.45,
+          "sample_sd": null,
+          "mean_display": "74.45",
+          "sd_display": null
+        },
+        "cosine": {
+          "values": [
+            75.13
+          ],
+          "n": 1,
+          "mean": 75.13,
+          "sample_sd": null,
+          "mean_display": "75.13",
+          "sd_display": null
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          0.68
+        ],
+        "n": 1,
+        "mean": 0.68,
+        "sample_sd": null,
+        "mean_display": "0.68",
+        "sd_display": null
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            74.45
+          ],
+          "n": 1,
+          "mean": 74.45,
+          "sample_sd": null,
+          "mean_display": "74.45",
+          "sd_display": null
+        },
+        "cosine": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            75.13
+          ],
+          "n": 1,
+          "mean": 75.13,
+          "sample_sd": null,
+          "mean_display": "75.13",
+          "sd_display": null
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": {
+        "KD": "74.39",
+        "ACD": "75.48",
+        "acd_runs": 2,
+        "source": "paired_cifar.vgg13_vgg8"
+      }
+    },
+    "res32x4_sv1": {
+      "pair": "ResNet32×4 → ShuffleNetV1",
+      "group": "heterogeneous",
+      "completed_record_count": 4,
+      "paired_seeds": [
+        2051,
+        2052
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            74.19,
+            72.91
+          ],
+          "n": 2,
+          "mean": 73.55,
+          "sample_sd": 0.9050966799187808,
+          "mean_display": "73.55",
+          "sd_display": "0.91"
+        },
+        "cosine": {
+          "values": [
+            75.62,
+            75.98
+          ],
+          "n": 2,
+          "mean": 75.8,
+          "sample_sd": 0.2545584412271571,
+          "mean_display": "75.80",
+          "sd_display": "0.25"
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          1.43,
+          3.07
+        ],
+        "n": 2,
+        "mean": 2.25,
+        "sample_sd": 1.159655121145938,
+        "mean_display": "2.25",
+        "sd_display": "1.16"
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            74.19,
+            72.91
+          ],
+          "n": 2,
+          "mean": 73.55,
+          "sample_sd": 0.9050966799187808,
+          "mean_display": "73.55",
+          "sd_display": "0.91"
+        },
+        "cosine": {
+          "seeds": [
+            2051,
+            2052
+          ],
+          "values": [
+            75.62,
+            75.98
+          ],
+          "n": 2,
+          "mean": 75.8,
+          "sample_sd": 0.2545584412271571,
+          "mean_display": "75.80",
+          "sd_display": "0.25"
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    },
+    "wrn402_sv1": {
+      "pair": "WRN-40-2 → ShuffleNetV1",
+      "group": "heterogeneous",
+      "completed_record_count": 2,
+      "paired_seeds": [
+        2051
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            73.48
+          ],
+          "n": 1,
+          "mean": 73.48,
+          "sample_sd": null,
+          "mean_display": "73.48",
+          "sd_display": null
+        },
+        "cosine": {
+          "values": [
+            75.41
+          ],
+          "n": 1,
+          "mean": 75.41,
+          "sample_sd": null,
+          "mean_display": "75.41",
+          "sd_display": null
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          1.93
+        ],
+        "n": 1,
+        "mean": 1.93,
+        "sample_sd": null,
+        "mean_display": "1.93",
+        "sd_display": null
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            73.48
+          ],
+          "n": 1,
+          "mean": 73.48,
+          "sample_sd": null,
+          "mean_display": "73.48",
+          "sd_display": null
+        },
+        "cosine": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            75.41
+          ],
+          "n": 1,
+          "mean": 75.41,
+          "sample_sd": null,
+          "mean_display": "75.41",
+          "sd_display": null
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": {
+        "ACD": "78.86",
+        "acd_runs": 2,
+        "source": "extended_cifar_archived_means: WRN40-2 → ShuffleNetV1"
+      }
+    },
+    "vgg13_mv1": {
+      "pair": "VGG13 → MobileNetV1",
+      "group": "heterogeneous",
+      "completed_record_count": 2,
+      "paired_seeds": [
+        2051
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            59.12
+          ],
+          "n": 1,
+          "mean": 59.12,
+          "sample_sd": null,
+          "mean_display": "59.12",
+          "sd_display": null
+        },
+        "cosine": {
+          "values": [
+            58.24
+          ],
+          "n": 1,
+          "mean": 58.24,
+          "sample_sd": null,
+          "mean_display": "58.24",
+          "sd_display": null
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          -0.88
+        ],
+        "n": 1,
+        "mean": -0.88,
+        "sample_sd": null,
+        "mean_display": "-0.88",
+        "sd_display": null
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            59.12
+          ],
+          "n": 1,
+          "mean": 59.12,
+          "sample_sd": null,
+          "mean_display": "59.12",
+          "sd_display": null
+        },
+        "cosine": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            58.24
+          ],
+          "n": 1,
+          "mean": 58.24,
+          "sample_sd": null,
+          "mean_display": "58.24",
+          "sd_display": null
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": {
+        "KD": "67.78",
+        "ACD": "69.71",
+        "acd_runs": 2,
+        "source": "paired_cifar.vgg13_mv1"
+      }
+    },
+    "res50_mv1": {
+      "pair": "ResNet50 → MobileNetV1",
+      "group": "heterogeneous",
+      "completed_record_count": 2,
+      "paired_seeds": [
+        2051
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            58.53
+          ],
+          "n": 1,
+          "mean": 58.53,
+          "sample_sd": null,
+          "mean_display": "58.53",
+          "sd_display": null
+        },
+        "cosine": {
+          "values": [
+            58.72
+          ],
+          "n": 1,
+          "mean": 58.72,
+          "sample_sd": null,
+          "mean_display": "58.72",
+          "sd_display": null
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          0.19
+        ],
+        "n": 1,
+        "mean": 0.19,
+        "sample_sd": null,
+        "mean_display": "0.19",
+        "sd_display": null
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            58.53
+          ],
+          "n": 1,
+          "mean": 58.53,
+          "sample_sd": null,
+          "mean_display": "58.53",
+          "sd_display": null
+        },
+        "cosine": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            58.72
+          ],
+          "n": 1,
+          "mean": 58.72,
+          "sample_sd": null,
+          "mean_display": "58.72",
+          "sd_display": null
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    },
+    "res32x4_sv2": {
+      "pair": "ResNet32×4 → ShuffleNetV2",
+      "group": "heterogeneous",
+      "completed_record_count": 2,
+      "paired_seeds": [
+        2051
+      ],
+      "paired_methods": {
+        "linear": {
+          "values": [
+            72.6
+          ],
+          "n": 1,
+          "mean": 72.6,
+          "sample_sd": null,
+          "mean_display": "72.60",
+          "sd_display": null
+        },
+        "cosine": {
+          "values": [
+            74.58
+          ],
+          "n": 1,
+          "mean": 74.58,
+          "sample_sd": null,
+          "mean_display": "74.58",
+          "sd_display": null
+        }
+      },
+      "paired_delta_pp": {
+        "values": [
+          1.98
+        ],
+        "n": 1,
+        "mean": 1.98,
+        "sample_sd": null,
+        "mean_display": "1.98",
+        "sd_display": null
+      },
+      "all_completed_by_head": {
+        "linear": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            72.6
+          ],
+          "n": 1,
+          "mean": 72.6,
+          "sample_sd": null,
+          "mean_display": "72.60",
+          "sd_display": null
+        },
+        "cosine": {
+          "seeds": [
+            2051
+          ],
+          "values": [
+            74.58
+          ],
+          "n": 1,
+          "mean": 74.58,
+          "sample_sd": null,
+          "mean_display": "74.58",
+          "sd_display": null
+        }
+      },
+      "unpaired_records": [],
+      "retained_later_acd": null
+    }
+  },
+  "excluded_nonfinal_snapshot_records": [
+    {
+      "source": "reproductions/head_transfer_20261021/artifacts/res50_mv1__s2052__linear/status.json",
+      "study": "head_transfer_20261021",
+      "record_kind": "native_training_status",
+      "name": "res50_mv1__s2052__linear",
+      "method": "null",
+      "variant": "null",
+      "seed": "2052",
+      "pair": "res50_mv1",
+      "status": "running",
+      "epoch": "114",
+      "last_top1": "34.9",
+      "completed_reloaded_top1": "null",
+      "heartbeat_at": "2026-10-27T06:34:54.974088+00:00",
+      "finished_at": "null",
+      "error_last_line": "null"
+    }
+  ],
+  "cross_model_catalog_check": "All 52 completed records match cross_model.tsv; same scan, not independent reruns.",
+  "original_status_files_available_locally": 0,
+  "original_status_files_tracked_at_scan": 0,
+  "original_status_files_restored_from_release": 52,
+  "training": {
+    "epochs": 240,
+    "batch_size": 64,
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": false,
+    "decay_zero_based": [
+      150,
+      180,
+      210
+    ],
+    "decay_rate": 0.1,
+    "protocol": "double",
+    "examples_per_epoch": 100000,
+    "workers": 2,
+    "ce_weight": 0.5,
+    "kd_weight": 0.5,
+    "temperature": 4,
+    "precision": "float32",
+    "tf32": false,
+    "deterministic_cudnn": true,
+    "primary": "reloaded epoch240 test top1",
+    "early_stopping": false
+  },
+  "heads": {
+    "linear": "untouched nn.Linear including bias",
+    "cosine": "unit-normalized copy of paired initial linear weights; normalized features; no bias",
+    "cosine_etf": "original ETF initialization, original pair only; learned directions; no bias",
+    "scale": 30.0,
+    "etf_seed": 1993
+  },
+  "method_classification": "Ordinary CE + temperature-scaled KL; no standardization or conditional distillation. Not full ACD.",
+  "later_compact_double_means": [
+    {
+      "pair": "vgg13_mv1",
+      "linear": 67.836,
+      "cosine": 66.67,
+      "cosine_etf": 66.702,
+      "n": 5,
+      "protocol": "compact_double",
+      "evidence": "Release results restored; see release_recovery/release_results.json for per-seed records",
+      "source": "reports/HETEROGENEOUS_KD_WEEK_20261102.md",
+      "restored_methods": {
+        "linear": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            67.79,
+            68.06,
+            67.5,
+            67.43,
+            68.4
+          ],
+          "n": 5,
+          "mean": 67.836,
+          "sample_sd": 0.4025295020243858,
+          "mean_display": "67.84",
+          "sd_display": "0.40"
+        },
+        "cosine": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            66.39,
+            66.71,
+            66.48,
+            66.92,
+            66.85
+          ],
+          "n": 5,
+          "mean": 66.67,
+          "sample_sd": 0.22967368155711704,
+          "mean_display": "66.67",
+          "sd_display": "0.23"
+        },
+        "cosine_etf": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            66.6,
+            66.86,
+            66.86,
+            66.52,
+            66.67
+          ],
+          "n": 5,
+          "mean": 66.702,
+          "sample_sd": 0.15368799562750501,
+          "mean_display": "66.70",
+          "sd_display": "0.15"
+        },
+        "rotating_etf": {
+          "seeds": [
+            2101
+          ],
+          "values": [
+            66.63
+          ],
+          "n": 1,
+          "mean": 66.63,
+          "sample_sd": null,
+          "mean_display": "66.63",
+          "sd_display": null
+        }
+      }
+    },
+    {
+      "pair": "res50_mv1",
+      "linear": 68.422,
+      "cosine": 67.532,
+      "cosine_etf": 67.394,
+      "n": 5,
+      "protocol": "compact_double",
+      "evidence": "Release results restored; see release_recovery/release_results.json for per-seed records",
+      "source": "reports/HETEROGENEOUS_KD_WEEK_20261102.md",
+      "restored_methods": {
+        "linear": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            68.8,
+            68.52,
+            68.31,
+            68.59,
+            67.89
+          ],
+          "n": 5,
+          "mean": 68.422,
+          "sample_sd": 0.3450652112282547,
+          "mean_display": "68.42",
+          "sd_display": "0.35"
+        },
+        "cosine": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            67.88,
+            67.7,
+            66.93,
+            67.48,
+            67.67
+          ],
+          "n": 5,
+          "mean": 67.532,
+          "sample_sd": 0.3651985761198967,
+          "mean_display": "67.53",
+          "sd_display": "0.37"
+        },
+        "cosine_etf": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            67.45,
+            66.81,
+            67.54,
+            67.48,
+            67.69
+          ],
+          "n": 5,
+          "mean": 67.394,
+          "sample_sd": 0.3393081195609678,
+          "mean_display": "67.39",
+          "sd_display": "0.34"
+        },
+        "rotating_etf": {
+          "seeds": [
+            2101
+          ],
+          "values": [
+            67.57
+          ],
+          "n": 1,
+          "mean": 67.57,
+          "sample_sd": null,
+          "mean_display": "67.57",
+          "sd_display": null
+        }
+      }
+    },
+    {
+      "pair": "wrn402_sv1",
+      "linear": 77.31,
+      "n": 5,
+      "protocol": "compact_double",
+      "evidence": "Release results restored; see release_recovery/release_results.json for per-seed records",
+      "source": "reports/HETEROGENEOUS_KD_WEEK_20261102.md",
+      "restored_methods": {
+        "linear": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            76.92,
+            76.99,
+            77.32,
+            77.68,
+            77.64
+          ],
+          "n": 5,
+          "mean": 77.31,
+          "sample_sd": 0.3536947836765479,
+          "mean_display": "77.31",
+          "sd_display": "0.35"
+        },
+        "cosine": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            77.82,
+            77.11,
+            77.43,
+            78.08,
+            77.08
+          ],
+          "n": 5,
+          "mean": 77.504,
+          "sample_sd": 0.4393517952620656,
+          "mean_display": "77.50",
+          "sd_display": "0.44"
+        },
+        "cosine_etf": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104
+          ],
+          "values": [
+            77.6,
+            77.9,
+            77.51,
+            78.02
+          ],
+          "n": 4,
+          "mean": 77.7575,
+          "sample_sd": 0.2417126393054364,
+          "mean_display": "77.76",
+          "sd_display": "0.24"
+        },
+        "rotating_etf": {
+          "seeds": [
+            2101
+          ],
+          "values": [
+            77.45
+          ],
+          "n": 1,
+          "mean": 77.45,
+          "sample_sd": null,
+          "mean_display": "77.45",
+          "sd_display": null
+        }
+      }
+    },
+    {
+      "pair": "res32x4_sv1",
+      "linear": 76.822,
+      "n": 5,
+      "protocol": "compact_double",
+      "evidence": "Release results restored; see release_recovery/release_results.json for per-seed records",
+      "source": "reports/HETEROGENEOUS_KD_WEEK_20261102.md",
+      "restored_methods": {
+        "linear": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            77.28,
+            76.75,
+            76.85,
+            76.8,
+            76.43
+          ],
+          "n": 5,
+          "mean": 76.822,
+          "sample_sd": 0.3040888028191765,
+          "mean_display": "76.82",
+          "sd_display": "0.30"
+        },
+        "cosine": {
+          "seeds": [
+            2101
+          ],
+          "values": [
+            76.97
+          ],
+          "n": 1,
+          "mean": 76.97,
+          "sample_sd": null,
+          "mean_display": "76.97",
+          "sd_display": null
+        },
+        "rotating_etf": {
+          "seeds": [
+            2101
+          ],
+          "values": [
+            76.9
+          ],
+          "n": 1,
+          "mean": 76.9,
+          "sample_sd": null,
+          "mean_display": "76.90",
+          "sd_display": null
+        }
+      }
+    },
+    {
+      "pair": "res32x4_sv2",
+      "linear": 76.442,
+      "n": 5,
+      "protocol": "compact_double",
+      "evidence": "Release results restored; see release_recovery/release_results.json for per-seed records",
+      "source": "reports/HETEROGENEOUS_KD_WEEK_20261102.md",
+      "restored_methods": {
+        "linear": {
+          "seeds": [
+            2101,
+            2102,
+            2103,
+            2104,
+            2105
+          ],
+          "values": [
+            76.59,
+            76.7,
+            76.45,
+            76.55,
+            75.92
+          ],
+          "n": 5,
+          "mean": 76.442,
+          "sample_sd": 0.30523761236125535,
+          "mean_display": "76.44",
+          "sd_display": "0.31"
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "reports/research_catalog_20261027/native_statuses.tsv": "e5f36aa7250e8806e9d226445678c1319bf6a014536e4958db8257d08bade614",
+    "reports/research_catalog_20261027/cross_model.tsv": "b93352e96a61886fe0cd80d38ea140e76f85d150e2d9d68f5ddf36aaabb8a7a8",
+    "reports/research_catalog_20261027/source_files.tsv": "33b6bbd194570d9c72f614a92e5765ce0d36a5695cd986568f633c91adddec29",
+    "reports/research_catalog_20261027/catalog.json": "030d6a6b7be10cf2d0f706158a9c20dab12120c3cb8f5fead4fd41fe8d95b4bf",
+    "reproductions/head_transfer_20261021/study.json": "4746ac56cf38a5e9873da879adbb44896ef56cdf75b2e713c19fef0d61b65151",
+    "reproductions/head_transfer_20261021/methods.py": "d569401dd450a264c4810536de6932409228afd0c5bc95d5cc3d627d8e439bea",
+    "paper_assets/acd_tables/main_results_20261116/cifar_benchmark_layout.json": "c83b768599ac1f1a81546fb00c7616eb3103f59f960425a0fab84af940d41640",
+    "reports/HETEROGENEOUS_KD_WEEK_20261102.md": "26f1373c782cb3314b59ea9812f5a3ac7855429d4b82d65e00a6aea76d17641d",
+    "paper_assets/acd_tables/main_results_20261116/release_recovery/release_results.json": "a4b0d2b61f39693c91c5ddd53c4be09d6fb226f145dcf2d0813255ad4f5cd80b"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "layout_placeholder_not_skd_or_acd_results",
+  "models": [
+    {
+      "arm": "I0",
+      "checkpoint": "reproductions/imagenet1k_acd_20261113/runs/I0_seed3101_baseline_20261114/latest.pth",
+      "sha256": "3519ca20e94e375f27b00703eb8e51c2bfcd86a1a222faf6293a8e42ead4bc56",
+      "epoch": 100,
+      "validation": {
+        "count": 50000,
+        "top1": 68.662,
+        "top5": 88.798
+      }
+    },
+    {
+      "arm": "I2",
+      "checkpoint": "reproductions/imagenet1k_acd_20261113/runs/I2_seed3101_baseline_20261114/latest.pth",
+      "sha256": "c112ac513585a666ce725bd5c5a025ff16cfeb315bd92cf3b653e298c7fc5475",
+      "epoch": 100,
+      "validation": {
+        "count": 50000,
+        "top1": 69.28,
+        "top5": 89.462
+      }
+    }
+  ],
+  "display_labels": [
+    "Input",
+    "SKD",
+    "Ours"
+  ],
+  "actual_methods": [
+    "Input",
+    "CE baseline",
+    "Ordinary KD"
+  ],
+  "caption_disclosure_required": true,
+  "images": [
+    {
+      "image": "/fastdata/users/iaii2026/datasets/imagenet1k/val/n01514668/validation-00000-of-00014-003560.JPEG",
+      "image_sha256": "b86331c7956688e5e2b0503f626a250f14b7bc7e3911be7347b7fbef9c236594",
+      "target": 7,
+      "class": "cock",
+      "predictions": [
+        7,
+        7
+      ]
+    },
+    {
+      "image": "/fastdata/users/iaii2026/datasets/imagenet1k/val/n02099601/validation-00000-of-00014-001091.JPEG",
+      "image_sha256": "81a3daf9597e7115c9b26d3c9014c490c394a4f866f3d6b1f82f96b0a189acbf",
+      "target": 207,
+      "class": "golden_retriever",
+      "predictions": [
+        207,
+        207
+      ]
+    }
+  ],
+  "target_layer": "features.18 (last conv block before global pooling)",
+  "activation_shape": [
+    1,
+    1280,
+    7,
+    7
+  ],
+  "target": "same ground-truth class for all methods",
+  "cam": "Grad-CAM++ conventional gradient-power implementation",
+  "normalization": "per-image per-method min-max",
+  "palette": "jet",
+  "overlay_alpha": 0.45,
+  "native_resolution": [
+    7,
+    7
+  ],
+  "limitation": "No complete ImageNet cosine/ETF/full-standardized/SICD ablation endpoints found."
+}

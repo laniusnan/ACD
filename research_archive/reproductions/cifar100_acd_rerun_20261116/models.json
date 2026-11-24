@@ -1,0 +1,115 @@
+{
+  "pairs": {
+    "res56_res20": {
+      "stage": "B",
+      "teacher": "resnet56",
+      "student": "resnet20",
+      "paper_teacher": 72.4,
+      "paper_kd": 71.74
+    },
+    "res110_res32": {
+      "stage": "B",
+      "teacher": "resnet110",
+      "student": "resnet32",
+      "paper_teacher": 74.31,
+      "paper_kd": 74.01
+    },
+    "wrn402_wrn162": {
+      "stage": "B",
+      "teacher": "wrn_40_2",
+      "student": "wrn_16_2",
+      "paper_teacher": 75.59,
+      "paper_kd": 76.04
+    },
+    "wrn402_wrn401": {
+      "stage": "B",
+      "teacher": "wrn_40_2",
+      "student": "wrn_40_1",
+      "paper_teacher": 75.59,
+      "paper_kd": 74.52
+    },
+    "res32x4_sv1": {
+      "stage": "B",
+      "teacher": "resnet32x4",
+      "student": "shufflenetv1",
+      "paper_teacher": 79.42,
+      "paper_kd": 76.64
+    },
+    "res50_mv1": {
+      "stage": "B",
+      "teacher": "resnet50",
+      "student": "mobilenetv1",
+      "paper_teacher": 79.33,
+      "paper_kd": 68.44
+    },
+    "res32x4_sv2": {
+      "stage": "B",
+      "teacher": "resnet32x4",
+      "student": "shufflenetv2",
+      "paper_teacher": 79.42,
+      "paper_kd": 77.78
+    }
+  },
+  "models": {
+    "wrn_16_2": {
+      "module": "wrn",
+      "constructor": "wrn_16_2",
+      "head": "fc"
+    },
+    "resnet20": {
+      "module": "resnet",
+      "constructor": "resnet20",
+      "head": "fc"
+    },
+    "wrn_40_1": {
+      "module": "wrn",
+      "constructor": "wrn_40_1",
+      "head": "fc"
+    },
+    "resnet32x4": {
+      "module": "resnet",
+      "constructor": "resnet32x4",
+      "head": "fc"
+    },
+    "mobilenetv1": {
+      "module": "mobilenetv1",
+      "constructor": "mobilenetv1",
+      "head": "fc"
+    },
+    "wrn_40_2": {
+      "module": "wrn",
+      "constructor": "wrn_40_2",
+      "head": "fc"
+    },
+    "resnet110": {
+      "module": "resnet",
+      "constructor": "resnet110",
+      "head": "fc"
+    },
+    "shufflenetv1": {
+      "module": "shufflenet_v1",
+      "constructor": "ShuffleV1",
+      "head": "linear"
+    },
+    "shufflenetv2": {
+      "module": "shufflenet_v2",
+      "constructor": "ShuffleV2",
+      "head": "linear"
+    },
+    "resnet50": {
+      "module": "resnet50_cifar",
+      "constructor": "ResNet50",
+      "head": "linear"
+    },
+    "resnet32": {
+      "module": "resnet",
+      "constructor": "resnet32",
+      "head": "fc"
+    },
+    "resnet56": {
+      "module": "resnet",
+      "constructor": "resnet56",
+      "head": "fc"
+    }
+  }
+}

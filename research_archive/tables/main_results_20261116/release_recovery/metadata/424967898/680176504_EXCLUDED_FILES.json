@@ -1,0 +1,476 @@
+{
+  "files": [
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_bec2_kd_w2.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_bec2_smoke.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_bec_smoke.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_ctl_ent2.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_follow_omni_eval_fixed_s2021.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_freqkd_l3_mse_lam12.pth",
+      "reason": "not confirmed complete: error(rc=143)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_gain_dkd_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_gain_kd_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_het_vgg13_mv1_udfgrad.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_omni_align_gray.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_omni_align_gray_p15.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_omni_paper_gray.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_tailfeat_ce10.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_tailfeat_ce10_s2022.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_udf_calib_chan.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_in100_udf_calib_chan_v2.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_iso_wrn402_wrn162_base.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_iso_wrn402_wrn162_udfgrad.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_kd_ce05kd05_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_resume_probe.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_mask_tik1e5_double240_lr01.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_nomask_ce10_tik1e4_double240_lr01.pth",
+      "reason": "not confirmed complete: aborted(手动停止): test 在 40~49 之间振荡 40+ 轮无趋势；Train@best 43.41 vs Test@best 50.99 → gap −7.58（欠拟合）；同设置仅 λ 不同（λ=1e-1）可平滑涨到 73.35 ⇒ ce=1.0 + 活跃方向项(λ=1e-4) 不稳定；后续 λ=1e-5/1e-6（方向项更强）一并跳过"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e1_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e1_noC_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e4_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e4_noC_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e5_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_skd_tik1e6_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_t2b_res32x4_weak240_seed2022.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_udfmech_vit_rg_s2026.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/ckpt_vanilla_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/dkd_weak240_rs8x4_r32x4.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/follow_omni_eval_fixed_s2021.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/follow_omni_eval_fixed_s2021_aborted_full.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/follow_omni_eval_fixed_s2021_best_full.pth",
+      "reason": "not confirmed complete: aborted(fail-fast)"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/gain_kd_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/kd_ce05kd05_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/kd_weak240_rs8x4_r32x4.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/probe_res20_skd_abl4.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/probe_res20_skd_ce05.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/resume_probe.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_tik1e1_noC_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_tik1e4_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_tik1e4_noC_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_tik1e5_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_tik1e6_double240_lr01.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/skd_weak240_rs8x4_r32x4.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/udfmech_vit_rg_s2026.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/udfmech_vit_rg_s2026_best_full.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/vanilla_double240_lr005.pth",
+      "reason": "not confirmed complete: no completion marker"
+    },
+    {
+      "path": "queue_logs/follow_omni_eval_fixed_s2021/epoch_000.pth",
+      "reason": "snapshot run not complete: aborted(fail-fast)"
+    },
+    {
+      "path": "queue_logs/follow_omni_eval_fixed_s2021/epoch_001.pth",
+      "reason": "snapshot run not complete: aborted(fail-fast)"
+    },
+    {
+      "path": "queue_logs/follow_omni_eval_fixed_s2021/epoch_005.pth",
+      "reason": "snapshot run not complete: aborted(fail-fast)"
+    },
+    {
+      "path": "queue_logs/follow_omni_eval_fixed_s2021/epoch_015.pth",
+      "reason": "snapshot run not complete: aborted(fail-fast)"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_000.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_001.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_005.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_030.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_060.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "queue_logs/udfmech_vit_rg_s2026/epoch_120.pth",
+      "reason": "snapshot run not complete: no marker"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/mean_linear_s2052/epoch001.pth",
+      "reason": "run state running"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/mean_linear_s2052/epoch030.pth",
+      "reason": "run state running"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/mean_linear_s2052/last.pth",
+      "reason": "run state running"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/artifacts/FitNet_s2041/best.pth",
+      "reason": "run state cancelled_by_user"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/artifacts/FitNet_s2041/last.pth",
+      "reason": "run state cancelled_by_user"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/artifacts/OFD_s2041/best.pth",
+      "reason": "run state cancelled_by_user"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/artifacts/OFD_s2041/last.pth",
+      "reason": "run state cancelled_by_user"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/teacher.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_shufflenetv1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet20.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet32x4.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_wrn_16_2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet8x4.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet110.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet56.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_vgg8.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_resnet32.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_mobilenetv1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_shufflenetv2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_wrn_40_1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_wrn_16_1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_wrn_40_2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/Model_Pth/best_model_weights_vgg13.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_shufflenetv1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet20.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_mobilenetv2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet32x4.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_wrn_16_2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet8x4.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet110.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet56.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_vgg8.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_resnet32.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_shufflenetv2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_wrn_40_1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_wrn_16_1.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_wrn_40_2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/skd_baselines_20261020/upstream/StreamLined/CIFAR-100/SDD_Models_Pth/best_model_weights_vgg13.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/head_mechanism_20261022/artifacts/diagnostic_inputs.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/convex_readout_confirmation_linear_s2051_ep240.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/convex_readout_confirmation_cosine_s2052_ep240.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/convex_readout_confirmation_linear_s2052_ep240.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/mechanism_validation_20261026/artifacts/convex_readout_confirmation_cosine_s2051_ep240.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/head_etf_memory_20261023/artifacts/trajectory_s2051.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/head_etf_memory_20261023/artifacts/teacher_fit_logits.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "reproductions/head_etf_memory_20261023/artifacts/trajectory_s2052.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/model_distillation_pth/best_model_weights_resnet20_DKD.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/model_distillation_pth/best_model_weights_mobilenetv2_SKD.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/model_distillation_pth/best_model_weights_resnet8x4_KD.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/model_distillation_pth/best_model_weights_resnet20_Vanilla.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/freqkd_hf_nohigh_henergy_l3.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_freqkd_gsd_lam7.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/freqkd_hf_nohigh_hcos_l3.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_freqkd_hf_nohigh_henergy_l3.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_freqkd_gsd_lam2.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_fitnet_absorbfix_orthoscale.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_freqkd_hf_nohigh_henergy_l3.pre_reorder.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    },
+    {
+      "path": "CIFAR-100/Utils/results/evidence_lrcontaminated/ckpt_freqkd_hf_nohigh_hcos_l3.pth",
+      "reason": "cache, diagnostic, or model lacking an explicit completed-run marker"
+    }
+  ]
+}

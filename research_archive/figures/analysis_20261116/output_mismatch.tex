@@ -1,0 +1,15 @@
+\paragraph{Output mismatch beyond scalar confidence.}
+We first investigate whether the discrepancy between teacher and student outputs can be explained solely by their overall confidence scales.
+Using a frozen linear-KD student, we perform an oracle-calibration probe: for each image, we independently optimize a nonnegative scalar multiplying the entire student logit vector to minimize its KL divergence to the fixed teacher distribution.
+This per-image oracle is more flexible than a single global temperature and therefore provides a stringent test of the scalar-confidence explanation.
+As shown in Fig.~\ref{fig:output_mismatch}(a), on all 10,000 CIFAR-100 test images, calibration reduces the mean weighted divergence from 1.2198 to 0.5575 ($8\,\mathrm{KL}$ at $T=4$), leaving 45.7\% of the original mean discrepancy.
+The post-calibration median is 0.4260, indicating that the residual is not confined to a few extreme examples.
+Consistently, the centered teacher and calibrated student class scores still deviate from exact agreement in Fig.~\ref{fig:output_mismatch}(b).
+These observations demonstrate that, for this endpoint, matching overall confidence is insufficient to recover the teacher's class-relative outputs, motivating a closer examination of the classifier parameterization.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{paper_assets/acd_figures/analysis_20261116/fig_output_mismatch_cifar100_seed2051.pdf}
+  \caption{Teacher--student output mismatch beyond scalar confidence. We use one historical linear-KD checkpoint on CIFAR-100 (ResNet32$\times$4 teacher, ResNet8$\times$4 student, seed 2051, epoch 240), with no retraining. For each image $i$, $\alpha_i^*\geq0$ minimizes $8\,\mathrm{KL}(p_i^t\Vert\operatorname{softmax}(\alpha_i z_i^s/T))$, where $p_i^t=\operatorname{softmax}(z_i^t/T)$ and $T=4$. \textbf{Left:} empirical cumulative distributions of the per-image divergence before and after oracle calibration, including all 10,000 test images; the horizontal axis uses a symmetric-logarithmic scale. \textbf{Right:} density of the 1,000,000 image--class pairs, comparing $(z_{ic}^t-\bar z_i^t)/T$ and $\alpha_i^*(z_{ic}^s-\bar z_i^s)/T$, with the same limits and units on both axes. The dashed diagonal denotes exact agreement; color indicates the number of pairs per hexagonal bin on a logarithmic scale, not KL or accuracy. Centering removes only a softmax-invariant common shift, without standard-deviation normalization. No samples, classes, or tails are omitted.}
+  \label{fig:output_mismatch}
+\end{figure*}

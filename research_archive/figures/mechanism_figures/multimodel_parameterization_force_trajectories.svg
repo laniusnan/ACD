@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760" role="img">
+<title>Parameterization rotates local KD-force directions</title><desc>Each row unit-normalizes the angular, scale/norm, and raw mean KD forces in its pair-local plane. Angles state raw-force rotation from the angular baseline.</desc>
+<rect width="1080" height="760" fill="white"/>
+<text x="80.00" y="62.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#52616B">Pair</text>
+<text x="283.00" y="62.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#52616B">Unit-norm KD-force direction</text>
+<line x1="275.00" y1="76.00" x2="880.00" y2="76.00" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="80.00" y1="235.00" x2="950.00" y2="235.00" stroke="#DCE3E8" stroke-width="0.8"/>
+<text x="80.00" y="185.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#2878B5">VGG13→MV1</text>
+<line x1="315.00" y1="180.00" x2="380.00" y2="180.00" stroke="#52616B" stroke-width="2"/>
+<circle cx="380.00" cy="180.00" r="6" fill="#52616B" fill-opacity="0.9" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="180.00" x2="336.46" y2="118.65" stroke="#2878B5" stroke-width="2.4"/>
+<rect x="331.46" y="113.65" width="10.00" height="10.00" fill="#2878B5" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="180.00" x2="336.19" y2="118.55" stroke="#2878B5" stroke-width="3.2"/>
+<path d="M 336.19 111.55 L 343.19 118.55 L 336.19 125.55 L 329.19 118.55 Z" fill="#2878B5" stroke="white" stroke-width="1.2"/>
+<text x="347.19" y="113.55" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#2878B5">Δθ 71°</text>
+<circle cx="315.00" cy="180.00" r="3.5" fill="#172B3A" fill-opacity="1" stroke="none" stroke-width="0"/>
+<line x1="80.00" y1="340.00" x2="950.00" y2="340.00" stroke="#DCE3E8" stroke-width="0.8"/>
+<text x="80.00" y="290.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#D88A2D">R50→MV1</text>
+<line x1="315.00" y1="285.00" x2="380.00" y2="285.00" stroke="#52616B" stroke-width="2"/>
+<circle cx="380.00" cy="285.00" r="6" fill="#52616B" fill-opacity="0.9" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="285.00" x2="333.82" y2="222.79" stroke="#D88A2D" stroke-width="2.4"/>
+<rect x="328.82" y="217.79" width="10.00" height="10.00" fill="#D88A2D" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="285.00" x2="334.06" y2="222.86" stroke="#D88A2D" stroke-width="3.2"/>
+<path d="M 334.06 215.86 L 341.06 222.86 L 334.06 229.86 L 327.06 222.86 Z" fill="#D88A2D" stroke="white" stroke-width="1.2"/>
+<text x="345.06" y="217.86" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#D88A2D">Δθ 73°</text>
+<circle cx="315.00" cy="285.00" r="3.5" fill="#172B3A" fill-opacity="1" stroke="none" stroke-width="0"/>
+<line x1="80.00" y1="445.00" x2="950.00" y2="445.00" stroke="#DCE3E8" stroke-width="0.8"/>
+<text x="80.00" y="395.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#23856D">R32×4→SV1</text>
+<line x1="315.00" y1="390.00" x2="380.00" y2="390.00" stroke="#52616B" stroke-width="2"/>
+<circle cx="380.00" cy="390.00" r="6" fill="#52616B" fill-opacity="0.9" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="390.00" x2="325.74" y2="325.89" stroke="#23856D" stroke-width="2.4"/>
+<rect x="320.74" y="320.89" width="10.00" height="10.00" fill="#23856D" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="390.00" x2="326.21" y2="325.97" stroke="#23856D" stroke-width="3.2"/>
+<path d="M 326.21 318.97 L 333.21 325.97 L 326.21 332.97 L 319.21 325.97 Z" fill="#23856D" stroke="white" stroke-width="1.2"/>
+<text x="337.21" y="320.97" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#23856D">Δθ 80°</text>
+<circle cx="315.00" cy="390.00" r="3.5" fill="#172B3A" fill-opacity="1" stroke="none" stroke-width="0"/>
+<line x1="80.00" y1="550.00" x2="950.00" y2="550.00" stroke="#DCE3E8" stroke-width="0.8"/>
+<text x="80.00" y="500.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#8B71AB">WRN40-2→SV1</text>
+<line x1="315.00" y1="495.00" x2="380.00" y2="495.00" stroke="#52616B" stroke-width="2"/>
+<circle cx="380.00" cy="495.00" r="6" fill="#52616B" fill-opacity="0.9" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="495.00" x2="320.35" y2="430.22" stroke="#8B71AB" stroke-width="2.4"/>
+<rect x="315.35" y="425.22" width="10.00" height="10.00" fill="#8B71AB" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="495.00" x2="320.74" y2="430.25" stroke="#8B71AB" stroke-width="3.2"/>
+<path d="M 320.74 423.25 L 327.74 430.25 L 320.74 437.25 L 313.74 430.25 Z" fill="#8B71AB" stroke="white" stroke-width="1.2"/>
+<text x="331.74" y="425.25" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#8B71AB">Δθ 85°</text>
+<circle cx="315.00" cy="495.00" r="3.5" fill="#172B3A" fill-opacity="1" stroke="none" stroke-width="0"/>
+<line x1="80.00" y1="655.00" x2="950.00" y2="655.00" stroke="#DCE3E8" stroke-width="0.8"/>
+<text x="80.00" y="605.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#B94D58">R32×4→SV2</text>
+<line x1="315.00" y1="600.00" x2="380.00" y2="600.00" stroke="#52616B" stroke-width="2"/>
+<circle cx="380.00" cy="600.00" r="6" fill="#52616B" fill-opacity="0.9" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="600.00" x2="321.57" y2="535.33" stroke="#B94D58" stroke-width="2.4"/>
+<rect x="316.57" y="530.33" width="10.00" height="10.00" fill="#B94D58" stroke="white" stroke-width="1.2"/>
+<line x1="315.00" y1="600.00" x2="321.67" y2="535.34" stroke="#B94D58" stroke-width="3.2"/>
+<path d="M 321.67 528.34 L 328.67 535.34 L 321.67 542.34 L 314.67 535.34 Z" fill="#B94D58" stroke="white" stroke-width="1.2"/>
+<text x="332.67" y="530.34" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#B94D58">Δθ 84°</text>
+<circle cx="315.00" cy="600.00" r="3.5" fill="#172B3A" fill-opacity="1" stroke="none" stroke-width="0"/>
+<circle cx="560.00" cy="38.00" r="5" fill="#52616B" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="571.00" y="43.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#52616B">angular</text>
+<rect x="705.00" y="33.00" width="10.00" height="10.00" fill="#52616B" stroke="none" stroke-width="0"/>
+<text x="721.00" y="43.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#52616B">+ scale/norm</text>
+<path d="M 860.00 32.00 L 866.00 38.00 L 860.00 44.00 L 854.00 38.00 Z" fill="#52616B"/>
+<text x="871.00" y="43.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#52616B">raw</text>
+</svg>

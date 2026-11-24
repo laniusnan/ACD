@@ -1,0 +1,129 @@
+{
+  "status": "completed",
+  "device": "cpu",
+  "torch": "2.9.0+cu126",
+  "split": "official CIFAR-100 test",
+  "selection": "final_epoch_240_first_seed_per_study_2051_or_2101; ordinary_KD_controls",
+  "models": [
+    {
+      "filename": "ci_kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "8ffa98ddf2674a4dab4f65a3c574994afb6ca19b0fbfdd3ae961523b15966556",
+      "top1": 76.99,
+      "top5": 94.02,
+      "ce": 0.9822285003662109,
+      "samples": 10000,
+      "seconds": 27.16,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_etf_kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "9feb524767446415e4ac7f7ef2d2b64fe2ecc59c94cdf4227b4eb8964fdd68fc",
+      "top1": 77.42,
+      "top5": 93.95,
+      "ce": 0.9727181539535522,
+      "samples": 10000,
+      "seconds": 27.06,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "15e91ed6fb7bb8f004e6ed93c5b87f5eafe42732e96e818a5240f410a5228909",
+      "top1": 75.18,
+      "top5": 93.84,
+      "ce": 0.9590447616577148,
+      "samples": 10000,
+      "seconds": 26.81,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_kd_vgg13_vgg8_s2051_e240.pth",
+      "sha256": "6afbabdb7fbd825800dab837030cce305f6f0fb6e1e8b7a108980579a635cb98",
+      "top1": 75.13,
+      "top5": 92.59,
+      "ce": 1.1105777311325074,
+      "samples": 10000,
+      "seconds": 17.59,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "kd_vgg13_vgg8_s2051_e240.pth",
+      "sha256": "e94048cf57c086d00c6b72da9445abe0ae1f87fcbdf3497493b2868b39594fc6",
+      "top1": 74.45,
+      "top5": 92.61,
+      "ce": 1.0820499862670898,
+      "samples": 10000,
+      "seconds": 17.71,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_kd_res50_mv1_s2101_e240.pth",
+      "sha256": "34c8295de33259cd9d6fc0495b44b6af774bb30fb8966f9273630bfa67d7a185",
+      "top1": 67.88,
+      "top5": 89.04,
+      "ce": 1.9355520538330078,
+      "samples": 10000,
+      "seconds": 4.42,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_etf_kd_res50_mv1_s2101_e240.pth",
+      "sha256": "903bd14a5d28164cb993668531a527363ad68892a62c2c22058ae3e8a456605c",
+      "top1": 67.45,
+      "top5": 88.99,
+      "ce": 1.9763217189788818,
+      "samples": 10000,
+      "seconds": 4.44,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_kd_vgg13_mv1_s2101_e240.pth",
+      "sha256": "384ebdd38d5cdedef0544645593f26f6729eb6dc1f36a2f4e5caad3385f8ea5f",
+      "top1": 66.39,
+      "top5": 88.67,
+      "ce": 1.9141885957717895,
+      "samples": 10000,
+      "seconds": 4.29,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_etf_kd_vgg13_mv1_s2101_e240.pth",
+      "sha256": "d34d36fc871678155898a02221489e1b078a26d160e98bf94a3a45243949799f",
+      "top1": 66.6,
+      "top5": 88.73,
+      "ce": 1.9009154390335083,
+      "samples": 10000,
+      "seconds": 4.32,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_kd_wrn402_sv1_s2101_e240.pth",
+      "sha256": "b585f1a20ae08d93b48f44362effd9e96884371cad9614585ca4759c7cbc3c46",
+      "top1": 77.82,
+      "top5": 94.31,
+      "ce": 1.0524367404937744,
+      "samples": 10000,
+      "seconds": 23.66,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "ci_etf_kd_wrn402_sv1_s2101_e240.pth",
+      "sha256": "e0ba80d78e981de01d9813c8567d58ef7933bfbe14dcb6921d21707ec02ae3a8",
+      "top1": 77.6,
+      "top5": 94.55,
+      "ce": 1.0454455616950988,
+      "samples": 10000,
+      "seconds": 23.48,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "teacher_vgg13_cifar100.pth",
+      "sha256": "456defd08ff18cca5d478564e8ec21fb2370415b9b8b329a5144d2533ca218d2",
+      "top1": 74.64,
+      "top5": 92.6,
+      "ce": 1.083931164932251,
+      "samples": 10000,
+      "seconds": 41.7,
+      "archived_top1_match": null
+    }
+  ]
+}

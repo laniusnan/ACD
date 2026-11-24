@@ -1,0 +1,137 @@
+{
+  "device": "cpu",
+  "torch": "2.9.0+cu126",
+  "split": "official CIFAR-100 test",
+  "selection": "final_epoch_240_single_seed_3201_no_etf",
+  "models": [
+    {
+      "filename": "acd_res110_res32_s3201_e240.pth",
+      "sha256": "56832823e6cbdd15beb5f6c27bf5814649b81cdc7c5aaa0e83a36b4f25803b16",
+      "top1": 73.51,
+      "top5": 93.19,
+      "ce": 0.945134669303894,
+      "samples": 10000,
+      "seconds": 12.31,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_res32x4_sv1_s3201_e240.pth",
+      "sha256": "28a15fbd5bbd302a74d20639d3ec988e676e121e8f4b48c6fc795da84ceccc70",
+      "top1": 78.74,
+      "top5": 94.97,
+      "ce": 0.9778319326400757,
+      "samples": 10000,
+      "seconds": 25.01,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_res32x4_sv2_s3201_e240.pth",
+      "sha256": "4b9e94e0cf84ab819dfc9aa21ee76f99f632db3867990377f7c0159d97722a8d",
+      "top1": 80.07,
+      "top5": 95.45,
+      "ce": 0.9057727765083313,
+      "samples": 10000,
+      "seconds": 13.15,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_res50_mv1_s3201_e240.pth",
+      "sha256": "7b1c7deb3bf035597ba702a75135cb63813cdfda7eeba882103921a8d2df5b59",
+      "top1": 69.45,
+      "top5": 90.38,
+      "ce": 1.367039517211914,
+      "samples": 10000,
+      "seconds": 4.33,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_res56_res20_s3201_e240.pth",
+      "sha256": "31ebf1301f6604d4d951f829868634901c1898eb0e249d80c080819f401947fb",
+      "top1": 71.08,
+      "top5": 92.57,
+      "ce": 1.0072389606475831,
+      "samples": 10000,
+      "seconds": 7.86,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_wrn402_wrn162_s3201_e240.pth",
+      "sha256": "c93b2307d1785bb31f4d8aa31e79e875fdc31f4c75bef0b7257323f594857b55",
+      "top1": 75.67,
+      "top5": 94.07,
+      "ce": 0.8688899030685425,
+      "samples": 10000,
+      "seconds": 16.8,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "acd_wrn402_wrn401_s3201_e240.pth",
+      "sha256": "3933f3fbe78aa578dc1da9f6dc5482c7e74af8cbfe605ffe41bb1146f1fa7c06",
+      "top1": 74.67,
+      "top5": 93.84,
+      "ce": 0.9230585748672485,
+      "samples": 10000,
+      "seconds": 14.48,
+      "archived_top1_match": true
+    },
+    {
+      "filename": "teacher_resnet110_cifar100.pth",
+      "sha256": "2652f276d4f0fb10ddd6809197f502c3669b0eb35ff501d4e0c541cf887feace",
+      "top1": 74.31,
+      "top5": 92.92,
+      "ce": 1.1811622459411621,
+      "samples": 10000,
+      "seconds": 39.86,
+      "archived_top1_match": null
+    },
+    {
+      "filename": "teacher_resnet32x4_cifar100.pth",
+      "sha256": "a11f9a1a95f8eae0d09bd4660ba1c91eded8d20c874ff56c9a496cd040d7b5ea",
+      "top1": 79.42,
+      "top5": 94.58,
+      "ce": 0.8833264132499695,
+      "samples": 10000,
+      "seconds": 142.62,
+      "archived_top1_match": null
+    },
+    {
+      "filename": "teacher_resnet50_cifar100.pth",
+      "sha256": "d9365973e091567e5c607dd4142d71c3a2283453cf82a28b40a91ef473fd2b0b",
+      "top1": 79.34,
+      "top5": 94.81,
+      "ce": 0.9270140283584595,
+      "samples": 10000,
+      "seconds": 208.69,
+      "archived_top1_match": null
+    },
+    {
+      "filename": "teacher_resnet56_cifar100.pth",
+      "sha256": "d7b51f778b0bda0f3d2cc2b5ba493c3dab03f68e07a4d8e4dbda76042e4b58ad",
+      "top1": 72.41,
+      "top5": 92.5,
+      "ce": 1.1747806941986083,
+      "samples": 10000,
+      "seconds": 20.49,
+      "archived_top1_match": null
+    },
+    {
+      "filename": "teacher_wrn_40_2_cifar100.pth",
+      "sha256": "10aab78a3be2fbae831df1e039264831a414cfd6a8c9db506a2c07db16658bb9",
+      "top1": 75.61,
+      "top5": 93.63,
+      "ce": 1.0744551553726196,
+      "samples": 10000,
+      "seconds": 45.11,
+      "archived_top1_match": null
+    }
+  ],
+  "status": "completed",
+  "date": "2026-11-18",
+  "compatibility_check": {
+    "code_commit": "cd7bc8a964991de677eb664756da35f2eaccbc4a",
+    "pair": "res56_res20",
+    "top1": 71.08,
+    "samples": 10000,
+    "status": "passed_using_unmodified_release_tag_code"
+  }
+}

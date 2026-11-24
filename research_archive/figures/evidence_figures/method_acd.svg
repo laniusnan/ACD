@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="710" viewBox="0 0 1400 710" role="img">
+<title>ACD: construct the interface, then select the supervision</title><desc>Method  /  student-side ACI + standardized conditional distillation  /  computational graph, not an empirical result</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#627381"/></marker></defs>
+<rect width="1400" height="100%" fill="white"/>
+<text x="40" y="43" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#172B3A">ACD: construct the interface, then select the supervision</text>
+<text x="40" y="75" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#627381">Method  /  student-side ACI + standardized conditional distillation  /  computational graph, not an empirical result</text>
+<rect x="200" y="308" width="283" height="183" rx="8" fill="#F1F6FA" stroke="none"/>
+<text x="219" y="338" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#357DB2">ACI · student interface</text>
+<rect x="520" y="134" width="835" height="357" rx="8" fill="#F0F7F3" stroke="none"/>
+<text x="542" y="164" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#23856D">SICD · select scale-invariant conditional relations</text>
+<rect x="40" y="195" width="135" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="107.5" y="228" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#D88A2D">Teacher</text>
+<text x="107.5" y="257" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">frozen</text>
+<rect x="222" y="195" width="240" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="342.0" y="228" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#D88A2D">Original classifier</text>
+<text x="342.0" y="257" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">zₜ = Wₜhₜ + bₜ</text>
+<rect x="550" y="195" width="210" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="655.0" y="228" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#D88A2D">Standardize</text>
+<text x="655.0" y="257" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">N(zₜ)</text>
+<rect x="814" y="195" width="220" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="924.0" y="228" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#D88A2D">Condition on k ≠ y</text>
+<text x="924.0" y="257" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">p⁻; retain 1 − pᵧ</text>
+<rect x="40" y="356" width="135" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="107.5" y="389" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#357DB2">Student</text>
+<text x="107.5" y="418" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">trainable</text>
+<rect x="222" y="356" width="240" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="342.0" y="389" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#357DB2">Angular classifier</text>
+<text x="342.0" y="418" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">zₛ,ₖ = γ cos θₛ,ₖ</text>
+<rect x="550" y="356" width="210" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="655.0" y="389" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#357DB2">Standardize</text>
+<text x="655.0" y="418" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">N(zₛ)</text>
+<rect x="814" y="356" width="220" height="88" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="924.0" y="389" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#357DB2">Condition on k ≠ y</text>
+<text x="924.0" y="418" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">q⁻</text>
+<line x1="175" y1="239" x2="217" y2="239" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="462" y1="239" x2="545" y2="239" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="760" y1="239" x2="809" y2="239" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="175" y1="400" x2="217" y2="400" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="462" y1="400" x2="545" y2="400" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="760" y1="400" x2="809" y2="400" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="783" y="310" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">softmax(· / T)</text>
+<rect x="1090" y="268" width="240" height="106" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="1210.0" y="301" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#23856D">Conditional loss</text>
+<text x="1210.0" y="330" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">Lᵣ = T²(1 − pᵧ) KL(p⁻ ‖ q⁻)</text>
+<path d="M 1034.00 239.00 L 1060.00 239.00 L 1060.00 300.00 L 1086.00 300.00" fill="none" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1034.00 400.00 L 1060.00 400.00 L 1060.00 344.00 L 1086.00 344.00" fill="none" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="219" y="474" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#357DB2">Normalize hₛ, wₛ,ₖ; no bias</text>
+<text x="551" y="470" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#23856D">N(z): per-example centering and standard deviation over classes</text>
+<rect x="40" y="526" width="743" height="105" rx="8" fill="#F5F7F9" stroke="none"/>
+<text x="60" y="556" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="start" fill="#172B3A">Detached gradient-strength matching</text>
+<text x="60" y="590" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#172B3A">a = stopgrad( ‖∇ Lfull‖₂ / ‖∇ Lᵣ‖₂ )</text>
+<text x="60" y="618" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Same minibatch and state; non-head student parameters; extra backward work.</text>
+<rect x="884" y="535" width="446" height="89" rx="8" fill="white" stroke="#DCE3E8"/>
+<text x="1107.0" y="568" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#23856D">Training objective</text>
+<text x="1107.0" y="597" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#627381">L = λCE CE(zₛ, y) + λKD a Lᵣ</text>
+<line x1="783" y1="578" x2="879" y2="578" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1210.00 374.00 L 1370.00 374.00 L 1370.00 579.00 L 1335.00 579.00" fill="none" stroke="#627381" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="500" cy="400" r="3" fill="#357DB2"/>
+<path d="M 500.00 400.00 L 500.00 508.00 L 866.00 508.00 L 866.00 553.00 L 879.00 553.00" fill="none" stroke="#357DB2" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="802" y="502" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#357DB2">CE</text>
+<line x1="40" y1="644" x2="1360" y2="644" stroke="#DCE3E8" stroke-width="1.5"/>
+<text x="40" y="664" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Teacher classifier is unchanged. Standardization does not remove arbitrary class-dependent teacher bias or weight-norm effects.</text>
+<text x="40" y="688" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">No shared teacher–student feature-space projection. Labels y define the conditional mask; only the student is optimized.</text>
+</svg>

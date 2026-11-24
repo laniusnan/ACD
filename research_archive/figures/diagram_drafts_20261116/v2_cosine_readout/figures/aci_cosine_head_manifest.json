@@ -1,0 +1,33 @@
+{
+  "figure": "aci_cosine_head.pdf",
+  "font": "STIXGeneral",
+  "illustration": {
+    "feature_angle_degrees": 56.0,
+    "feature_norms": [
+      0.52,
+      1.12
+    ],
+    "weight_angles_degrees": [
+      10.0,
+      150.0,
+      245.0
+    ],
+    "weight_norms": [
+      1.12,
+      0.73,
+      1.27
+    ],
+    "shared_scale": 30.0
+  },
+  "sources": [
+    "CLASSIFIER_DISCUSSION_20261026.md, sections 1.2 and 5",
+    "docs/CLASSIFIER_FIGURE_GUIDE_20261027.md, sections B and C",
+    "docs/CLASSIFIER_FIGURE_REUSE_20261116.md, sections 2 and 3",
+    "reports/ACD_WRITING_ARGUMENT_20261110.md, Method and Figure implications",
+    "reproductions/cifar100_acd_rerun_20261116/methods.py, AngularHead",
+    "reproductions/cifar100_acd_rerun_20261116/protocol.json, angular_scale"
+  ],
+  "scope": "Same illustrative student directions before/after normalization, not trained checkpoints or an empirical accuracy comparison. Bias is an additive score term, not a feature-space displacement. ETF and cosine attraction loss are not part of this head.",
+  "feature_scaling": "Both positive scalar multiples map to one unit direction. Raw feature norms may still change during training.",
+  "embedded_rasters": 0
+}

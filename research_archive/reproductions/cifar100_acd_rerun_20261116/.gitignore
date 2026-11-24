@@ -1,0 +1,6 @@
+/assets/
+/data/
+/artifacts/
+/runs/
+__pycache__/
+/frozen/**/__pycache__/

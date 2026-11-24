@@ -35,10 +35,13 @@ def distillation_loss(z, teacher, labels, backbone, config):
     elif method in ('standardized_full', 'acd', 'conditional'):
         zs = standardize(z, config.get('standardization_eps', 1e-6))
         ts = standardize(teacher.detach(), config.get('standardization_eps', 1e-6))
-        full = full_kl(zs, ts, tau)
-        kd = full if method == 'standardized_full' else conditional_kl(zs, ts, labels, tau)
+        kd = full_kl(zs, ts, tau) if method == 'standardized_full' else conditional_kl(zs, ts, labels, tau)
         if method == 'acd':
-            ratio = (gradient_norm(full, backbone)/gradient_norm(kd, backbone).clamp_min(config.get('gradient_eps', 1e-12))).detach()
+            parameters = tuple(backbone)
+            if not parameters:
+                raise ValueError('ACD gradient matching requires nonempty backbone parameters')
+            full = full_kl(zs, ts, tau)
+            ratio = (gradient_norm(full, parameters)/gradient_norm(kd, parameters).clamp_min(config.get('gradient_eps', 1e-12))).detach()
     else:
         raise ValueError(f'Unknown method: {method}')
     loss = config.get('ce_weight', 1.)*ce + config.get('kd_weight', 1.)*ratio*kd

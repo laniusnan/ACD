@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{User-reported historical ETF-initialization comparison (accuracy, \%; protocol pending verification).}
+\label{tab:etf_user_reported}
+\begin{tabular}{lrrr}
+\toprule
+Teacher $\to$ student & Relation-only & + ETF init. & $\Delta$ (pp) \\
+\midrule
+ResNet50 $\to$ MobileNetV1 & 73.30 & 72.80 & -0.50 \\
+WRN-40-2 $\to$ ShuffleNetV1 & 81.38 & 81.62 & +0.24 \\
+ResNet32$\times$4 $\to$ ShuffleNetV1 & 81.46 & 81.36 & -0.10 \\
+ResNet32$\times$4 $\to$ ShuffleNetV2 & 82.28 & 83.12 & +0.84 \\
+VGG13 $\to$ VGG8 & 80.22 & 80.52 & +0.30 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.96\textwidth}\footnotesize
+Values were transcribed by the user from a historical screenshot. Evaluation split, checkpoint selection, run count, recipe, and equivalence to ACD remain unverified. Three of five differences are positive; the unweighted mean is +0.16 pp. This is descriptive evidence, not a significance test or a uniformly matched benchmark. These entries do not replace archived ACD means.
+\end{minipage}
+\end{table*}

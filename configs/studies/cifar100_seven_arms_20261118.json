@@ -1,0 +1,41 @@
+{
+  "name": "cifar100_seven_arms_20261118",
+  "pairs": ["res32x4_res8x4", "vgg13_vgg8", "wrn402_sv1", "vgg13_mv1", "res32x4_sv1", "res50_mv1", "res32x4_sv2", "wrn402_wrn162", "res56_res20", "res110_res32", "wrn402_wrn401"],
+  "arms": {
+    "kd": {"method": "kd", "etf": false, "rotating_etf": false},
+    "cosine_kd": {"method": "angular_kd", "etf": false, "rotating_etf": false},
+    "cosine_etf_kd": {"method": "angular_kd", "etf": true, "rotating_etf": false},
+    "rotating_etf_kd": {"method": "angular_kd", "etf": false, "rotating_etf": true},
+    "cosine_sicd": {"method": "acd", "etf": false, "rotating_etf": false},
+    "cosine_etf_sicd": {"method": "acd", "etf": true, "rotating_etf": false},
+    "rotating_etf_sicd": {"method": "acd", "etf": false, "rotating_etf": true}
+  },
+  "candidates": {
+    "lr005_ce05": {"lr": 0.05, "ce_weight": 0.5, "kd_weight": 0.5},
+    "lr001_ce01": {"lr": 0.01, "ce_weight": 0.1, "kd_weight": 0.9},
+    "lr005_ce01": {"lr": 0.05, "ce_weight": 0.1, "kd_weight": 0.9},
+    "lr001_ce05": {"lr": 0.01, "ce_weight": 0.5, "kd_weight": 0.5}
+  },
+  "shared": {
+    "dataset": "cifar100", "epochs": 240, "batch_size": 64, "workers": 4,
+    "momentum": 0.9, "weight_decay": 0.0005,
+    "milestones": [150, 180, 210], "lr_decay": 0.1,
+    "temperature": 4.0, "scale": 30.0, "augmentation": "double_view",
+    "standardization_eps": 0.000001, "gradient_eps": 1e-12
+  },
+  "low_dimension_students": ["resnet20", "resnet32", "wrn_40_1"],
+  "feature_lift": 128,
+  "selection": {
+    "method": "kd", "seed": 3300, "split_seed": 20261118,
+    "validation_per_class": 50, "screen_epochs": 60, "promote": 2,
+    "ranking": "mean_last_5_validation_top1_then_lower_ce_then_candidate_id",
+    "schedule": "Screen uses the first 60 epochs of the unchanged 240-epoch schedule; the top two resume to epoch 240.",
+    "scope": "Best measured candidate within this bounded search, not a global optimum. Teachers were pretrained on the full training split."
+  },
+  "final_seed": 3301,
+  "final_order": ["cosine_sicd", "cosine_etf_sicd", "rotating_etf_sicd", "kd", "cosine_kd", "cosine_etf_kd", "rotating_etf_kd"],
+  "historical_checkpoints": "Retained as reference; not substituted for newly matched controls.",
+  "final_evaluation": "Full 50000-image training split (100000 augmented views); final epoch240 checkpoint on official10000-image test split.",
+  "gpu_allowlist": [0, 1], "automatic_failure_retries": 0,
+  "minimum_free_disk_gib": 8
+}

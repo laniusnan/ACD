@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "job": "wrn402_sv1__s2104__cosine_etf",
+      "reason": "running"
+    },
+    {
+      "job": "res50_mv1__s2101__rotating_etf",
+      "reason": "pending"
+    },
+    {
+      "job": "wrn402_sv1__s2101__rotating_etf",
+      "reason": "running"
+    },
+    {
+      "job": "res32x4_sv1__s2101__rotating_etf",
+      "reason": "running"
+    }
+  ]
+}

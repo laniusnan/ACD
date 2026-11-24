@@ -1,0 +1,509 @@
+{
+  "created_at": "2026-11-16T11:46:27.840272+00:00",
+  "paired_cifar": {
+    "vgg13_vgg8": {
+      "pair": "VGG13 → VGG8",
+      "seeds": [
+        2102,
+        2103
+      ],
+      "methods": {
+        "linear_kd": {
+          "values": [
+            74.69,
+            74.08
+          ],
+          "n": 2,
+          "mean": 74.385,
+          "sample_sd": 0.431335136523794,
+          "mean_display": "74.39",
+          "sd_display": "0.43"
+        },
+        "cosine_kd": {
+          "values": [
+            74.66,
+            74.93
+          ],
+          "n": 2,
+          "mean": 74.795,
+          "sample_sd": 0.19091883092036782,
+          "mean_display": "74.80",
+          "sd_display": "0.19"
+        },
+        "cosine_standardized_full": {
+          "values": [
+            75.51,
+            75.58
+          ],
+          "n": 2,
+          "mean": 75.545,
+          "sample_sd": 0.049497474683058325,
+          "mean_display": "75.55",
+          "sd_display": "0.05"
+        },
+        "cosine_relation_matched": {
+          "values": [
+            75.49,
+            75.46
+          ],
+          "n": 2,
+          "mean": 75.475,
+          "sample_sd": 0.021213203435596427,
+          "mean_display": "75.48",
+          "sd_display": "0.02"
+        }
+      },
+      "paired_gains": {
+        "linear_kd": {
+          "values": [
+            0.8,
+            1.38
+          ],
+          "n": 2,
+          "mean": 1.09,
+          "sample_sd": 0.41012193308819755,
+          "mean_display": "1.09",
+          "sd_display": "0.41"
+        },
+        "cosine_kd": {
+          "values": [
+            0.83,
+            0.53
+          ],
+          "n": 2,
+          "mean": 0.68,
+          "sample_sd": 0.21213203435596426,
+          "mean_display": "0.68",
+          "sd_display": "0.21"
+        },
+        "cosine_standardized_full": {
+          "values": [
+            -0.02,
+            -0.12
+          ],
+          "n": 2,
+          "mean": -0.07,
+          "sample_sd": 0.07071067811865475,
+          "mean_display": "-0.07",
+          "sd_display": "0.07"
+        }
+      }
+    },
+    "vgg13_mv1": {
+      "pair": "VGG13 → MobileNetV1",
+      "seeds": [
+        2102,
+        2103
+      ],
+      "methods": {
+        "linear_kd": {
+          "values": [
+            68.06,
+            67.5
+          ],
+          "n": 2,
+          "mean": 67.78,
+          "sample_sd": 0.3959797974644666,
+          "mean_display": "67.78",
+          "sd_display": "0.40"
+        },
+        "cosine_kd": {
+          "values": [
+            66.71,
+            66.48
+          ],
+          "n": 2,
+          "mean": 66.595,
+          "sample_sd": 0.16263455967290594,
+          "mean_display": "66.60",
+          "sd_display": "0.16"
+        },
+        "cosine_standardized_full": {
+          "values": [
+            68.96,
+            68.99
+          ],
+          "n": 2,
+          "mean": 68.975,
+          "sample_sd": 0.021213203435596427,
+          "mean_display": "68.98",
+          "sd_display": "0.02"
+        },
+        "cosine_relation_matched": {
+          "values": [
+            69.7,
+            69.72
+          ],
+          "n": 2,
+          "mean": 69.71,
+          "sample_sd": 0.01414213562373095,
+          "mean_display": "69.71",
+          "sd_display": "0.01"
+        }
+      },
+      "paired_gains": {
+        "linear_kd": {
+          "values": [
+            1.64,
+            2.22
+          ],
+          "n": 2,
+          "mean": 1.93,
+          "sample_sd": 0.41012193308819755,
+          "mean_display": "1.93",
+          "sd_display": "0.41"
+        },
+        "cosine_kd": {
+          "values": [
+            2.99,
+            3.24
+          ],
+          "n": 2,
+          "mean": 3.115,
+          "sample_sd": 0.1767766952966369,
+          "mean_display": "3.12",
+          "sd_display": "0.18"
+        },
+        "cosine_standardized_full": {
+          "values": [
+            0.74,
+            0.73
+          ],
+          "n": 2,
+          "mean": 0.735,
+          "sample_sd": 0.007071067811865475,
+          "mean_display": "0.74",
+          "sd_display": "0.01"
+        }
+      }
+    }
+  },
+  "cifar_benchmark_layout": {
+    "source": "Teacher/student architectures and reference accuracies supplied by the user in the conversation on 2026-11-16.",
+    "reference_accuracy_scope": "User-supplied reference values; not established as evaluations of the local teacher/student checkpoints.",
+    "comparison_status": "Draft benchmark layouts. Local results are provisionally mapped by architecture pair; matching to the reference-table training protocol remains to be audited.",
+    "homogeneous": [
+      {
+        "key": "res56_res20",
+        "teacher": "ResNet56",
+        "teacher_top1": 72.4,
+        "student": "ResNet20",
+        "student_top1": 65.79
+      },
+      {
+        "key": "res110_res32",
+        "teacher": "ResNet110",
+        "teacher_top1": 74.31,
+        "student": "ResNet32",
+        "student_top1": 67.92
+      },
+      {
+        "key": "res32x4_res8x4",
+        "teacher": "ResNet32×4",
+        "teacher_top1": 79.42,
+        "student": "ResNet8×4",
+        "student_top1": 72.48
+      },
+      {
+        "key": "wrn402_wrn162",
+        "teacher": "WRN-40-2",
+        "teacher_top1": 75.59,
+        "student": "WRN-16-2",
+        "student_top1": 71.12
+      },
+      {
+        "key": "wrn402_wrn401",
+        "teacher": "WRN-40-2",
+        "teacher_top1": 75.59,
+        "student": "WRN-40-1",
+        "student_top1": 69.54
+      },
+      {
+        "key": "vgg13_vgg8",
+        "teacher": "VGG13",
+        "teacher_top1": 74.64,
+        "student": "VGG8",
+        "student_top1": 68.19
+      }
+    ],
+    "heterogeneous": [
+      {
+        "key": "res32x4_sv1",
+        "teacher": "ResNet32×4",
+        "teacher_top1": 79.42,
+        "student": "ShuffleNetV1",
+        "student_top1": 69.43
+      },
+      {
+        "key": "wrn402_sv1",
+        "teacher": "WRN-40-2",
+        "teacher_top1": 75.59,
+        "student": "ShuffleNetV1",
+        "student_top1": 69.43
+      },
+      {
+        "key": "vgg13_mv1",
+        "teacher": "VGG13",
+        "teacher_top1": 74.64,
+        "student": "MobileNetV1",
+        "student_top1": 60.09
+      },
+      {
+        "key": "res50_mv1",
+        "teacher": "ResNet50",
+        "teacher_top1": 79.33,
+        "student": "MobileNetV1",
+        "student_top1": 60.09
+      },
+      {
+        "key": "res32x4_sv2",
+        "teacher": "ResNet32×4",
+        "teacher_top1": 79.42,
+        "student": "ShuffleNetV2",
+        "student_top1": 73.5
+      }
+    ]
+  },
+  "cifar_provisional_local_cells": {
+    "vgg13_vgg8": {
+      "KD": "74.39",
+      "ACD": "75.48",
+      "acd_runs": 2,
+      "source": "paired_cifar.vgg13_vgg8"
+    },
+    "vgg13_mv1": {
+      "KD": "67.78",
+      "ACD": "69.71",
+      "acd_runs": 2,
+      "source": "paired_cifar.vgg13_mv1"
+    },
+    "res32x4_res8x4": {
+      "ACD": "78.36",
+      "acd_runs": 3,
+      "source": "extended_cifar_archived_means: ResNet32×4 → ResNet8×4",
+      "DKD": "77.40"
+    },
+    "wrn402_sv1": {
+      "ACD": "78.86",
+      "acd_runs": 2,
+      "source": "extended_cifar_archived_means: WRN40-2 → ShuffleNetV1"
+    }
+  },
+  "user_reported_historical_etf": {
+    "source_type": "user_transcription_of_historical_screenshot",
+    "received_date": "2026-11-16",
+    "source_note": "User supplied these values in the conversation as a transcription of an earlier experiment screenshot; the underlying image, run logs and checkpoints were not supplied in this turn.",
+    "dataset_context": "CIFAR-100",
+    "metric_context": "Reported accuracy (%); intended as Top-1 in the surrounding discussion, pending run metadata confirmation.",
+    "method_labels_as_supplied": [
+      "relation-only",
+      "+ETF初始化"
+    ],
+    "verification_status": "transcribed; arithmetic checked; protocol and mapping to ACD pending",
+    "unknown_metadata": [
+      "evaluation split and size",
+      "final versus best checkpoint",
+      "epoch count",
+      "seed identities and number of runs",
+      "teacher checkpoint",
+      "augmentation and optimization recipe",
+      "standardization and gradient-matching implementation",
+      "ETF construction, lifting and trainability"
+    ],
+    "transcription_note": "The detached +0.30pp in the message is assigned to VGG13 -> VGG8 because 80.52 - 80.22 = 0.30; the other four differences also match their paired values.",
+    "raw_user_text": "配对\nrelation-only\n+ETF初始化\nETF差值\nResNet50>MobileNetV1\n73.30%\n72.80%\n-0.50pp\nWRN40-2+ShuffleNetV1\n81.38%\n81.62%\n+0.24pp\nResNet32x4+ShuffleNetV1\n81.46%\n81.36%\n-0.10pp\nResNet32x4+ShuffleNetV2\n82.28%\n83.12%\n+0.84pp\n+0.30pp\nVGG13→VGG8(同构)\n80.22%\n80.52%",
+    "rows": [
+      {
+        "pair_key": "res50_mv1",
+        "relation_only": "73.30",
+        "plus_etf_init": "72.80",
+        "reported_delta_pp": "-0.50",
+        "n": null,
+        "seeds": null,
+        "delta_pp": -0.5,
+        "delta_display": "-0.50"
+      },
+      {
+        "pair_key": "wrn402_sv1",
+        "relation_only": "81.38",
+        "plus_etf_init": "81.62",
+        "reported_delta_pp": "+0.24",
+        "n": null,
+        "seeds": null,
+        "delta_pp": 0.24,
+        "delta_display": "+0.24"
+      },
+      {
+        "pair_key": "res32x4_sv1",
+        "relation_only": "81.46",
+        "plus_etf_init": "81.36",
+        "reported_delta_pp": "-0.10",
+        "n": null,
+        "seeds": null,
+        "delta_pp": -0.1,
+        "delta_display": "-0.10"
+      },
+      {
+        "pair_key": "res32x4_sv2",
+        "relation_only": "82.28",
+        "plus_etf_init": "83.12",
+        "reported_delta_pp": "+0.84",
+        "n": null,
+        "seeds": null,
+        "delta_pp": 0.84,
+        "delta_display": "+0.84"
+      },
+      {
+        "pair_key": "vgg13_vgg8",
+        "relation_only": "80.22",
+        "plus_etf_init": "80.52",
+        "reported_delta_pp": "+0.30",
+        "n": null,
+        "seeds": null,
+        "delta_pp": 0.3,
+        "delta_display": "+0.30"
+      }
+    ],
+    "descriptive_summary": {
+      "pairs": 5,
+      "positive_pairs": 3,
+      "negative_pairs": 2,
+      "unweighted_mean_delta_pp": 0.156,
+      "mean_delta_display": "0.16",
+      "interpretation": "Descriptive difference across five user-reported pairs, not a seed average or significance test."
+    }
+  },
+  "historical_head_study_recovery": {
+    "path": "historical_results.json",
+    "completed_records": 52,
+    "pairs": 11,
+    "snapshot_finished_at": "2026-10-27T06:34:55.848764+00:00",
+    "method": "Ordinary-KD head study; not full ACD"
+  },
+  "extended_cifar_archived_means": [
+    {
+      "pair": "ResNet32×4 → ResNet8×4",
+      "n": 3,
+      "standardized_full": 77.98,
+      "acd": 78.36,
+      "dkd": 77.4,
+      "source_level": "2026-11-11 ledger means only; per-seed data unavailable locally",
+      "source_reported_gain": "+0.39"
+    },
+    {
+      "pair": "WRN40-2 → ShuffleNetV1",
+      "n": 2,
+      "standardized_full": 78.68,
+      "acd": 78.86,
+      "dkd": null,
+      "source_level": "2026-11-11 ledger means only; per-seed data unavailable locally",
+      "source_reported_gain": "+0.18"
+    }
+  ],
+  "imagenet_snapshot": [
+    {
+      "method": "Teacher (ResNet50)",
+      "n": null,
+      "epoch": null,
+      "status": "revalidated official pretrained teacher",
+      "count": 50000,
+      "top1": 76.146,
+      "top5": 92.872
+    },
+    {
+      "method": "Student (CE)",
+      "n": 1,
+      "seed": 3101,
+      "top1": 68.662,
+      "top5": 88.798,
+      "epoch": 100,
+      "count": 50000,
+      "status": "completed final-checkpoint evaluation",
+      "checkpoint_sha256": "3519ca20e94e375f27b00703eb8e51c2bfcd86a1a222faf6293a8e42ead4bc56"
+    },
+    {
+      "method": "KD",
+      "n": 1,
+      "seed": 3101,
+      "top1": null,
+      "top5": null,
+      "epoch": null,
+      "status": "no completed evaluation available at snapshot",
+      "last_observed_training": {
+        "epoch": 99,
+        "batch": 1600
+      }
+    },
+    {
+      "method": "ACD",
+      "n": null,
+      "epoch": null,
+      "top1": null,
+      "top5": null,
+      "status": "no verified full-run ACD result; I7 pilot is excluded"
+    }
+  ],
+  "plugin": [
+    {
+      "pipeline": "AT + KL",
+      "pair": "ResNet32×4 → ShuffleNetV1",
+      "seed": 2101,
+      "n": 1,
+      "linear_kl": 77.3,
+      "angular_kl": 77.6,
+      "acd": 78.97,
+      "gain_vs_angular_kl": 1.37,
+      "gain_vs_linear_kl": 1.67
+    },
+    {
+      "pipeline": "ReviewKD-style + KL",
+      "pair": "WRN40-2 → WRN40-1",
+      "seed": 2101,
+      "n": 1,
+      "linear_kl": 75.74,
+      "angular_kl": 75.54,
+      "acd": 75.6,
+      "gain_vs_angular_kl": 0.06,
+      "gain_vs_linear_kl": -0.14
+    }
+  ],
+  "efficiency_archived_summary": [
+    {
+      "method": "ACI + KL",
+      "median_ms": 15.09,
+      "relative_to_angular_kl": 1.0
+    },
+    {
+      "method": "DKD",
+      "median_ms": 15.55,
+      "relative_to_angular_kl": 1.0304837640821736
+    },
+    {
+      "method": "ACI + standardized full KL",
+      "median_ms": 15.51,
+      "relative_to_angular_kl": 1.0278330019880715
+    },
+    {
+      "method": "ACD matched relation",
+      "median_ms": 30.04,
+      "relative_to_angular_kl": 1.990722332670643
+    }
+  ],
+  "source_sha256": {
+    "reports/ACD_EVIDENCE_LEDGER_AND_NEXT_PLAN_20261111.md": "e44806ae1971fd60d267350a1631f35ceb52e829d51f3e72582805c7948d5a10",
+    "reports/ACD_CVPR_REVIEWER_AUDIT_20261111.md": "21929aa73544fc9f7b0b46e519aa16edf26b5626919a5a0899035560a67a6b08",
+    "paper_assets/acd_figures/mechanism_figures/acd_evidence_figure_data.json": "5c16a260909a85e28da2afaca8860c3398764df0914a8d5d57719f5e6944d6a1",
+    "reproductions/imagenet1k_acd_20261113/artifacts/real_preflight_20261114_gpu0/preflight.json": "5a960f3e11746568217cfba731bb804027280a55cfd1ca945a342832732c333e",
+    "paper_assets/acd_tables/main_results_20261116/cifar_benchmark_layout.json": "c83b768599ac1f1a81546fb00c7616eb3103f59f960425a0fab84af940d41640",
+    "paper_assets/acd_tables/main_results_20261116/user_reported_etf_20261116.json": "fa1c92c97745ea668f536b6b3338ea177cc1354a0cce4fab2ec6c9830ffd80c0",
+    "reproductions/imagenet1k_acd_20261113/runs/I0_seed3101_baseline_20261114/final.json": "07bd7910de2134e27b92d3dda39592010a7a96d0ca2f4c02fa37b6c89c7fe818"
+  },
+  "source_correction": "Ignored external.ACD=[75.51,75.58] in figure_data; these are full-KL values. Conditional ACD=[75.49,75.46]. Historical input was not edited.",
+  "limits": [
+    "Historical CIFAR endpoint checkpoints/registrations are not locally restored; these tables reconcile retained records, not rerun evaluations.",
+    "ACD denotes angular head plus matched conditional loss; ETF gains are not established by these rows.",
+    "Standard deviations describe two training seeds and are not confidence intervals or significance tests.",
+    "Missing cells are unavailable results, never zeros.",
+    "No training or checkpoint evaluation was performed to generate these tables."
+  ]
+}

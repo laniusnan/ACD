@@ -1,0 +1,42 @@
+% Recovered historical ordinary-KD head study; not full ACD. Requires booktabs.
+\begin{table*}[t]
+\centering\small
+\caption{Recovered homogeneous CIFAR-100 head-study results (Top-1, \%).}
+\label{tab:historical_homogeneous}
+\begin{tabular}{lrrrr}
+\toprule
+Teacher $\to$ student & Paired seeds & Affine KD & Cosine-head KD & $\Delta$ (pp) \\
+\midrule
+ResNet56 $\to$ ResNet20 & 5 & $72.07\pm0.23$ & $72.45\pm0.09$ & +0.39 \\
+ResNet110 $\to$ ResNet32 & 2 & $74.39\pm0.48$ & $74.37\pm0.25$ & -0.02 \\
+ResNet32$\times$4 $\to$ ResNet8$\times$4 & 5 & $74.99\pm0.24$ & $77.25\pm0.19$ & +2.27 \\
+WRN-40-2 $\to$ WRN-16-2 & 2 & $76.54\pm0.40$ & $77.21\pm0.23$ & +0.67 \\
+WRN-40-2 $\to$ WRN-40-1 & 2 & $75.22\pm0.10$ & $75.50\pm0.39$ & +0.28 \\
+VGG13 $\to$ VGG8 & 1 & $74.45$ & $75.13$ & +0.68 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{0.95\textwidth}\footnotesize
+Mean $\pm$ sample SD over common completed seeds in the 2026-10-27 snapshot; no SD for a single seed. All heads use ordinary KL, not SICD. Results use the historical double-view recipe and must not be ranked against later ACD runs from other recipes.
+\end{minipage}
+\end{table*}
+
+\begin{table*}[t]
+\centering\small
+\caption{Recovered heterogeneous CIFAR-100 head-study results (Top-1, \%).}
+\label{tab:historical_heterogeneous}
+\begin{tabular}{lrrrr}
+\toprule
+Teacher $\to$ student & Paired seeds & Affine KD & Cosine-head KD & $\Delta$ (pp) \\
+\midrule
+ResNet32$\times$4 $\to$ ShuffleNetV1 & 2 & $73.55\pm0.91$ & $75.80\pm0.25$ & +2.25 \\
+WRN-40-2 $\to$ ShuffleNetV1 & 1 & $73.48$ & $75.41$ & +1.93 \\
+VGG13 $\to$ MobileNetV1 & 1 & $59.12$ & $58.24$ & -0.88 \\
+ResNet50 $\to$ MobileNetV1 & 1 & $58.53$ & $58.72$ & +0.19 \\
+ResNet32$\times$4 $\to$ ShuffleNetV2 & 1 & $72.60$ & $74.58$ & +1.98 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{0.95\textwidth}\footnotesize
+Mean $\pm$ sample SD over common completed seeds in the 2026-10-27 snapshot; no SD for a single seed. All heads use ordinary KL, not SICD. Results use the historical double-view recipe and must not be ranked against later ACD runs from other recipes.
+\end{minipage}
+\end{table*}
+

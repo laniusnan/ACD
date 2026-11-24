@@ -1,0 +1,19 @@
+% Upload figures/final_method_figure.pdf alongside this snippet in Overleaf.
+% Requires \usepackage{graphicx} in the document preamble.
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{final_method_figure.pdf}
+  \caption{\textbf{Overview of ACI and SICD.}
+  ACI parameterizes student logits using feature--classifier
+  cosine similarities with a shared scale, removing explicit
+  feature magnitude, class-specific weight norms, and biases.
+  The teacher retains its original classifier.
+  SICD standardizes teacher and student logits and matches
+  their non-target conditional distributions, weighted by
+  the teacher's non-target probability mass.
+  A detached gradient-strength matching factor calibrates
+  the conditional objective against standardized full KL.
+  The student is trained jointly with ground-truth
+  cross-entropy supervision.}
+  \label{fig:method_overview}
+\end{figure*}

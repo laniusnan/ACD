@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img">
+<title>Output-objective comparison</title><desc>Each colored point is one completed arm&#x27;s epoch-240 location on two fixed-probe discrepancy coordinates.</desc>
+<rect width="1200" height="690" fill="white"/>
+<text x="150.00" y="38.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172B3A">Output-objective comparison</text>
+<text x="150.00" y="62.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#627381">VGG13 → VGG8 · protocol-mixed descriptive snapshot; not a fair ranking</text>
+<line x1="150.00" y1="80.00" x2="150.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="570.00" x2="910.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="150.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.035</text>
+<text x="138.00" y="574.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">0.79</text>
+<line x1="302.00" y1="80.00" x2="302.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="472.00" x2="910.00" y2="472.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="302.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.038</text>
+<text x="138.00" y="476.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.12</text>
+<line x1="454.00" y1="80.00" x2="454.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="374.00" x2="910.00" y2="374.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="454.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.042</text>
+<text x="138.00" y="378.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.45</text>
+<line x1="606.00" y1="80.00" x2="606.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="276.00" x2="910.00" y2="276.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="606.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.045</text>
+<text x="138.00" y="280.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.78</text>
+<line x1="758.00" y1="80.00" x2="758.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="178.00" x2="910.00" y2="178.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="758.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.048</text>
+<text x="138.00" y="182.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">2.11</text>
+<line x1="910.00" y1="80.00" x2="910.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="80.00" x2="910.00" y2="80.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="910.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.051</text>
+<text x="138.00" y="84.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">2.44</text>
+<line x1="150.00" y1="80.00" x2="150.00" y2="570.00" stroke="#9EABB5" stroke-width="1.2"/>
+<line x1="150.00" y1="570.00" x2="910.00" y2="570.00" stroke="#9EABB5" stroke-width="1.2"/>
+<text x="530.00" y="623.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#172B3A">Standardized non-target relation discrepancy ↓</text>
+<text x="44" y="325.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#172B3A" transform="rotate(-90 44 325.00)">Raw-logit KL discrepancy ↓</text>
+<circle cx="580.92" cy="501.12" r="9" fill="#4F86B5" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="125.00" r="5" fill="#4F86B5" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="130.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">Cosine KL</text>
+<circle cx="388.35" cy="529.17" r="9" fill="#8A71AB" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="158.00" r="5" fill="#8A71AB" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="163.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">DKD</text>
+<circle cx="499.74" cy="168.81" r="9" fill="#B96878" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="191.00" r="5" fill="#B96878" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="196.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">NCKD</text>
+<circle cx="671.65" cy="120.83" r="9" fill="#A68D69" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="224.00" r="5" fill="#A68D69" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="229.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">LSKD</text>
+<circle cx="532.83" cy="158.38" r="9" fill="#2F8A70" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="257.00" r="5" fill="#2F8A70" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="262.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">ACD</text>
+<text x="150.00" y="672.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#627381">Each point is the final epoch-240 checkpoint. Coordinates are fixed-probe diagnostics, not Top-1.</text>
+</svg>

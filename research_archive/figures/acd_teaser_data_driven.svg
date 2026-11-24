@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+  <style>
+    .title { font: 700 34px Arial, sans-serif; fill:#1E293B; }
+    .sub { font: 500 19px Arial, sans-serif; fill:#536274; }
+    .pt { font: 700 25px Arial, sans-serif; fill:#1E293B; }
+    .label { font: 600 17px Arial, sans-serif; fill:#304257; }
+    .small { font: 500 15px Arial, sans-serif; fill:#536274; }
+    .tiny { font: 500 13px Arial, sans-serif; fill:#64748B; }
+    .value { font: 700 16px Arial, sans-serif; fill:#1E293B; }
+  </style>
+  <rect width="1800" height="900" fill="white"/>
+  <text x="900" y="55" text-anchor="middle" class="title">Why Raw Logit Matching Is Unreliable, and What ACD Changes</text>
+  <text x="900" y="87" text-anchor="middle" class="sub">Read-only analysis of fixed CIFAR-100 test indices 0–255 using completed ViT-T → ResNet8×4 checkpoints (seed 2102).</text>
+
+  <!-- Panel a -->
+  <rect x="45" y="125" width="545" height="650" rx="20" fill="#FFF9F8" stroke="#EAB6B1" stroke-width="2"/>
+  <circle cx="82" cy="164" r="20" fill="#D65F5F"/><text x="82" y="171" text-anchor="middle" fill="white" style="font:700 17px Arial">a</text>
+  <text x="115" y="172" class="pt">Raw magnitudes and biases change class relations</text>
+  <text x="115" y="201" class="sub">Non-target class ordering changes in actual trained models</text>
+  <line x1="115" y1="635" x2="544" y2="635" stroke="#A5B2C1" stroke-width="1.5"/>
+  <line x1="115" y1="505" x2="544" y2="505" stroke="#D7E0E9" stroke-width="1"/>
+  <line x1="115" y1="375" x2="544" y2="375" stroke="#D7E0E9" stroke-width="1"/>
+  <line x1="115" y1="245" x2="544" y2="245" stroke="#D7E0E9" stroke-width="1"/>
+  <text x="103" y="640" text-anchor="end" class="tiny">0</text><text x="103" y="510" text-anchor="end" class="tiny">10</text><text x="103" y="380" text-anchor="end" class="tiny">20</text><text x="103" y="250" text-anchor="end" class="tiny">30%</text>
+  <!-- bars: actual top1 changed, 17.58/22.66/26.95/.78 -->
+  <rect x="153" y="406" width="52" height="229" fill="#D65F5F"/><text x="179" y="393" text-anchor="middle" class="value">17.6</text>
+  <rect x="257" y="340" width="52" height="295" fill="#D65F5F"/><text x="283" y="327" text-anchor="middle" class="value">22.7</text>
+  <rect x="361" y="285" width="52" height="350" fill="#D65F5F"/><text x="387" y="272" text-anchor="middle" class="value">27.0</text>
+  <rect x="465" y="625" width="52" height="10" fill="#D65F5F"/><text x="491" y="612" text-anchor="middle" class="value">0.8</text>
+  <text x="179" y="663" text-anchor="middle" class="small">Teacher</text><text x="179" y="684" text-anchor="middle" class="tiny">magnitude</text>
+  <text x="283" y="663" text-anchor="middle" class="small">Teacher</text><text x="283" y="684" text-anchor="middle" class="tiny">bias</text>
+  <text x="387" y="663" text-anchor="middle" class="small">Student</text><text x="387" y="684" text-anchor="middle" class="tiny">magnitude</text>
+  <text x="491" y="663" text-anchor="middle" class="small">Student</text><text x="491" y="684" text-anchor="middle" class="tiny">bias</text>
+  <rect x="115" y="714" width="429" height="38" rx="9" fill="#FDECEC"/>
+  <text x="330" y="739" text-anchor="middle" class="small">Raw $z_k$ need not preserve the directional non-target relation.</text>
+
+  <!-- panel b -->
+  <rect x="627" y="125" width="545" height="650" rx="20" fill="#F5FAFE" stroke="#A9CEE9" stroke-width="2"/>
+  <circle cx="664" cy="164" r="20" fill="#2878B5"/><text x="664" y="171" text-anchor="middle" fill="white" style="font:700 17px Arial">b</text>
+  <text x="697" y="172" class="pt">ACI defines angular category coordinates</text>
+  <text x="697" y="201" class="sub">Same 100 learned student classes; effective forward coordinates</text>
+  <text x="899" y="252" text-anchor="middle" class="label">Linear classifier</text>
+  <text x="1057" y="252" text-anchor="middle" class="label">Angular Coordinate Interface</text>
+  <!-- Linear plot -->
+  <line x1="700" y1="555" x2="1090" y2="555" stroke="#A5B2C1"/><line x1="700" y1="310" x2="700" y2="555" stroke="#A5B2C1"/>
+  <text x="687" y="559" text-anchor="end" class="tiny">0</text><text x="687" y="437" text-anchor="end" class="tiny">1</text><text x="687" y="315" text-anchor="end" class="tiny">2</text>
+  <text x="721" y="581" class="tiny">linear ‖wₖ‖</text><text x="865" y="581" class="tiny">linear |bₖ|</text><text x="1002" y="581" class="tiny">ACI ‖ŵₖ‖</text>
+  <!-- weight norm clouds -->
+  <g fill="#D65F5F" opacity=".75">
+   <circle cx="740" cy="335" r="5"/><circle cx="751" cy="360" r="5"/><circle cx="760" cy="385" r="5"/><circle cx="770" cy="405" r="5"/><circle cx="742" cy="425" r="5"/><circle cx="752" cy="446" r="5"/><circle cx="765" cy="467" r="5"/><circle cx="776" cy="489" r="5"/><circle cx="737" cy="515" r="5"/><circle cx="758" cy="529" r="5"/>
+  </g>
+  <g fill="#D28D36" opacity=".75"><circle cx="885" cy="542" r="5"/><circle cx="900" cy="537" r="5"/><circle cx="915" cy="545" r="5"/><circle cx="930" cy="530" r="5"/><circle cx="944" cy="540" r="5"/><circle cx="959" cy="535" r="5"/><circle cx="974" cy="548" r="5"/></g>
+  <g fill="#2878B5" opacity=".8"><circle cx="1025" cy="433" r="5"/><circle cx="1040" cy="433" r="5"/><circle cx="1055" cy="433" r="5"/><circle cx="1070" cy="433" r="5"/><circle cx="1085" cy="433" r="5"/></g>
+  <line x1="1010" y1="433" x2="1100" y2="433" stroke="#2878B5" stroke-width="2" stroke-dasharray="4 4"/>
+  <rect x="700" y="627" width="405" height="105" rx="10" fill="white" stroke="#CFE3F2"/>
+  <text x="721" y="656" class="label">Forward score comparison</text>
+  <text x="721" y="686" class="small">Linear:  zₖ = ‖wₖ‖ ‖h‖ cos θₖ + bₖ</text>
+  <text x="721" y="714" class="small" fill="#2878B5">ACI:  zₖ = γ cos θₖ  (effective ‖ŵₖ‖=1, bₖ=0)</text>
+
+  <!-- Panel c -->
+  <rect x="1209" y="125" width="545" height="650" rx="20" fill="#F5FBF8" stroke="#AAD8C3" stroke-width="2"/>
+  <circle cx="1246" cy="164" r="20" fill="#3A9D72"/><text x="1246" y="171" text-anchor="middle" fill="white" style="font:700 17px Arial">c</text>
+  <text x="1279" y="172" class="pt">SICD selects the conditional relation signal</text>
+  <text x="1279" y="201" class="sub">Exact finite-temperature decomposition after standardization</text>
+  <text x="1482" y="262" text-anchor="middle" class="label">Completed cosine standardized-full checkpoint</text>
+  <!-- stacked bar 4.46 /95.54 -->
+  <rect x="1355" y="300" width="250" height="340" rx="10" fill="#3A9D72"/>
+  <rect x="1355" y="625" width="250" height="15" rx="3" fill="#BBC5D0"/>
+  <text x="1480" y="478" text-anchor="middle" fill="white" style="font:700 24px Arial">95.5%</text>
+  <text x="1480" y="505" text-anchor="middle" fill="white" style="font:500 17px Arial">conditional non-target relation</text>
+  <text x="1480" y="619" text-anchor="middle" class="tiny">4.5% target-confidence term</text>
+  <text x="1480" y="676" text-anchor="middle" class="label">SICD directly distills this conditional component</text>
+  <text x="1480" y="705" text-anchor="middle" class="small">rather than directly enforcing absolute target confidence.</text>
+  <rect x="1268" y="724" width="430" height="28" rx="8" fill="#E8F4ED"/>
+  <text x="1483" y="744" text-anchor="middle" class="tiny">256 fixed test examples · T=4 · KL = binary confidence + conditional relation</text>
+
+  <path d="M 566 807 C 740 807 825 807 895 807" fill="none" stroke="#D65F5F" stroke-width="3"/>
+  <path d="M 1142 807 C 1260 807 1360 807 1434 807" fill="none" stroke="#2878B5" stroke-width="3"/>
+  <text x="900" y="852" text-anchor="middle" class="pt">ACD: establish compatible category coordinates, then transfer compatible conditional relations.</text>
+</svg>

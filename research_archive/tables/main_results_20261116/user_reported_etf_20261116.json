@@ -1,0 +1,19 @@
+{
+  "source_type": "user_transcription_of_historical_screenshot",
+  "received_date": "2026-11-16",
+  "source_note": "User supplied these values in the conversation as a transcription of an earlier experiment screenshot; the underlying image, run logs and checkpoints were not supplied in this turn.",
+  "dataset_context": "CIFAR-100",
+  "metric_context": "Reported accuracy (%); intended as Top-1 in the surrounding discussion, pending run metadata confirmation.",
+  "method_labels_as_supplied": ["relation-only", "+ETF初始化"],
+  "verification_status": "transcribed; arithmetic checked; protocol and mapping to ACD pending",
+  "unknown_metadata": ["evaluation split and size", "final versus best checkpoint", "epoch count", "seed identities and number of runs", "teacher checkpoint", "augmentation and optimization recipe", "standardization and gradient-matching implementation", "ETF construction, lifting and trainability"],
+  "transcription_note": "The detached +0.30pp in the message is assigned to VGG13 -> VGG8 because 80.52 - 80.22 = 0.30; the other four differences also match their paired values.",
+  "raw_user_text": "配对\nrelation-only\n+ETF初始化\nETF差值\nResNet50>MobileNetV1\n73.30%\n72.80%\n-0.50pp\nWRN40-2+ShuffleNetV1\n81.38%\n81.62%\n+0.24pp\nResNet32x4+ShuffleNetV1\n81.46%\n81.36%\n-0.10pp\nResNet32x4+ShuffleNetV2\n82.28%\n83.12%\n+0.84pp\n+0.30pp\nVGG13→VGG8(同构)\n80.22%\n80.52%",
+  "rows": [
+    {"pair_key": "res50_mv1", "relation_only": "73.30", "plus_etf_init": "72.80", "reported_delta_pp": "-0.50", "n": null, "seeds": null},
+    {"pair_key": "wrn402_sv1", "relation_only": "81.38", "plus_etf_init": "81.62", "reported_delta_pp": "+0.24", "n": null, "seeds": null},
+    {"pair_key": "res32x4_sv1", "relation_only": "81.46", "plus_etf_init": "81.36", "reported_delta_pp": "-0.10", "n": null, "seeds": null},
+    {"pair_key": "res32x4_sv2", "relation_only": "82.28", "plus_etf_init": "83.12", "reported_delta_pp": "+0.84", "n": null, "seeds": null},
+    {"pair_key": "vgg13_vgg8", "relation_only": "80.22", "plus_etf_init": "80.52", "reported_delta_pp": "+0.30", "n": null, "seeds": null}
+  ]
+}

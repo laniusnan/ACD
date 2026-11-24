@@ -1,0 +1,65 @@
+% Requires booktabs. Reference headers are user supplied; local cells remain provisional.
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Homogeneous CIFAR-100 benchmark layout with provisional local results (Top-1, \%).}
+\label{tab:cifar_homo}
+\begin{tabular}{lcccccc}
+\toprule
+Method / Teacher & ResNet56 & ResNet110 & ResNet32$\times$4 & WRN-40-2 & WRN-40-2 & VGG13 \\
+\midrule
+Teacher Top-1 (reference) & 72.40 & 74.31 & 79.42 & 75.59 & 75.59 & 74.64 \\
+Student & ResNet20 & ResNet32 & ResNet8$\times$4 & WRN-16-2 & WRN-40-1 & VGG8 \\
+Student Top-1 (reference) & 65.79 & 67.92 & 72.48 & 71.12 & 69.54 & 68.19 \\
+KD$^{\dagger}$ & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & 74.39 \\
+DKD$^{\dagger}$ & \textemdash & \textemdash & 77.40 & \textemdash & \textemdash & \textemdash \\
+NormKD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+CRD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+ReviewKD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+ACD$^{\dagger}$ & \textemdash & \textemdash & 78.36 & \textemdash & \textemdash & 75.48 \\
+ACD runs & \textemdash & \textemdash & 3 & \textemdash & \textemdash & 2 \\
+Reported relation-only* & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & 80.22 \\
+Reported +ETF init.* & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & 80.52 \\
+Reported ETF delta (pp)* & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash & +0.30 \\
+Recovered historical head-study runs & 10 & 5 & 15 & 4 & 4 & 2 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.96\textwidth}\footnotesize
+Teacher/student reference accuracies are supplied by the user and are not local checkpoint re-evaluations. $^{\dagger}$ Local experimental records are provisionally placed by architecture pair; protocol compatibility with the reference table must be checked before ranking. Dashes denote entries unavailable for this method/protocol, not evidence that a pair was never trained. 52 completed ordinary-KD head-study records cover all 11 pairs; these are summarized separately in the historical recovery tables, not relabeled as ACD. Feature-pipeline combinations are excluded from standalone ACD cells. * User-transcribed historical screenshot values: evaluation split, checkpoint selection, run count, recipe and equivalence to ACD remain unverified. They are retained separately from archived ACD means and are not used for ranking.
+\end{minipage}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Heterogeneous CIFAR-100 benchmark layout with provisional local results (Top-1, \%).}
+\label{tab:cifar_hetero}
+\begin{tabular}{lccccc}
+\toprule
+Method / Teacher & ResNet32$\times$4 & WRN-40-2 & VGG13 & ResNet50 & ResNet32$\times$4 \\
+\midrule
+Teacher Top-1 (reference) & 79.42 & 75.59 & 74.64 & 79.33 & 79.42 \\
+Student & ShuffleNetV1 & ShuffleNetV1 & MobileNetV1 & MobileNetV1 & ShuffleNetV2 \\
+Student Top-1 (reference) & 69.43 & 69.43 & 60.09 & 60.09 & 73.50 \\
+KD$^{\dagger}$ & \textemdash & \textemdash & 67.78 & \textemdash & \textemdash \\
+DKD$^{\dagger}$ & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+NormKD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+CRD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+ReviewKD & \textemdash & \textemdash & \textemdash & \textemdash & \textemdash \\
+ACD$^{\dagger}$ & \textemdash & 78.86 & 69.71 & \textemdash & \textemdash \\
+ACD runs & \textemdash & 2 & 2 & \textemdash & \textemdash \\
+Reported relation-only* & 81.46 & 81.38 & \textemdash & 73.30 & 82.28 \\
+Reported +ETF init.* & 81.36 & 81.62 & \textemdash & 72.80 & 83.12 \\
+Reported ETF delta (pp)* & -0.10 & +0.24 & \textemdash & -0.50 & +0.84 \\
+Recovered historical head-study runs & 4 & 2 & 2 & 2 & 2 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.96\textwidth}\footnotesize
+Teacher/student reference accuracies are supplied by the user and are not local checkpoint re-evaluations. $^{\dagger}$ Local experimental records are provisionally placed by architecture pair; protocol compatibility with the reference table must be checked before ranking. Dashes denote entries unavailable for this method/protocol, not evidence that a pair was never trained. 52 completed ordinary-KD head-study records cover all 11 pairs; these are summarized separately in the historical recovery tables, not relabeled as ACD. Feature-pipeline combinations are excluded from standalone ACD cells. * User-transcribed historical screenshot values: evaluation split, checkpoint selection, run count, recipe and equivalence to ACD remain unverified. They are retained separately from archived ACD means and are not used for ranking.
+\end{minipage}
+\end{table*}
+

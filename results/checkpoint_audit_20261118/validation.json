@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "csv_row_counts": {
+    "coverage.csv": 77,
+    "missing_cells.csv": 39,
+    "runs.csv": 120,
+    "record_only.csv": 25,
+    "training_gaps.csv": 39,
+    "recipe_alignment_gaps.csv": 6
+  },
+  "unique_cells": 77,
+  "unique_source_checkpoints_or_recorded_hashes": 120,
+  "teachers_cover_all_11_pairs": true,
+  "cell_gap_partition": {
+    "supported": 16,
+    "rotating_head_integration": 11,
+    "dimension_design": 12
+  },
+  "test_scope": "Inventory consistency, source-file integrity and current release metadata; no new model training or full test evaluation"
+}

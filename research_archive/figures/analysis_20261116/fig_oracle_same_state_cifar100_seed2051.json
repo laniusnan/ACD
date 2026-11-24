@@ -1,0 +1,152 @@
+{
+  "seed": 2051,
+  "design": "Four ECDFs and paired post-oracle differences from the same frozen linear checkpoint",
+  "probe": {
+    "identity": {
+      "seed": 2051,
+      "epoch": 240,
+      "release": "model-backup-20261027",
+      "release_student_path": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/last.pth",
+      "student_sha256": "7f8a5d67db946b80a6f3b4fe0841e609365f4cf94063892afc55c6affa847a7b",
+      "teacher_sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d",
+      "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+      "dataset": "CIFAR-100",
+      "split": "test",
+      "samples": 10000,
+      "ordering": "torchvision CIFAR100 test order; no shuffle or augmentation",
+      "data_sha256": {
+        "test": "4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864",
+        "meta": "a5d4786345c961390f865e93b434dbd5c6904ce880667e0cb888c97d449f28b9"
+      },
+      "sources_sha256": {
+        "paper_assets/acd_figures/analysis_20261116/probe_cifar100_same_state.py": "04466a9f3aa1a82de3633e6f34e14c1f63b21fbb7343cf45a385818934c18f93",
+        "reproductions/head_transfer_20261021/methods.py": "d569401dd450a264c4810536de6932409228afd0c5bc95d5cc3d627d8e439bea",
+        "reproductions/head_transfer_20261021/study.json": "4746ac56cf38a5e9873da879adbb44896ef56cdf75b2e713c19fef0d61b65151",
+        "reproductions/head_transfer_20261021/frozen/models/resnet.py": "7776ef927a874fc4e1ae05bd1ae786a972d4b1f1d8e49ac60b92187b93aafdf9"
+      },
+      "runtime": {
+        "python": "3.12.16",
+        "torch": "2.9.0+cu126",
+        "torchvision": "0.24.0+cu126",
+        "numpy": "1.26.4",
+        "device": "cpu",
+        "threads": 4,
+        "batch_size": 128
+      }
+    },
+    "checks": {
+      "state_before": {
+        "student": "3a3163c13499f8a6c835dd61945697c9adb46ec426010b2bd46f74b5c4aeb83c",
+        "teacher": "a8ca0dca79092996923da18fae04dc24f027c7eb58423c2851ebf4838dbb307c"
+      },
+      "state_after": {
+        "student": "3a3163c13499f8a6c835dd61945697c9adb46ec426010b2bd46f74b5c4aeb83c",
+        "teacher": "a8ca0dca79092996923da18fae04dc24f027c7eb58423c2851ebf4838dbb307c"
+      },
+      "state_unchanged": true,
+      "affine_reconstruction_max_abs": 0.0,
+      "zero_feature_count": 0,
+      "zero_classifier_row_count": 0,
+      "historical_absolute_errors": {
+        "before": 4.779325823989211e-10,
+        "after": 6.804451446740245e-10
+      }
+    },
+    "temperature": 4.0,
+    "loss_factor": 8.0,
+    "angular_scale": 30.0,
+    "scalar_domain": "alpha >= 0",
+    "target": "fixed original teacher softmax(logits / 4) for both representations",
+    "training": "none; post-hoc head substitution on one frozen linear checkpoint",
+    "cases": {
+      "affine": {
+        "before": {
+          "mean": 1.2198129667053796,
+          "median": 0.8755765682454622,
+          "q25": 0.58262897858609,
+          "q75": 1.4102435312151984,
+          "min": 0.07061969902557905,
+          "max": 14.929047054442846
+        },
+        "after": {
+          "mean": 0.5574744676439393,
+          "median": 0.42598065482186454,
+          "q25": 0.2678738162888399,
+          "q75": 0.6748977376852316,
+          "min": 0.04627661579682636,
+          "max": 10.724160397236824
+        },
+        "alpha": {
+          "mean": 0.8472796885236011,
+          "median": 0.8113427931017507,
+          "q25": 0.6761999263664885,
+          "q75": 0.9826463482333279,
+          "min": 0.2448215218175664,
+          "max": 2.82939732186413
+        },
+        "boundary_zero_count": 0,
+        "interior_derivative_max_abs": 2.6645352591003757e-15,
+        "calibration_increased_count": 0
+      },
+      "angular": {
+        "before": {
+          "mean": 1.3265273033948208,
+          "median": 0.9961366964777056,
+          "q25": 0.695867897971095,
+          "q75": 1.5632802628112787,
+          "min": 0.11553858653712276,
+          "max": 13.627859909002163
+        },
+        "after": {
+          "mean": 0.5600698267277151,
+          "median": 0.41986134305657,
+          "q25": 0.26065224118124014,
+          "q75": 0.6802427325164784,
+          "min": 0.046921277974035336,
+          "max": 10.86630600815979
+        },
+        "alpha": {
+          "mean": 0.8063358362741158,
+          "median": 0.7682448677140423,
+          "q25": 0.6421409326895564,
+          "q75": 0.9283714612915992,
+          "min": 0.2054264779809563,
+          "max": 2.578353410343098
+        },
+        "boundary_zero_count": 0,
+        "interior_derivative_max_abs": 2.220446049250313e-15,
+        "calibration_increased_count": 0
+      }
+    },
+    "paired_delta": {
+      "mean": 0.002595359083775893,
+      "median": -0.00306416955598357,
+      "q25": -0.029137279847342146,
+      "q75": 0.02178424222224125,
+      "min": -1.4123935747406033,
+      "max": 2.568231855731469,
+      "angular_better_fraction": 0.5428,
+      "definition": "angular_after - affine_after"
+    },
+    "accuracy_percent": {
+      "teacher": 79.42,
+      "affine": 75.18,
+      "angular": 75.11
+    },
+    "oracle_arrays_sha256": "03662cccdfdb8f5a4fb53946c2275d673d4e75f2426a01eb6028a0a737f37347"
+  },
+  "source": "paper_assets/acd_figures/analysis_20261116/artifacts/cifar100_same_state_seed2051/report.json",
+  "source_sha256": "182cde3890384ef3cfd43a1372551c59d1276c64755dcff61cc380b07946c3b8",
+  "script_sha256": "b83789f29cdd9e0fdddf73954a00c59f99ddbe5472206a29597738457b70600b",
+  "output_sha256": {
+    "fig_oracle_same_state_cifar100_seed2051.pdf": "b2558cfd5d46f849f346cfbac4d871dcd53bb8ec0c5b1523aa4b6449c8d65359",
+    "fig_oracle_same_state_cifar100_seed2051.svg": "42499582f78557d39c5b228d2273421f01b3e61db8b444549547814dac2b3223",
+    "fig_oracle_same_state_cifar100_seed2051.png": "5f90bb7ebfe3bb1ebc056c23602c244b61e9344e5c2f63b80ceb00c299666902"
+  },
+  "plot_checks": {
+    "text_inside_canvas": true,
+    "all_samples_plotted": true
+  },
+  "new_training_performed": false,
+  "new_evaluation_performed": true
+}

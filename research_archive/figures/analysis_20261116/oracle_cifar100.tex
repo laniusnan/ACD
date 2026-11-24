@@ -1,0 +1,21 @@
+\paragraph{Is the mismatch merely a scalar confidence error?}
+Teacher--student output discrepancies may reflect differences in overall confidence rather than class-relative structure.
+We test this explanation using an oracle that independently rescales each student's logit vector to minimize its KL divergence to the fixed teacher distribution.
+On all 10,000 CIFAR-100 test images, using the historical ResNet32$\times$4--ResNet8$\times$4 linear-KD checkpoint (seed 2051), calibration reduces the mean weighted divergence from 1.2198 to 0.5575 ($8\,\mathrm{KL}$ at $T=4$; Fig.~\ref{fig:oracle_calib_cifar}).
+Thus, 45.7\% of the original mean discrepancy remains even under this per-image oracle, ruling out a purely positive-scalar explanation for this endpoint.
+However, a same-state control shows that replacing the affine readout with angular scores, while fixing the features, classifier directions, and teacher targets, does not reduce the mean calibrated residual (0.5575 versus 0.5601; Fig.~\ref{fig:oracle_same_state_cifar}).
+These observations establish a mismatch beyond scalar confidence, but do not uniquely identify classifier geometry as its cause or show that post-hoc normalization resolves it; we therefore examine the effect of training with an angular interface separately.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{paper_assets/acd_figures/analysis_20261116/fig_oracle_calib_seed2051.pdf}
+  \caption{Oracle scalar calibration of one linear-KD checkpoint on CIFAR-100 (seed 2051, epoch 240). The two curves show the empirical cumulative distributions of per-image divergence before and after independently minimizing $8\,\mathrm{KL}(p_t\Vert\operatorname{softmax}(\alpha z_s/T))$ over $\alpha\geq0$, with $T=4$ and fixed $p_t=\operatorname{softmax}(z_t/T)$. All 10,000 test images are included; the horizontal axis uses a symmetric-logarithmic scale. Calibration reduces the mean error but leaves a substantial residual. This is a diagnostic oracle, not a deployable calibration procedure.}
+  \label{fig:oracle_calib_cifar}
+\end{figure}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{paper_assets/acd_figures/analysis_20261116/fig_oracle_same_state_cifar100_seed2051.pdf}
+  \caption{Same-state oracle probe on CIFAR-100. We compare the original affine logits $Wf+b$ with post-hoc angular scores $30\cos\theta$ from the same frozen linear-KD checkpoint, without retraining. Features, classifier directions, test images, and teacher target distributions are fixed; each representation receives its own per-image optimal scalar. Left: four ECDFs for the two readouts before and after calibration. Right: paired post-calibration differences, angular minus affine, in units of $8\,\mathrm{KL}$; negative values favor the angular readout. Angular substitution improves 54.28\% of images, but the mean difference is $+0.0026$ (median $-0.0031$). The experiment does not show a reduction in mean residual from post-hoc angular substitution and should not be confused with comparing separately trained linear and cosine models.}
+  \label{fig:oracle_same_state_cifar}
+\end{figure*}

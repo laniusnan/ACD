@@ -1,0 +1,21 @@
+{
+  "repository": "laniusnan/KD",
+  "local_source_commit": "f2e97f845b0c5f927441bcb2c932c14214b7323f",
+  "files": [
+    {
+      "destination": "figs/method.png",
+      "source": "paper_assets/acd_figures/diagram_drafts_20261116/v4_horizontal/figures/method_horizontal.png",
+      "sha256": "e357ede794a71ba76d723bcde1ec1c85a63d640f843e51ba196e5e1efff3c3d2"
+    },
+    {
+      "destination": "figs/method.pdf",
+      "source": "paper_assets/acd_figures/diagram_drafts_20261116/v4_horizontal/figures/method_horizontal.pdf",
+      "sha256": "c5c0662256d554b4b432f1591ce2e96a2bbf96aca298a1a28e43be1e429cee65"
+    },
+    {
+      "destination": "figs/method.svg",
+      "source": "paper_assets/acd_figures/diagram_drafts_20261116/v4_horizontal/figures/method_horizontal.svg",
+      "sha256": "9970e6f7bf45b072f5013fc9dcf7e794628bee2a7c3fab92e417da55626060dd"
+    }
+  ]
+}

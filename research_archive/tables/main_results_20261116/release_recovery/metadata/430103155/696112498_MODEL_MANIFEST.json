@@ -1,0 +1,2272 @@
+{
+  "format": "content-addressed-independent-tar-v1",
+  "repository": "laniusnan/KD",
+  "tag": "kd-head-models-20261031-final",
+  "source_commit": "cde7c065162ca8d7a3c5fcd7c0a4f55519e8b70a",
+  "created_at": "2026-10-31T18:13:14.731406+00:00",
+  "files": [
+    {
+      "path": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/epoch000.pth",
+      "group": "accepted_kd_heads_20261030",
+      "role": "model",
+      "completion_evidence": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/status.json",
+      "status_sha256": "03ca848209dc88719338a097d9f6bad2088fa750628470dde56faa137da87790",
+      "sha256": "b1e74e7d5247c556e14210d6a609595feafdef2b2858b5bcde52aacc2961e851",
+      "bytes": 4008935,
+      "archive": "accepted_kd_heads_20261030-000.tar.gz"
+    },
+    {
+      "path": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/epoch001.pth",
+      "group": "accepted_kd_heads_20261030",
+      "role": "model",
+      "completion_evidence": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/status.json",
+      "status_sha256": "03ca848209dc88719338a097d9f6bad2088fa750628470dde56faa137da87790",
+      "sha256": "5c61fe1593fc8ea8ee918c8335d797e61761fd2b3e2e2f89342e5e7094d54a9e",
+      "bytes": 7847167,
+      "archive": "accepted_kd_heads_20261030-000.tar.gz"
+    },
+    {
+      "path": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/last.pth",
+      "group": "accepted_kd_heads_20261030",
+      "role": "model",
+      "completion_evidence": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/status.json",
+      "status_sha256": "03ca848209dc88719338a097d9f6bad2088fa750628470dde56faa137da87790",
+      "sha256": "e2d8e1a8331ff93aeb732a4a61dd8fe8733cbab4a5ce5ce62655039f54586f20",
+      "bytes": 7910719,
+      "archive": "accepted_kd_heads_20261030-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/epoch000.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "sha256": "e6ee2291e7124ce55d379c338d58b9675e1419dfb1c1367f131d5a4ce4e7d4ed",
+      "bytes": 6826461,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/epoch001.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "sha256": "4009231227da310ed28f3b51462b7b17650c6a424041bf9f7f7904f8a9c08617",
+      "bytes": 13504913,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/epoch030.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "sha256": "3c6be34bf8590165a6f7f54a0d9313eca43d97cf1266e064e7d15e78ed336364",
+      "bytes": 13513233,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/epoch150.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "sha256": "9664524bf6d2b23d96cbfa033dfa99e7159a63b78a8bc98e0ffe851280b9b405",
+      "bytes": 13548049,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/last.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "sha256": "0825bdbf0d594fc8412327df3938d7b9eb60920919e31d53dfc44d42caf737b1",
+      "bytes": 13574161,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/epoch000.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "sha256": "2ba4593a3863c67d210af86823b7c4ade7728a9cc0c82b89133d6c958e50121b",
+      "bytes": 4049445,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/epoch001.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "sha256": "a07c72fd39756f05205cd0856369986798e500a507a5a0081baa14db34420940",
+      "bytes": 7887741,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/epoch030.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "sha256": "bbc19cf73adfe9a54cf0c170de4355c4c9b4eb68338364ecbe5578764280cd5e",
+      "bytes": 7896061,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/epoch150.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "sha256": "2ec2feafcdd7599c237a8a3a066f5fa4bd6ffcd9c9ef3a440447428cd26ca64c",
+      "bytes": 7930813,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/last.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "sha256": "c204240ed8156f84c95a0ab1c4dfa7855a388ab5a009cd349120cc26ad6b7400",
+      "bytes": 7956925,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/epoch000.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "sha256": "29b1e9f889afb96666e99a08b4f57823efa437be9d939e199b54d185b51138e0",
+      "bytes": 4049445,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/epoch001.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "sha256": "3443179d98924d0a2fb05945f5b9ab19a21ddc3638e41ce7ce6b2dc54fd88219",
+      "bytes": 7887741,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/epoch030.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "sha256": "086341fee216bfc2b96b4e3a10265e45e246a365cc6543a9a96b40d744587a12",
+      "bytes": 7896061,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/epoch150.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "sha256": "aec35ca472f392281ab7ec245f9467d9d179a43dafe89adc315ae52088ba093e",
+      "bytes": 7930877,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/last.pth",
+      "group": "heterogeneous_rotating_etf_20261031",
+      "role": "model",
+      "completion_evidence": "reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "status_sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "sha256": "538af483a551ec66aeebfd3f40a191822a5b20208a1bb558c7513112387f6d95",
+      "bytes": 7956925,
+      "archive": "heterogeneous_rotating_etf_20261031-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/RESULTS.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c88e30e8024dd35f8fea4206e4929734777615ef3903732e1899c7880ab1813c",
+      "bytes": 11784,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "81cba3469705c47a2ab7ae509fd179a4afa3bd3aac6d5e9258ce3247f5d338c0",
+      "bytes": 1994,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "33c3d88787daf10ff48c10dd727e6afe9260281e1853c5e8c545809c4db15566",
+      "bytes": 6741,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/audit.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3ea0a1ba7e5b81165e3b8c4c15c512c1f4aa716a0f53bf44fc9f18682616e4d4",
+      "bytes": 22752,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/deployment.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4e666660a82751cf81250e9d66b582f8224129cce8fafa765f6a62852233c17a",
+      "bytes": 361,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/deployment_verification.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ccd330530544d5949f441b2570655657cd11d459fe50fbec17ee7327f8429b8b",
+      "bytes": 3525,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a5a52aafd056118cc7c6775d61dc7ecda08ab9b2c9bb4eea1278d2d7863f4702",
+      "bytes": 136,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9b95175ad6744afe9c08cecc2e43481fed75491aa57d889c5b46a4033c878552",
+      "bytes": 136,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "33e7dd0dcf6f14bc8717e4b650aa08cc75bc528d954b0004b965f7ca0f47b2ae",
+      "bytes": 136,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ff8e723d4ca96b3b9509e9b17e4716752ad798f6ca6811eefd215a24c9786f5a",
+      "bytes": 136,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/handoff_gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "58f9a3c0147281aa1df8505186fd827c7210b6de9bdb46e31399ba66f6cdfba5",
+      "bytes": 834,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/handoff_gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7db0bd784d49f9062e04ee877c9df7dd0815d1df3e48ce8c512d84ae0941097c",
+      "bytes": 834,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/handoff_gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "24474aade8e9059516de4c53a60fd33d3fbdc2bcabc0ff4ca7d3f86b1b00cb68",
+      "bytes": 834,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/handoff_gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7234a386f1091680f0439fe893aabad3ec0c1d2ed35e304fcaab57bde55155b2",
+      "bytes": 834,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/locks/res32x4_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "46386b35985fd799fdb663e890d5960de221bbcfe91b18aa338243d8f8edc39a",
+      "bytes": 20976,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/locks/res50_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5259374aef839bde558424d73e9a45fda4603ec6fecd3a5cd046a06f5ed1c955",
+      "bytes": 22584,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/locks/vgg13_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "01eebca10268df32c87b90b18bb74b519515d3ba56b02006340c081c25b15777",
+      "bytes": 20914,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/locks/wrn402_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ac2de030a0c3d79bd9bd60b8d77ba7009e8b01217ce3ca53aa94b3cef367e43f",
+      "bytes": 22607,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/registration.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "97fce5cbcc024b88d0a464caabdd623525a92d232f1d74f63bc53149cdbfe285",
+      "bytes": 34012,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res32x4_sv1__s2101__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "abe608491b12bced5354f1bc87ec347b6da6d8c6f1beeb1123a7c6cc066fdb19",
+      "bytes": 94418,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res32x4_sv1__s2101__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "16670ed12d1bedc32a42176f0e7ba35f1737761571c9e294280154345d8a952b",
+      "bytes": 158030,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res32x4_sv1__s2101__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "cbaf640445f23e0b59504ebe7fde086d711979ba4ccd954802299299b817ae40",
+      "bytes": 1635,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res32x4_sv1__s2101__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bf96ca71a182b3064d6b9a23badc4b5f2393bd597697524a5a93cb350162ecaf",
+      "bytes": 78027,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "13db47bf6db9351162ff80c7e968e03a7217280c36ceb367b3f46ceb09f66029",
+      "bytes": 94374,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5dd6f02cf2da229e13fcb6934f6a2cdc307254db88d64a5b71b50c9a3966f2d9",
+      "bytes": 158061,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "79fe7e986bb99989a1dc0dfa0ce700e8870fe81e0ed8d10e696b69496e1dc44f",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "676d7eb29f139a6e4116a307aff47b37300c8018ce0c1a69a13b9b93b6566852",
+      "bytes": 77983,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "6870aa4058df9c8375777a2f0ea28ea3b985aec27c0f65cf4f614aaf7c08845d",
+      "bytes": 94392,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f9dc1c39cc7dda729d69f4a6c3bab59643352986ac9f4f6c7998f8d74b6fe66f",
+      "bytes": 158080,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f75f12ab0a8f72db5419a3dc37985490e13c4fab7c2e6a47262cd6edfef8c959",
+      "bytes": 1632,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1be2854f3b2248772bdc1442721766ba06c1bfde3bd3df0fc6fbab9ec7911d80",
+      "bytes": 78001,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "18cac40a192b8e1390aa212f3723e50dee721fe9e2f02b05461086a079c62d93",
+      "bytes": 94378,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a97746fb6d683366461edf10b55b7b89860686fd66d864e8b9983b08f94210a1",
+      "bytes": 158093,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1e4441aed2fd78b1ff5d9536335b4600e51b21cd3ce6ef65227d89010cf629ed",
+      "bytes": 1623,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7b57164c82e46b274a5c1370561c6796a89a98638c4f7941a4ff204db1e698d3",
+      "bytes": 77987,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1ebd979efb910c9de155815dc3816b56da3a981e80c95ca947ba44e09542bb22",
+      "bytes": 94382,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8d6fae4389f8547336fddf87d99d6b158a25b9e0c78bdbe937f2eabef772d973",
+      "bytes": 158086,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "119226523674e728df8591dcdeaf66ca0358e3c2ac519ce13496c4131c015390",
+      "bytes": 1631,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2102__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "05546719ae72553f58af1bcaf519e92a5aabf7d95eb22b38fe3145e7f8bac3bb",
+      "bytes": 77991,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4fe6328e9cff8f0ece85227b643aec4510cab4551b9d0d4979183cb8017e5604",
+      "bytes": 94398,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "aa967a221933f50c25a8962324e04fb501d16517a8df77a63407d11ae7be054c",
+      "bytes": 158105,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "af360d02e8c93b878fe7ebe004a811bc00429c6d20e6ed32741f4a06bd11c8e8",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "43a34ebd3f180903173bff85f7dfe10f320abc908e2472a7e5e31dc682ef62fa",
+      "bytes": 78007,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5cc9180d66cb907d652c7cdca0327ee80a19d68bbde438ba3ffdcf5abe972879",
+      "bytes": 94379,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "28e895291a9cef2b54e2690c3b5cffc023e9a7b5d94c7213217cfbdee1098881",
+      "bytes": 158072,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bab2c1751577b5c47bd6085dcf676f9ba91f02a42c892a010da156264f8febc4",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2103__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f82dd455f22bf4accbf282c427d93bdd78f44f86aa96032b849b4767fc01d05f",
+      "bytes": 77988,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "38112f96efc57e85f66bd4fa0e154100ddb166a928c392cb39c7d97e05cd91e0",
+      "bytes": 94428,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "19feecb41caf56472f8c29aa4ec336ea202d67ec9d97a31b3a3854b0fa3829fc",
+      "bytes": 158111,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fe151366325f29a5610e84430007ac982070c57b3d209fd06f5cee0ee78aba28",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8db2a8523c7d909eefd6fb72c401f3c73bbd06864c5e151e893905c6d480c301",
+      "bytes": 78037,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f3100a85697d964c2f3b91d24ee23aead4dff4fcc87b152fb22a540ca18ef691",
+      "bytes": 94401,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4f502e477b3c3b64f17c7ad9f6bc69ffcf9ce97e53f521bd2727ad0233e7584e",
+      "bytes": 158089,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1af9b1fc06e6717fcf1075dc779fa9699788cd8d96c0744268334b964e525161",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2104__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "09dd57791afb0fabcc09b3bb2e5fbaec1cb15bdc8196d4ab8411ed21b6439d04",
+      "bytes": 78010,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "2ac15f5a5baceae2871c46b0e2ebb9cd5b684f6227535e978386fb330f908ec9",
+      "bytes": 94431,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "cc81b4bc1b35dec5148b4074ea39379cfe6495f5d572bbe39ccfb36ba229b9c4",
+      "bytes": 158055,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ef68ad6f2526b42762d1a79ec2883c6c2bfc7de75f83c4ca2c7d6535b74e574a",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9a34078e9cc4b618847adb048bf02fae7752b43b4431826e12a0a18c5ca21f3b",
+      "bytes": 78040,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b8582b120c3e094764e66ee016480d9a9cdcac56a2fa4bff725f035da7a50f3b",
+      "bytes": 94420,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1f5573f186967bb458612e6ffb4afd1073d051ac4df14398ee77cfe90c6c6a97",
+      "bytes": 158090,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "596032cd14c254e4fb55a4d20d83c33fc82eb49d471040e2391dce4eec1a4eb1",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2105__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8f1eab01aa4a081e48ccaf5712624e5b722605c3fa08ec4a8f5ad933dfb93b78",
+      "bytes": 78029,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/split.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b3cfbee108333f36d504899ac20a0f271618d4453acb04637b3d0c1eaaea6ba4",
+      "bytes": 538984,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/state.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "709e9acbced8c69bcb1b75424e68b6d15b8926917faac4a39580e3e02b06176f",
+      "bytes": 103694,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4f22b09c4e581a4e5c35234c9074a6cdc2aa8862dc3ffe7cd3ebb42b16068c0b",
+      "bytes": 94487,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1d3102968c8b13f4dd763e6e2441e083490769b2fcb58ee8dac6d144fca79065",
+      "bytes": 158050,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "2f3aaaf7ca294c74ea17658c42e2ed65750de90d1586a89c574f56da3b7ef05d",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7983506bcdf94a3c2a296e20aa7e5f9dc56f9c48b8a0390cafc942eb379ebe23",
+      "bytes": 78096,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "eebc0c09b83a2ca794913ffa8cb6e21fa19f0be773389ee2a0c809ddb1dfd68b",
+      "bytes": 94488,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1784e1496cbb17b9f27daae1188bdee7e568334e026273418fd491787e4890df",
+      "bytes": 158056,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4e44121fd07e8b709223974ffcbad0bf7ff7a2ec12ae57b1f168e8190843430a",
+      "bytes": 1632,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0626507562d17111313e6ab829060df1acd8eb68ca6d076e1c2f29cc6428266c",
+      "bytes": 78097,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bef9f612470ecb5a340a7d2f47c5cd654513ab73456f33b0b29d82bdf9dd88ae",
+      "bytes": 94485,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d058391d3327dc5b9f63c28359133a01897f9f48f2f5fd4e09a4482e4fce514e",
+      "bytes": 158100,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "87dc7b965723bb247bab460fb9049abc81a4ff790ae61e2c15e5345164e473f6",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1b22d04e0d3129d06f87fdab18e9ab8497a71b629208886bb3d53d3b0c17238d",
+      "bytes": 78094,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a069fcab51006cade52e9a4e90afc49be6c6613cae8e348b4e293974eb8fcafa",
+      "bytes": 94495,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9e6e6204ba6fa0b55aab3dc158e6373da7a031a8e8d58904533ae83ac059f0d2",
+      "bytes": 158047,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "27c067276e44714d81b65c6433e67a25647f291f906d0ac812f8b0cd36684337",
+      "bytes": 1632,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2102__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c52dfcaf39cf8c6b76b4720ed8f31d6951184c60ac129386af6a00f3a4c7dfe5",
+      "bytes": 78104,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d3b411290364c006eff8c3027806c4493ddc8b577da7e7bce26da69329f2b411",
+      "bytes": 94518,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fba5773495db392a2c2cf141d7db33cae6878374ee6ab1dc09c5376e71f8ad28",
+      "bytes": 158040,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3c23f7d93ac18bd68cae25204f6207f0e1cc61a3dbf842cf54e0ff94f5ab6215",
+      "bytes": 1626,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e5400d6dd22d10584f1c3ea95bb6fafcdaae97c2e0494a110c73867c587ee140",
+      "bytes": 78127,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "670475bd8969214f25186921ecc8c00bd45f55f54687d03d20e19bac252b9feb",
+      "bytes": 94525,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "779ec552df3a488dfa22abe6169ac1a0c50d221325d7937fc911e42b940a5d38",
+      "bytes": 158054,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f197e80957d25f9db9e22d295c8c3b335cc421ae298fd33c524370f43517186c",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2103__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5aff4cb2b5be3fbb8661386e9b52e1bfd129d075b487adf81b0bf8aab9c63aa4",
+      "bytes": 78134,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f67857ff520a886bac403c8e74e7c8432d9ebde9508e2e7605cef0119f716b97",
+      "bytes": 94502,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "15602b051bda2d429037fffbcb1da0070b568d6859b855ef890034a720ce4aa0",
+      "bytes": 158084,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "6539b108723c2b49a8b89aba74c812b2d01bc89264487ac1a228e553e6fe3062",
+      "bytes": 1625,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "92e59800fbf853a2483c818edff27ddc83736e86c8ef7239a3a54c70abb9b87f",
+      "bytes": 78111,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3d586c289c256e622ddaa6ed37452f10867be6ac3238868b46cd5466df33d75f",
+      "bytes": 94523,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bf010e6964dbd4d7a17d05b84bab953cfba01ae45876892c2e8fc70660df0ab7",
+      "bytes": 158098,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "771d9ebbea55fc9af0775dbb473f04199ad74b33fb338999357ef5d05a1cbe1e",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2104__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "411a38cff009a0443e3a84197517c30e1710c172cb893df3731525f462328d22",
+      "bytes": 78132,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "541acb6c43b6fcb2788cc237d80f95d791947fb3db35829aedc84694bf5770aa",
+      "bytes": 94527,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4434d117014d15f37ab35d0232c6cb5ebfe868625dc2c421e7876d2fcd96b3e5",
+      "bytes": 158020,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "aaa5c15cd2ceffded58e67871e07394e1bfc252e7adb0eceb24bb1048d7b7ae3",
+      "bytes": 1624,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e815dd374e8724e199f7cccc585a58096f8b349cdbfc28a02d9ecd81a2e116fa",
+      "bytes": 78136,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fce9da1b664cdb0461324c60398c53c7bec5b0f5ca3bea1ffd99e286d85b7d7b",
+      "bytes": 94509,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bbce4f622f1a134c30561bd7d85a81fd069e6816f6fd02e8463ece686c6d180f",
+      "bytes": 158045,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c871b0836152ee29719d378961fc506cbbd131a5db70aa0caa87dfab7728ba76",
+      "bytes": 1633,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2105__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b42e79a468c47462d4af1d0a38500762424d65bc9494501d030ea0b75a66ece6",
+      "bytes": 78118,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a9a197ce0894529999b1c3a97bbaef3c52de4cffa7d05442fe0746eb62a0f56c",
+      "bytes": 94479,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bea9d7f47d605549528ce7dcb250a48da0eb31cb1c49155e380a9867b7e910dd",
+      "bytes": 158068,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b0d8a260af19852717494a8663b98b00139586117eb2268f0ba36fe5caf2fb21",
+      "bytes": 1632,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4a2a171ab017facc4eaf9d16034af366761595e71b8dedb2ea15eea8ba153477",
+      "bytes": 78088,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d02f46b864a087ac78e4efcb33bdab12c3b868eb04489ce8797fd29d45bfe74e",
+      "bytes": 94469,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "27fb239c488ecdf56d942749775e0802d1ccdce2e08682392402a855e58e3d4e",
+      "bytes": 158063,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d23456b39c938e869862d641485a03c56c9c500c3bc5b39624586a152fdc5d67",
+      "bytes": 1638,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c9150016c1276515c13a62d31191126dd320d7a4a3db37682249f9c35446f4f4",
+      "bytes": 78078,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0b1dbee8192ccac5b36870cfad1f1920874dde66e936f97b8e90f821ef7e7bc8",
+      "bytes": 94497,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "149268cbac829d67f727e90be033f115c178206afa58cd68a8b72c90453a63c2",
+      "bytes": 158077,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "12fd9fae104d856e51dccb315c73eccc0a219fe0da90e76aa755ad0aa65bb174",
+      "bytes": 1631,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "2e2fea1fbfd4b5d479ddf3e166729e6b7936c6232e418adba186a1d0001a3d38",
+      "bytes": 78106,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b2587814ca3df0e9959572fe7fa10002398a0e5f407696ebe7f96a43c0ccb80f",
+      "bytes": 94498,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "896da284e352f90e0617ac2df4ac3e8771b09c1ece566ef8ebe875901f62dcd7",
+      "bytes": 158062,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1230a86360a99c39df20cfd98ffa5783dad1f191fd4415aace35793b35ac2242",
+      "bytes": 1638,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2102__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "03a73068c3859833f06cfcea6f6c80e9f7d6165aa24bd78bdcfab05b7e428c87",
+      "bytes": 78107,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "775053db37abb11e4fa5af355a16ccf0e834b979801335490c9f42029964570a",
+      "bytes": 94468,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5e84df447a4862e4a00ed5a8720e66cbe08748b5194511eee18e0383dbe6b54b",
+      "bytes": 158072,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "39fae1124ce111b9f93d5405540c8c4c0f5b5adc2314139854150bf83d307fa7",
+      "bytes": 1631,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "dd8c82f7865719829427aa770ce6d1d015352c42ad731c2140f9054d74d362da",
+      "bytes": 78077,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d942e1474811f0faa94d9692bc01662ca9063c0713b16cce72f7c49530ba9f1c",
+      "bytes": 94464,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0d3de7d66ceed804a65b34465b79a0b6cd32c4b78bebb4ced2803aa5259a16c0",
+      "bytes": 158037,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8046fd4cbc20a3b0368790ec627b99af4452b198a7433b6ae11491144e751e09",
+      "bytes": 1639,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2103__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8620ae37d34dd854606551089992c38232de60b37117cbcc75833a94a4c25575",
+      "bytes": 78073,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "82ff75ef0fa67379f407b4d0fe49390195f65f77412c2e7a8cda8a0d53c50af2",
+      "bytes": 94503,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fb64f9275ba19ec2d9ae73a059e7d9aecdf631582ff4a9f2f9d67b80a061108b",
+      "bytes": 158056,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "537f76d058c47fd1d652a2849e68c8da694359c7389b34962424f5f452eec95d",
+      "bytes": 1630,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "74581ea002b4ee670a4f36f651fa16d9983c4f579765d591c405610fc5da1829",
+      "bytes": 78112,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7b6c7832f3838a5bfc796d2d652a6adbe76c75bfb9cf64d5dc23fd83588a6c46",
+      "bytes": 94467,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fd967720f8c11277c31878719a7a0a422a7ac2fbcb72b107fcb54460e9c8fb4e",
+      "bytes": 158053,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "03ca848209dc88719338a097d9f6bad2088fa750628470dde56faa137da87790",
+      "bytes": 1640,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2104__cosine_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ce0fb0357d4a18f340c09d2c2e440caae226e6fae1411d948f90ca2922b83e21",
+      "bytes": 78076,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2105__cosine/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9179c405d73dcd4b8d09ffbc18fe212e7f3f3448f9ea151375357cc8500578eb",
+      "bytes": 94481,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2105__cosine/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "88c10c494342daab224cdeb04da7b9930687f008673046dcdcb8b0d9fd5348b6",
+      "bytes": 158041,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2105__cosine/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "27fa5addbc6316c0a42f547100c3bf3823d9730039c4e7273f50dac9eefc1866",
+      "bytes": 1632,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2105__cosine.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1ce6d6a0b53b17e734e28fadf22383fa81484491065768ba7a3a97654312615f",
+      "bytes": 78090,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/audit.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e2ca32f2db94884dd376c090edcd3a851c9d0497b4072fdabd050159c88f7934",
+      "bytes": 8072,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "391759438dbf0e074b3a917e024f35f72685378c8c3851daa89f07b530988ec4",
+      "bytes": 731,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/dispatch.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "56f566d8a89c81a33f8aaa999239f5a43fc582e72bfbc2651d2e0d15a5744544",
+      "bytes": 4616,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/handoff.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0f959d8f12cf00777366d312ecb2b3520c340867dabd63cd8854e7e5bb453f73",
+      "bytes": 3971,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/kd-accepted-heads@.service",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8cbd2fa2a332b8310cc8e86359b22de5a8b59f03a9f5eec9339200b03e1418fd",
+      "bytes": 557,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/protocol.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d740a077886ba282e29edef45767803e7954c5f4658b057e9ad6029e39530899",
+      "bytes": 2462,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/study.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b37a421bd0ef2f9c951315f1ff5ed088803e5180f5429c901f381481cc0918eb",
+      "bytes": 13198,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/test_heads.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "702b7793ebc41c35bb63687a2f2344935c32b8dd12507cde67a203a960d7ec6d",
+      "bytes": 13870,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/accepted_kd_heads_20261030/train.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8096beb95cf3141dcb6bf8306cc6458f7652dc7e5a4c9c3775b29f4609c965b6",
+      "bytes": 9445,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "47ba559a2f5a65125fa8df7bd66b490f5a791eb1fef28af8223dbb7723435fff",
+      "bytes": 8594,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/artifacts/convex_baseline.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e1c6ea0d94c0c051657a58de96a7dff174fc16a3969e6490cefe55f99be14b30",
+      "bytes": 184073,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/artifacts/convex_baseline_initial.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3f87dfc90f3735c94e7783da0483d7f119ab25bd46244693665bd1b3faca9b75",
+      "bytes": 183644,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/artifacts/preflight_cpu.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8a3a0a1800db64891467f2bd57757c47478da8478617098c127eda50bf3d84a1",
+      "bytes": 1449,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/artifacts/queue.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3999d3780b9f26421668a0eb72bba7eab65492efa4d08155b1de5302f3744d2a",
+      "bytes": 422,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/artifacts/seal.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "adf9636081f15530ee825d80014ed1b6de2a42a962d152194db68f81253f237e",
+      "bytes": 18755,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/diagnostics.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "37358e3ece6b80fe316fa3682c9eac5eaae01e2bee3d76fb6819d9a806b8052f",
+      "bytes": 13205,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/kd-head-mechanism.service",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1354be8da0dd9eee3fec78776ccd4eee5b32876494bad58d2f57ee1b0a4ccc3b",
+      "bytes": 609,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/methods.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "884f96e02b2b4a9fc04d84360405b891697d7bc4b8e0f180cdd8ae35e834c41c",
+      "bytes": 6697,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/protocol.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "074a049fb6a0fee69fb1f91da3b67338c8eaed014e3b83d72877fac8d5245b9a",
+      "bytes": 2386,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/run.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b0ef7a8777faa4f323bfa10069a29a8cb7ad318827024d1e809b79806554095d",
+      "bytes": 25238,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/head_mechanism_20261022/test_mechanism.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a805814659a774cfccf52f821e9270489a820f34a1d6316f9f215142acb65056",
+      "bytes": 7188,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ffedc0701a07be19690139acebdf6bde07277c3b262a19c3ee23e1b11cb72463",
+      "bytes": 6433,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/audit.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fe18deb7fc2d216f5990375248723b8433a0088d281d8bf380d45a84d61b03a8",
+      "bytes": 26901,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/cpu_audit_environment_failure.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5c9de95b6017bd6db2a02ee3a180fc8a92cc4bd7d58b8dff5a90179726ac0f84",
+      "bytes": 721,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/deployment.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c9ab3bcb66a118bd446fb78a501c08cbe608a8f506df8b831e59576258f3e411",
+      "bytes": 1690,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/deployment_blocked_20261031.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8ff9e4f4c126cdca3515ecc35274986c6c24754a9682a4e280dd02ca78b52da1",
+      "bytes": 1019,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "95d221ccb9ebd1d7e8f08f35d62250587ee7b6bbdf69f45bc7b7b2f711c2555c",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "873aac7444521a6a964d98511d1d2857c91acdfe266bbbe6122c54cc8f30952c",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "69458b4c42169c4f00855986bbb55a88ad92e2254ae8a740e70222f02ab0f847",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5a4f5bfb8830339416e2983b2924d66c8e1511140ecd0283b34fff9280875a8a",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/locks/res32x4_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f20de9de87514504dc03cb485951bb0227c734b3582db72c5db559ea4f200068",
+      "bytes": 21063,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/locks/res50_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "980df70ec0e4fc590d6a853716d88451ac717b26132eb2c1dd37badae0fc02eb",
+      "bytes": 22671,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/locks/vgg13_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d582a96c49b8b700b3fc3fa039881124266903951d5894a486e68e9cc2b1f024",
+      "bytes": 21001,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/locks/wrn402_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "30ab50040ee4e0c9f587bb3cf43c2af45e5f9227d0e46d05c3e06fa31e28efe7",
+      "bytes": 22694,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/registration.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "df6e1843cf8dd6529b7a3328ad3cfa8a59d4d1fab8506aa5840e6ed39182bd32",
+      "bytes": 39901,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "27ce322fe807a1650f638c3956186918e680a62aa90095c317e2ff32d3eced9b",
+      "bytes": 112523,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d55551bd1e3bcff81bd1696d0abbae59c603577ca1a274383f04fa6c0ee95add",
+      "bytes": 158028,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9e663c13db7e71db55bd13b614bdcb561a59abe47a5e3dddd250ad83dd3c18a8",
+      "bytes": 1816,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res32x4_sv1__s2101__rotating_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "89ba0de06aa9aee78652b644715891f9d00346822d1f738dfc7c91942f667706",
+      "bytes": 94212,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0f621ae60afff358e6c56174f4d0ca7ce68f878c4655b448b1be9152eb090786",
+      "bytes": 112506,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ad6ccbc5f227e409f8f5d5c9c894339080478380065e21ed8dfed91864529147",
+      "bytes": 158079,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "9aa40995e1f0a24217d5d317ab73b9f856683cc098b7ec7efb5e6377c2f1275d",
+      "bytes": 1807,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/res50_mv1__s2101__rotating_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b84fae559b5114b603fe5335f8dad0a50aef0df4b2e36bf17036fa59b1ba7fb4",
+      "bytes": 94195,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/split.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b3cfbee108333f36d504899ac20a0f271618d4453acb04637b3d0c1eaaea6ba4",
+      "bytes": 538984,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/state.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0b47ac297b133380b6843ecb12da9a9f6cd2cd64a197f0090d7d4aadbf1bf4fa",
+      "bytes": 30075,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/vgg13_mv1__s2101__rotating_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "665db8af21529dfa1f5b344e11922c29f8d825a826ae87149b9c0dfd208a0ebd",
+      "bytes": 112603,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/vgg13_mv1__s2101__rotating_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "da6130936971e086ed08982a02cc12904cfb35c01a9520093ebc3c555276bbd4",
+      "bytes": 158050,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/vgg13_mv1__s2101__rotating_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a7a306544ea656052f8ba66d5105e4552c461217bde5a334222a2a6291db8421",
+      "bytes": 1807,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/vgg13_mv1__s2101__rotating_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8f930e4f32ed6525bf9956e3e68dae402b8a8ba84b8bd3d1a6554af1b0850ed8",
+      "bytes": 94292,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/history.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "138d9d2762cb3f2bc8cd31d1f7a6f333e51f889bfa806e6cdc91710101d892d7",
+      "bytes": 112578,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/predictions.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4d462a077e6a322db28a044ec40a46957ee8582f98642822d05863dad5abfe66",
+      "bytes": 158031,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf/status.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b3baf5c5ba8b2d24a697d50cf95fd48d60349cde2827aa11063935e102a91864",
+      "bytes": 1815,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/artifacts/wrn402_sv1__s2101__rotating_etf.log",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "db4b01c69871e72173c8473d5a7c45cde5958702634d7417238368f9176e6584",
+      "bytes": 94267,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/audit.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "72cf757e0a598c336d213c326a1b2937744e6aed556c9e20e83872d74496ebd9",
+      "bytes": 8150,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a48746a777c07300d20218a6b45c01fc16eea8e81f07190b42a8387cbc562c9d",
+      "bytes": 1332,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/dispatch.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7a45519028cf6063cf316555595f4d11c8a2d8ba6b3205dcd6e5062f3109fc9b",
+      "bytes": 5139,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/handoff.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "52eb666a1b234f416acb93ff5cc1eb98f18ef8e2a6249653240e46a4822b6fd3",
+      "bytes": 6122,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/kd-rotating-etf@.service",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c371ab3ef6d548c70849addd80c0d8afaa9dfdd0d9369bede89e9a90df2b26ef",
+      "bytes": 559,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/mechanism_plan.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3c054914a28687b65d7c25a1560bd03958a99524db2b8b37944cec0a8520bfe7",
+      "bytes": 5470,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/protocol.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "fc431f108028a702e959acc5966024cd3ea05db46c1e4bdf574bea206aea0038",
+      "bytes": 2587,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/study.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4c69324a3af8747a87302092d73a012d773a0197da1b5653efdaac1f50378b52",
+      "bytes": 12624,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/test_rotating.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d54ba627e5f85e995da8a995dd1bda2b07ef9975523437c456a90324cba1ae5f",
+      "bytes": 16310,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/heterogeneous_rotating_etf_20261031/train.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "dddc68a31495689ff35292069cf9698cbbde5d5a38bff817fa15ae5128e4a4ed",
+      "bytes": 10297,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "64af164999f03b19423460221324d8ab8afa07846d945f3ac4ca981909308e38",
+      "bytes": 4805,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/audit.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "073ed37f2059c4b6dbe5cf5978ded1dc8a1e8c47d047d43caa07244533ba85a7",
+      "bytes": 9774,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/deployment.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "69b5c92f6555a0ab4d6582185ae0e03bd7972ab5c9237c7c3bf60829bf0687db",
+      "bytes": 349,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "af72b26337481fa7d2da6330545be4669261a5ddea3e46dffa5c50d7707cc600",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "ece5a4fa42573aafa8b5a4eafec05aa07e3b8b923310a15390320c9ead359fd6",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "20ab41b601ae79232e52913ca8beeeeec60b5e7c7288075901c76b3ee74464f7",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b51f30f5be4990ad8e829088cceabc20474a2835ce0f182eb7fa571901eaa21c",
+      "bytes": 114,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/handoff_gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5e1f3a4b9abb2f765ca268cc95143f6677c66d05243b1a60ec7415157e808237",
+      "bytes": 609,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/handoff_gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "aed1b7644b7c607f449352e3d8485e80bc0225469adf9d6b2c8407e3be851fc4",
+      "bytes": 609,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/handoff_gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7f49ab8c42eb248ac954864bcf87eed54a76e42acabf2e9784155541f5f5e798",
+      "bytes": 609,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/handoff_gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e388a9c458460e92e1385a327157e2ddfefed1d00ea8776d22d4394f89c6e6d8",
+      "bytes": 609,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/hold_applied.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "2c9ea4544d148788f83406cfe2245b1b28b0d90ed3fe6e2a3cf1bb0177c91473",
+      "bytes": 189,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/hold_intent.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "bfdc7fc6023721a087416bbf58ac254fa1ecc5ff4cad6371bf10aa15a14950fd",
+      "bytes": 15948,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res32x4_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d78f0164ce998b72d14c5e4c2180bd57faf2f9923be37565c4120e2d2ec7681e",
+      "bytes": 6084,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res32x4_sv2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e581decc35ad8f8a2ddb251daef07bd1e51f4c3cf5c92de7a7aa308892e4b894",
+      "bytes": 6367,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/locks/res50_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "44988049a7cbdbbc7176847aad47f512e87936e5617db45d9bbb587bd7be3637",
+      "bytes": 6362,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/locks/vgg13_mv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d1c8bdab82e7fd021e9861ab758c3817e84a3662c257388bfc67db800c03da8a",
+      "bytes": 6080,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/locks/wrn402_sv1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "3a4aabc7668050039c514a9f163c714b80a63f4cde0242977eefee4039f4a97a",
+      "bytes": 6365,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/registration.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "26a0f051b252950aa180b0d5c79912e657f07ec4ea382f52be6db78672127f08",
+      "bytes": 19003,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/split.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b3cfbee108333f36d504899ac20a0f271618d4453acb04637b3d0c1eaaea6ba4",
+      "bytes": 538984,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/artifacts/state.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "86c3fc2fa67cba63ad047f5d202a7286c34a36815841969daeea83f3a27781af",
+      "bytes": 91956,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/audit.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0157cb6ceb1b442bb770b53135a84ab2446a3d8d91cc1c8ead504cfcbf905932",
+      "bytes": 2359,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "5b836ae3c208bf92f92d28a50792fd64cc86217a155d9ee567c1f85975415940",
+      "bytes": 1921,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/dispatch.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "392838df1a4584f702e4e9122441883fb7e3310a4caf63cfdbbc5c74d719884c",
+      "bytes": 7325,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/handoff.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "351bc84763747d42099fa028addf237fbcd429739e6daaf69effe04af26698f7",
+      "bytes": 5577,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/hold.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "350be74db79b47b9744f96dd1bbd9933380f597e9770e29bca9d0936ec38649a",
+      "bytes": 3076,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/kd-single-seed@.service",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "1e981dbf4f8ed95d9506e7c78ea380b90cafb83446256958256708a59d810b98",
+      "bytes": 569,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/protocol.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d39fb400386b966fb46c71f13f1028ca53608c959b142fdcee4d6241da91f4a8",
+      "bytes": 2373,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/study.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "76869c53b13ffbcc8e917e4edd837c867d33b19cb512b19d7dbdb8484b6c58dc",
+      "bytes": 6791,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/test_single_seed.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "44a1a59a2898f80eb3f37869671a42143321486fb483d25cfd4f5da5f9e47847",
+      "bytes": 14521,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/linear_kd_single_seed_20261029/train.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8116c84e114908af809d121188123e279ce63879d738a69fb41fadc7409b4972",
+      "bytes": 773,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "650378e653fd8324e11b8e0ef89901f6187b34614db729b119c6c8c03bec3f49",
+      "bytes": 3874,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/applied.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a05afa2be5064661e9018910fa5615f01ee43f0e632fc7bc931e0cfd52a8e61a",
+      "bytes": 807,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/deployment.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "465d510bd33f82c321a96042dcecbb85f01d545553b1eb93c8a69d85b7349dc8",
+      "bytes": 2375,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0cc614f3b20e435ba4dc71aae8077322b312020620ee20e2ff0c0395f2c11c36",
+      "bytes": 121,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "843a162e9efc1e903e6df65c50c2b89545b90d5785b11ecfa72f0814d6242d1e",
+      "bytes": 121,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "f3317090e5c548bc0d5bb912e1943f4e4822780c2d652cac21375b10a9710550",
+      "bytes": 121,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b7281bd3823a22d3c0713c1654d21c3847d053dc145ceea03c7434158916b110",
+      "bytes": 121,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/handoff_gpu0.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "0f2007a30f9d2427c38325befbcba74e796b359bdd82cbf180102ade1f7419ba",
+      "bytes": 105700,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/handoff_gpu1.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "d739ad3a47047e0c5492c2e7e94fcc68efd04e574a631b6198d2eed871bcc1a4",
+      "bytes": 110034,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/handoff_gpu2.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "73ebd6758df65da46bc668d83aaf71eccc27b332580850b03501f1e9f5236b60",
+      "bytes": 107866,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/handoff_gpu3.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "6c76ae0c4a426f6be35b7b3850a780c4af4111e6907ab6ad60ae2f883330848b",
+      "bytes": 103537,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/artifacts/registration.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "debecad8c496b3e3b97230da81572db9fa83c4b23bbba7d53d38d10bc0fcc741",
+      "bytes": 220842,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "a167a30dbce1a2d789155ca8ef5fe225f584bb9d50ee5b44f1fe3dfcf9ae2d52",
+      "bytes": 1559,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/kd-rotating-etf-priority@.service",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "b1b5004c1c2c4a7810d47ac8e79f88446775bf550377f343b32e26ea9de7a5b2",
+      "bytes": 556,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/priority.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "61ca5592c1647564d68a94634cc056ee33fc340395a1c53c28cf69b5a74686d1",
+      "bytes": 14015,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_priority_20261031/test_priority.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "c05cbcd216ea9e19478d374e134dff07169cb813d13201660c29a8ba623526fa",
+      "bytes": 8817,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/README.md",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "7b8e28f734e5d2ab15a77fc99d608eb1b2a632f1afba3d5e3cb937ad7a0afcf5",
+      "bytes": 2467,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/artifacts/applied.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e24dea993fb367c2016af58c771b9a1dd26d73aa0ee94dc85b0b98ba842ab21d",
+      "bytes": 319,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/artifacts/intent.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "58fb6e0dd7ed46bf9ec8e8d61d0e29b82996b98de4596df487cd9181bff3df65",
+      "bytes": 36389,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/authorization.json",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "e300f48f111f1c4edc08ffc52c3d82c4ed1e81135a102146bc45b354ba39ba1b",
+      "bytes": 1159,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/reduce.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "8b6e2aafdd6549b3b5b6047741e790ae1e4930a3217ccb0f4107772e050e36b2",
+      "bytes": 5244,
+      "archive": "results-and-provenance-000.tar.gz"
+    },
+    {
+      "path": "reproductions/model_release_20261031/final/snapshot/reproductions/rotating_etf_single_seed_20261031/test_reduce.py",
+      "group": "results-and-provenance",
+      "role": "metadata",
+      "sha256": "4808c6bd9930c2619125c8510d6d365fb69cdd14cbdf6a1fa0e4743fd682c266",
+      "bytes": 4369,
+      "archive": "results-and-provenance-000.tar.gz"
+    }
+  ],
+  "archives": [
+    {
+      "name": "accepted_kd_heads_20261030-000.tar.gz",
+      "input_bytes": 19766821
+    },
+    {
+      "name": "heterogeneous_rotating_etf_20261031-000.tar.gz",
+      "input_bytes": 132408851
+    },
+    {
+      "name": "results-and-provenance-000.tar.gz",
+      "input_bytes": 13972442
+    }
+  ],
+  "selected_bytes": 167226082,
+  "unique_bytes": 166148114,
+  "scope": "Current completed cosine/free-ETF/rotating-ETF outputs only; no unrelated studies",
+  "caveats": [
+    "Only completed outputs in this bounded comparison are archived; running and pending models are excluded.",
+    "Linear baseline and teacher weights remain local because active/held jobs may depend on their exact bytes.",
+    "Native results/logs/configurations are retained locally; snapshot paths contain additional provenance copies.",
+    "Rotating ETF uses seed2101 only; compare same-seed controls, not historical five-seed means.",
+    "Adaptive official-test recipe selection and unmatched historical homogeneous protocols limit inference.",
+    "No mechanism experiments or new training are authorized by this archival operation.",
+    "Trusted pickle checkpoint bytes are archived without loading or executing them."
+  ],
+  "authorization_sha256": "81cba3469705c47a2ab7ae509fd179a4afa3bd3aac6d5e9258ce3247f5d338c0"
+}

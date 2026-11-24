@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2878B5"/></marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D65F5F"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3A9D72"/></marker>
+    <style>
+      .title { font: 700 31px Arial, Helvetica, sans-serif; fill: #1E293B; }
+      .subtitle { font: 500 20px Arial, Helvetica, sans-serif; fill: #536274; }
+      .paneltitle { font: 700 25px Arial, Helvetica, sans-serif; fill: #1E293B; }
+      .label { font: 600 19px Arial, Helvetica, sans-serif; fill: #304257; }
+      .small { font: 500 16px Arial, Helvetica, sans-serif; fill: #536274; }
+      .tiny { font: 500 14px Arial, Helvetica, sans-serif; fill: #64748B; }
+      .formula { font: italic 18px Georgia, 'Times New Roman', serif; fill: #304257; }
+      .white { font: 700 17px Arial, Helvetica, sans-serif; fill: white; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="900" fill="#FFFFFF"/>
+  <text x="900" y="58" text-anchor="middle" class="title">Angular Conditional Distillation: Making Classifier Outputs Transferable</text>
+  <text x="900" y="91" text-anchor="middle" class="subtitle">ACD addresses classifier geometry mismatch by constructing compatible coordinates and transferring compatible relations.</text>
+
+  <!-- cards -->
+  <rect x="55" y="130" width="520" height="580" rx="22" fill="#FFF8F7" stroke="#EAB6B1" stroke-width="2"/>
+  <rect x="640" y="130" width="520" height="580" rx="22" fill="#F5FAFE" stroke="#A9CEE9" stroke-width="2"/>
+  <rect x="1225" y="130" width="520" height="580" rx="22" fill="#F5FBF8" stroke="#AAD8C3" stroke-width="2"/>
+
+  <!-- panel A -->
+  <circle cx="93" cy="169" r="20" fill="#D65F5F"/>
+  <text x="93" y="176" text-anchor="middle" class="white">a</text>
+  <text x="126" y="177" class="paneltitle">Raw Logit KD</text>
+  <text x="126" y="204" class="subtitle">Classifier geometry mismatch</text>
+
+  <rect x="91" y="245" width="185" height="205" rx="14" fill="#FFFFFF" stroke="#D8E0E8"/>
+  <text x="183" y="278" text-anchor="middle" class="label">Teacher</text>
+  <text x="183" y="305" text-anchor="middle" class="formula">zₜ = Wₜᵀhₜ + bₜ</text>
+  <line x1="142" y1="365" x2="224" y2="365" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <line x1="142" y1="392" x2="202" y2="392" stroke="#2878B5" stroke-width="10" stroke-linecap="round"/>
+  <line x1="142" y1="419" x2="180" y2="419" stroke="#F0A44B" stroke-width="10" stroke-linecap="round"/>
+  <text x="183" y="438" text-anchor="middle" class="tiny">raw output coordinates</text>
+
+  <rect x="354" y="245" width="185" height="205" rx="14" fill="#FFFFFF" stroke="#D8E0E8"/>
+  <text x="446" y="278" text-anchor="middle" class="label">Student</text>
+  <text x="446" y="305" text-anchor="middle" class="formula">zₛ = Wₛᵀhₛ + bₛ</text>
+  <line x1="405" y1="365" x2="508" y2="365" stroke="#CBD5E1" stroke-width="11" stroke-linecap="round"/>
+  <line x1="405" y1="392" x2="466" y2="392" stroke="#2878B5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="405" y1="419" x2="518" y2="419" stroke="#F0A44B" stroke-width="13" stroke-linecap="round"/>
+  <text x="446" y="438" text-anchor="middle" class="tiny">different output coordinates</text>
+  <path d="M 284 348 C 310 325, 325 325, 347 348" fill="none" stroke="#D65F5F" stroke-width="3.5" stroke-dasharray="9 7" marker-end="url(#arrow-red)"/>
+  <text x="315" y="319" text-anchor="middle" class="small" fill="#B94343">raw KL</text>
+
+  <rect x="91" y="485" width="448" height="166" rx="14" fill="#FFFFFF" stroke="#F2D2CE"/>
+  <text x="115" y="521" class="label">One logit simultaneously contains</text>
+  <circle cx="124" cy="554" r="6" fill="#2878B5"/><text x="140" y="560" class="small">semantic class relations</text>
+  <circle cx="124" cy="587" r="6" fill="#97A6B6"/><text x="140" y="593" class="small">feature / weight magnitudes and biases</text>
+  <path d="M 115 622 L 505 622" stroke="#EAB6B1" stroke-width="1.5"/>
+  <text x="315" y="645" text-anchor="middle" class="small" fill="#B94343">Untransferable effects can yield conflicting gradients.</text>
+
+  <!-- panel B -->
+  <circle cx="678" cy="169" r="20" fill="#2878B5"/>
+  <text x="678" y="176" text-anchor="middle" class="white">b</text>
+  <text x="711" y="177" class="paneltitle">ACI</text>
+  <text x="711" y="204" class="subtitle">Angular Coordinate Interface: where to transfer</text>
+  <text x="900" y="251" text-anchor="middle" class="formula">zₛ,k = γ · cos θₖ</text>
+
+  <circle cx="900" cy="440" r="145" fill="#FFFFFF" stroke="#B9DAF0" stroke-width="2.5"/>
+  <circle cx="900" cy="440" r="6" fill="#1E293B"/>
+  <line x1="900" y1="440" x2="1014" y2="350" stroke="#2878B5" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <line x1="900" y1="440" x2="1040" y2="493" stroke="#F0A44B" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <line x1="900" y1="440" x2="788" y2="520" stroke="#8C6BB1" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <line x1="900" y1="440" x2="788" y2="353" stroke="#3A9D72" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <path d="M 966 391 A 82 82 0 0 1 981 464" fill="none" stroke="#8092A5" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="994" y="419" class="tiny">θₖ</text>
+  <text x="1023" y="341" class="small">class 1</text>
+  <text x="1047" y="511" class="small">class 2</text>
+  <text x="717" y="542" class="small">class 3</text>
+  <text x="713" y="345" class="small">class 4</text>
+  <text x="900" y="615" text-anchor="middle" class="label">Category coordinates are directional.</text>
+  <text x="900" y="645" text-anchor="middle" class="small">Feature magnitudes, weight norms, and biases no longer define the interface.</text>
+
+  <!-- panel C -->
+  <circle cx="1263" cy="169" r="20" fill="#3A9D72"/>
+  <text x="1263" y="176" text-anchor="middle" class="white">c</text>
+  <text x="1296" y="177" class="paneltitle">SICD</text>
+  <text x="1296" y="204" class="subtitle">Scale-Invariant Conditional Distillation: what to transfer</text>
+
+  <rect x="1262" y="245" width="192" height="150" rx="14" fill="#FFFFFF" stroke="#D8E0E8"/>
+  <text x="1358" y="276" text-anchor="middle" class="label">Teacher output</text>
+  <text x="1286" y="309" class="tiny">target</text><rect x="1286" y="319" width="34" height="46" rx="4" fill="#BBC5D0"/>
+  <text x="1330" y="309" class="tiny">n₁</text><rect x="1330" y="337" width="25" height="28" rx="4" fill="#2878B5"/>
+  <text x="1365" y="309" class="tiny">n₂</text><rect x="1365" y="328" width="25" height="37" rx="4" fill="#F0A44B"/>
+  <text x="1400" y="309" class="tiny">n₃</text><rect x="1400" y="347" width="25" height="18" rx="4" fill="#8C6BB1"/>
+  <path d="M 1470 320 L 1510 320" stroke="#3A9D72" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="1490" y="303" text-anchor="middle" class="tiny">standardize</text>
+  <rect x="1530" y="245" width="170" height="150" rx="14" fill="#FFFFFF" stroke="#D8E0E8"/>
+  <text x="1615" y="276" text-anchor="middle" class="label">Student output</text>
+  <text x="1552" y="309" class="tiny">target</text><rect x="1552" y="319" width="34" height="46" rx="4" fill="#BBC5D0"/>
+  <text x="1596" y="309" class="tiny">n₁</text><rect x="1596" y="337" width="25" height="28" rx="4" fill="#2878B5"/>
+  <text x="1631" y="309" class="tiny">n₂</text><rect x="1631" y="328" width="25" height="37" rx="4" fill="#F0A44B"/>
+  <text x="1666" y="309" class="tiny">n₃</text><rect x="1666" y="347" width="25" height="18" rx="4" fill="#8C6BB1"/>
+
+  <rect x="1262" y="436" width="438" height="215" rx="14" fill="#FFFFFF" stroke="#CDE5D9"/>
+  <text x="1288" y="474" class="label">Conditional non-target relation</text>
+  <path d="M 1291 500 L 1665 500" stroke="#DAE7DE" stroke-width="1.5"/>
+  <rect x="1291" y="523" width="19" height="19" rx="4" fill="#BBC5D0"/><text x="1322" y="539" class="small">absolute target confidence: not directly matched</text>
+  <rect x="1291" y="565" width="19" height="19" rx="4" fill="#2878B5"/><text x="1322" y="581" class="small">relative probabilities among non-target classes: distilled</text>
+  <path d="M 1291 610 L 1665 610" stroke="#DAE7DE" stroke-width="1.5"/>
+  <text x="1481" y="638" text-anchor="middle" class="small" fill="#287D5C">Transfer relations that remain meaningful in the compatible interface.</text>
+
+  <!-- Bottom synthesis -->
+  <rect x="250" y="760" width="1300" height="85" rx="20" fill="#F8FAFC" stroke="#CDD8E5" stroke-width="2"/>
+  <text x="380" y="812" text-anchor="middle" class="label">Raw classifier outputs</text>
+  <path d="M 515 802 L 682 802" stroke="#D65F5F" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="600" y="786" text-anchor="middle" class="tiny">ACI</text>
+  <text x="770" y="812" text-anchor="middle" class="label">Compatible angular coordinates</text>
+  <path d="M 985 802 L 1152 802" stroke="#2878B5" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="1068" y="786" text-anchor="middle" class="tiny">SICD</text>
+  <text x="1335" y="812" text-anchor="middle" class="label">Geometry-compatible supervision</text>
+</svg>

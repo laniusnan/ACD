@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img">
+<title>ACD component comparison</title><desc>Each colored point is one completed arm&#x27;s epoch-240 location on two fixed-probe discrepancy coordinates.</desc>
+<rect width="1200" height="690" fill="white"/>
+<text x="150.00" y="38.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#172B3A">ACD component comparison</text>
+<text x="150.00" y="62.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#627381">VGG13 → MobileNetV1 · seed 2102 · same initialization and data order</text>
+<line x1="150.00" y1="80.00" x2="150.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="570.00" x2="910.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="150.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.042</text>
+<text x="138.00" y="574.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.55</text>
+<line x1="302.00" y1="80.00" x2="302.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="472.00" x2="910.00" y2="472.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="302.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.045</text>
+<text x="138.00" y="476.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.59</text>
+<line x1="454.00" y1="80.00" x2="454.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="374.00" x2="910.00" y2="374.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="454.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.048</text>
+<text x="138.00" y="378.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.63</text>
+<line x1="606.00" y1="80.00" x2="606.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="276.00" x2="910.00" y2="276.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="606.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.051</text>
+<text x="138.00" y="280.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.67</text>
+<line x1="758.00" y1="80.00" x2="758.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="178.00" x2="910.00" y2="178.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="758.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.055</text>
+<text x="138.00" y="182.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.71</text>
+<line x1="910.00" y1="80.00" x2="910.00" y2="570.00" stroke="#DCE5EA" stroke-width="1"/>
+<line x1="150.00" y1="80.00" x2="910.00" y2="80.00" stroke="#DCE5EA" stroke-width="1"/>
+<text x="910.00" y="593.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#627381">0.058</text>
+<text x="138.00" y="84.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#627381">1.76</text>
+<line x1="150.00" y1="80.00" x2="150.00" y2="570.00" stroke="#9EABB5" stroke-width="1.2"/>
+<line x1="150.00" y1="570.00" x2="910.00" y2="570.00" stroke="#9EABB5" stroke-width="1.2"/>
+<text x="530.00" y="623.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#172B3A">Standardized non-target relation discrepancy ↓</text>
+<text x="44" y="325.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#172B3A" transform="rotate(-90 44 325.00)">Raw-logit KL discrepancy ↓</text>
+<circle cx="620.94" cy="491.65" r="9" fill="#667788" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="125.00" r="5" fill="#667788" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="130.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">Linear KD</text>
+<circle cx="677.60" cy="120.83" r="9" fill="#4F86B5" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="158.00" r="5" fill="#4F86B5" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="163.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">ACI + KL</text>
+<circle cx="463.42" cy="328.17" r="9" fill="#D38B45" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="191.00" r="5" fill="#D38B45" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="196.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">ACI + standardized full</text>
+<circle cx="382.40" cy="529.17" r="9" fill="#2F8A70" stroke="white" stroke-width="1.6"/>
+<circle cx="961.00" cy="224.00" r="5" fill="#2F8A70" stroke="white" stroke-width="1.6"/>
+<text x="983.00" y="229.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172B3A">ACI + SICD</text>
+<text x="150.00" y="672.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#627381">Each point is the final epoch-240 checkpoint. Coordinates are fixed-probe diagnostics, not Top-1.</text>
+</svg>

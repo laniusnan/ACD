@@ -1,0 +1,635 @@
+{
+  "format": "acd-release-v1",
+  "tag": "cifar100-head-controls-20261031",
+  "source_repository": "laniusnan/KD",
+  "download_base_url": "https://github.com/laniusnan/ACD/releases/download/cifar100-head-controls-20261031",
+  "selection": "final_epoch_240_first_seed_per_study_2051_or_2101; ordinary_KD_controls",
+  "models": [
+    {
+      "filename": "ci_kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "8ffa98ddf2674a4dab4f65a3c574994afb6ca19b0fbfdd3ae961523b15966556",
+      "size_bytes": 4968393,
+      "model_config": {
+        "architecture": "resnet8x4",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "8a74f310356442437590e0e78a799947a98d03ba432744720b0e248b6e076e8b",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "head_transfer_20261021-000.tar.gz",
+        "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+        "asset_id": 680184082,
+        "original_path": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine/last.pth",
+        "source_sha256": "8a74f310356442437590e0e78a799947a98d03ba432744720b0e248b6e076e8b",
+        "source_bytes": 10011008,
+        "study": "head_transfer_20261021",
+        "status_path": "restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine/status.json",
+        "status_sha256": "7eab0aa0d36cb38eb7881e9bd7689f94341a93333c833c722b467f3586bddf48"
+      },
+      "pair": "res32x4_res8x4",
+      "teacher": "resnet32x4",
+      "seed": 2051,
+      "epoch": 240,
+      "head": "cosine",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "early_double",
+      "archived_test": {
+        "top1": 76.99,
+        "ce": 0.9822285390853882,
+        "samples": 10000
+      },
+      "config_file": "ci_kd_res32x4_res8x4_s2051_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_etf_kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "9feb524767446415e4ac7f7ef2d2b64fe2ecc59c94cdf4227b4eb8964fdd68fc",
+      "size_bytes": 4968665,
+      "model_config": {
+        "architecture": "resnet8x4",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "3fdd3cf10af64a6ea147b49ff531ec51c18e5ffa33fa7142fc6d95c9a425824a",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "head_transfer_20261021-000.tar.gz",
+        "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+        "asset_id": 680184082,
+        "original_path": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine_etf/last.pth",
+        "source_sha256": "3fdd3cf10af64a6ea147b49ff531ec51c18e5ffa33fa7142fc6d95c9a425824a",
+        "source_bytes": 10011008,
+        "study": "head_transfer_20261021",
+        "status_path": "restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__cosine_etf/status.json",
+        "status_sha256": "091e52716d04a0b5842a79abfb870863a5e0b12142710cf35a3f09ad3263a4e5"
+      },
+      "pair": "res32x4_res8x4",
+      "teacher": "resnet32x4",
+      "seed": 2051,
+      "epoch": 240,
+      "head": "cosine_etf",
+      "etf": true,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "early_double",
+      "archived_test": {
+        "top1": 77.42,
+        "ce": 0.9727182143211365,
+        "samples": 10000
+      },
+      "config_file": "ci_etf_kd_res32x4_res8x4_s2051_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "kd_res32x4_res8x4_s2051_e240.pth",
+      "sha256": "15e91ed6fb7bb8f004e6ed93c5b87f5eafe42732e96e818a5240f410a5228909",
+      "size_bytes": 4968573,
+      "model_config": {
+        "architecture": "resnet8x4",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "7f8a5d67db946b80a6f3b4fe0841e609365f4cf94063892afc55c6affa847a7b",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "head_transfer_20261021-000.tar.gz",
+        "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+        "asset_id": 680184082,
+        "original_path": "reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/last.pth",
+        "source_sha256": "7f8a5d67db946b80a6f3b4fe0841e609365f4cf94063892afc55c6affa847a7b",
+        "source_bytes": 10012093,
+        "study": "head_transfer_20261021",
+        "status_path": "restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/res32x4_res8x4__s2051__linear/status.json",
+        "status_sha256": "1a2829e24dd0912010bb8711972013b6d61fd5b350927b0a880c78dc8241ee65"
+      },
+      "pair": "res32x4_res8x4",
+      "teacher": "resnet32x4",
+      "seed": 2051,
+      "epoch": 240,
+      "head": "linear",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "early_double",
+      "archived_test": {
+        "top1": 75.18,
+        "ce": 0.9590447101593017,
+        "samples": 10000
+      },
+      "config_file": "kd_res32x4_res8x4_s2051_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_kd_vgg13_vgg8_s2051_e240.pth",
+      "sha256": "6afbabdb7fbd825800dab837030cce305f6f0fb6e1e8b7a108980579a635cb98",
+      "size_bytes": 15886096,
+      "model_config": {
+        "architecture": "vgg8",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "555121634881983df08d80ed4eb88b193f7ebf3d3b3c3c6b8925bea9e39c064f",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "head_transfer_20261021-000.tar.gz",
+        "archive_sha256": "c70be04c99a3f827a60304beed86c3f77d0d1ec213dd775ecf20273d571f76dd",
+        "asset_id": 680184082,
+        "original_path": "reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__cosine/last.pth",
+        "source_sha256": "555121634881983df08d80ed4eb88b193f7ebf3d3b3c3c6b8925bea9e39c064f",
+        "source_bytes": 31852137,
+        "study": "head_transfer_20261021",
+        "status_path": "restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__cosine/status.json",
+        "status_sha256": "12bfbbe5274ff2fc92f8434b353708fe21b655292891e82a36a42cf2238d999c"
+      },
+      "pair": "vgg13_vgg8",
+      "teacher": "vgg13",
+      "seed": 2051,
+      "epoch": 240,
+      "head": "cosine",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "early_double",
+      "archived_test": {
+        "top1": 75.13,
+        "ce": 1.1105777266502381,
+        "samples": 10000
+      },
+      "config_file": "ci_kd_vgg13_vgg8_s2051_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "kd_vgg13_vgg8_s2051_e240.pth",
+      "sha256": "e94048cf57c086d00c6b72da9445abe0ae1f87fcbdf3497493b2868b39594fc6",
+      "size_bytes": 15886351,
+      "model_config": {
+        "architecture": "vgg8",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "afd0b2749eb4dafea8777b76faf4b3d9cf0b49c60d87fcbda6bbe1385724cf49",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "head_transfer_20261021-001.tar.gz",
+        "archive_sha256": "e973f0a347a4487c9fc81c4b8ec291bed3a5dd9851b46de50afd7a6f38abea51",
+        "asset_id": 680184904,
+        "original_path": "reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__linear/last.pth",
+        "source_sha256": "afd0b2749eb4dafea8777b76faf4b3d9cf0b49c60d87fcbda6bbe1385724cf49",
+        "source_bytes": 31853222,
+        "study": "head_transfer_20261021",
+        "status_path": "restored/model-backup-20261027/reproductions/head_transfer_20261021/artifacts/vgg13_vgg8__s2051__linear/status.json",
+        "status_sha256": "e1cb297dc580c35572ac076516047b4236794610bd4f07f08f06d5ff86b1d08c"
+      },
+      "pair": "vgg13_vgg8",
+      "teacher": "vgg13",
+      "seed": 2051,
+      "epoch": 240,
+      "head": "linear",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "early_double",
+      "archived_test": {
+        "top1": 74.45,
+        "ce": 1.0820499351501465,
+        "samples": 10000
+      },
+      "config_file": "kd_vgg13_vgg8_s2051_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_kd_res50_mv1_s2101_e240.pth",
+      "sha256": "34c8295de33259cd9d6fc0495b44b6af774bb30fb8966f9273630bfa67d7a185",
+      "size_bytes": 6764925,
+      "model_config": {
+        "architecture": "mobilenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "0f214e23eb009c2eebb33c71862df194ecafe32dbf35689ed8de5a6934c0b959",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-000.tar.gz",
+        "archive_sha256": "a62790c7ba7809139f6a950dcc9f2d3c49d19ad954bd75c035367fd0e11ae63e",
+        "asset_id": 695642807,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine/last.pth",
+        "source_sha256": "0f214e23eb009c2eebb33c71862df194ecafe32dbf35689ed8de5a6934c0b959",
+        "source_bytes": 13527891,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine/status.json",
+        "status_sha256": "79fe7e986bb99989a1dc0dfa0ce700e8870fe81e0ed8d10e696b69496e1dc44f"
+      },
+      "pair": "res50_mv1",
+      "teacher": "resnet50",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 67.88,
+        "ce": 1.9355520244598388,
+        "samples": 10000
+      },
+      "config_file": "ci_kd_res50_mv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_etf_kd_res50_mv1_s2101_e240.pth",
+      "sha256": "903bd14a5d28164cb993668531a527363ad68892a62c2c22058ae3e8a456605c",
+      "size_bytes": 6765573,
+      "model_config": {
+        "architecture": "mobilenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "60497627ee7a65caa12af2afaa970d09fe4384dc45a18f18b091ec06db564d15",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-000.tar.gz",
+        "archive_sha256": "a62790c7ba7809139f6a950dcc9f2d3c49d19ad954bd75c035367fd0e11ae63e",
+        "asset_id": 695642807,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf/last.pth",
+        "source_sha256": "60497627ee7a65caa12af2afaa970d09fe4384dc45a18f18b091ec06db564d15",
+        "source_bytes": 13527891,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/res50_mv1__s2101__cosine_etf/status.json",
+        "status_sha256": "f75f12ab0a8f72db5419a3dc37985490e13c4fab7c2e6a47262cd6edfef8c959"
+      },
+      "pair": "res50_mv1",
+      "teacher": "resnet50",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine_etf",
+      "etf": true,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 67.45,
+        "ce": 1.9763217025756836,
+        "samples": 10000
+      },
+      "config_file": "ci_etf_kd_res50_mv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_kd_vgg13_mv1_s2101_e240.pth",
+      "sha256": "384ebdd38d5cdedef0544645593f26f6729eb6dc1f36a2f4e5caad3385f8ea5f",
+      "size_bytes": 6764925,
+      "model_config": {
+        "architecture": "mobilenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "c8e2298f874334ec6823fc2f67c6e826f5dbab150ea674bd63083d63ea1097ad",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-001.tar.gz",
+        "archive_sha256": "b411c965cf0116a7c34d61e37928b7f992c5a958eae769da9a09cbc5c3635eb0",
+        "asset_id": 695643945,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine/last.pth",
+        "source_sha256": "c8e2298f874334ec6823fc2f67c6e826f5dbab150ea674bd63083d63ea1097ad",
+        "source_bytes": 13527891,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine/status.json",
+        "status_sha256": "2f3aaaf7ca294c74ea17658c42e2ed65750de90d1586a89c574f56da3b7ef05d"
+      },
+      "pair": "vgg13_mv1",
+      "teacher": "vgg13",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 66.39,
+        "ce": 1.9141886390686036,
+        "samples": 10000
+      },
+      "config_file": "ci_kd_vgg13_mv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_etf_kd_vgg13_mv1_s2101_e240.pth",
+      "sha256": "d34d36fc871678155898a02221489e1b078a26d160e98bf94a3a45243949799f",
+      "size_bytes": 6765573,
+      "model_config": {
+        "architecture": "mobilenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "e0713afe9a99e44ab81eee013407910b583b56b79d6a39fde7f6700e583ff506",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-001.tar.gz",
+        "archive_sha256": "b411c965cf0116a7c34d61e37928b7f992c5a958eae769da9a09cbc5c3635eb0",
+        "asset_id": 695643945,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf/last.pth",
+        "source_sha256": "e0713afe9a99e44ab81eee013407910b583b56b79d6a39fde7f6700e583ff506",
+        "source_bytes": 13527891,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/vgg13_mv1__s2101__cosine_etf/status.json",
+        "status_sha256": "4e44121fd07e8b709223974ffcbad0bf7ff7a2ec12ae57b1f168e8190843430a"
+      },
+      "pair": "vgg13_mv1",
+      "teacher": "vgg13",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine_etf",
+      "etf": true,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 66.6,
+        "ce": 1.9009155004501344,
+        "samples": 10000
+      },
+      "config_file": "ci_etf_kd_vgg13_mv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_kd_wrn402_sv1_s2101_e240.pth",
+      "sha256": "b585f1a20ae08d93b48f44362effd9e96884371cad9614585ca4759c7cbc3c46",
+      "size_bytes": 3990727,
+      "model_config": {
+        "architecture": "shufflenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "5c9082262d5eb5f812a4e8104221a83ab2ae149bbd430d6de2bb8caa50aa7754",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-000.tar.gz",
+        "archive_sha256": "a62790c7ba7809139f6a950dcc9f2d3c49d19ad954bd75c035367fd0e11ae63e",
+        "asset_id": 695642807,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine/last.pth",
+        "source_sha256": "5c9082262d5eb5f812a4e8104221a83ab2ae149bbd430d6de2bb8caa50aa7754",
+        "source_bytes": 7910655,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine/status.json",
+        "status_sha256": "b0d8a260af19852717494a8663b98b00139586117eb2268f0ba36fe5caf2fb21"
+      },
+      "pair": "wrn402_sv1",
+      "teacher": "wrn_40_2",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine",
+      "etf": false,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 77.82,
+        "ce": 1.0524366937637328,
+        "samples": 10000
+      },
+      "config_file": "ci_kd_wrn402_sv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "ci_etf_kd_wrn402_sv1_s2101_e240.pth",
+      "sha256": "e0ba80d78e981de01d9813c8567d58ef7933bfbe14dcb6921d21707ec02ae3a8",
+      "size_bytes": 3991935,
+      "model_config": {
+        "architecture": "shufflenetv1",
+        "dataset": "cifar100",
+        "angular": true,
+        "scale": 30.0
+      },
+      "role": "student",
+      "resumable": false,
+      "source_sha256": "50a1bd47a497c556ba0a628ca077e3b4b68b4b0ae10f573bcc3f008aa0b99092",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "kd-head-models-20261031-completed",
+        "archive": "accepted_kd_heads_20261030-000.tar.gz",
+        "archive_sha256": "a62790c7ba7809139f6a950dcc9f2d3c49d19ad954bd75c035367fd0e11ae63e",
+        "asset_id": 695642807,
+        "original_path": "reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf/last.pth",
+        "source_sha256": "50a1bd47a497c556ba0a628ca077e3b4b68b4b0ae10f573bcc3f008aa0b99092",
+        "source_bytes": 7910719,
+        "study": "accepted_kd_heads_20261030",
+        "status_path": "restored/kd-head-models-20261031-final/reproductions/accepted_kd_heads_20261030/artifacts/wrn402_sv1__s2101__cosine_etf/status.json",
+        "status_sha256": "d23456b39c938e869862d641485a03c56c9c500c3bc5b39624586a152fdc5d67"
+      },
+      "pair": "wrn402_sv1",
+      "teacher": "wrn_40_2",
+      "seed": 2101,
+      "epoch": 240,
+      "head": "cosine_etf",
+      "etf": true,
+      "objective": "ordinary_temperature_KL",
+      "protocol": "compact_double",
+      "archived_test": {
+        "top1": 77.6,
+        "ce": 1.045445576286316,
+        "samples": 10000
+      },
+      "config_file": "ci_etf_kd_wrn402_sv1_s2101_e240.json",
+      "filled_legacy_buffers": []
+    },
+    {
+      "filename": "teacher_vgg13_cifar100.pth",
+      "sha256": "456defd08ff18cca5d478564e8ec21fb2370415b9b8b329a5144d2533ca218d2",
+      "size_bytes": 37897181,
+      "model_config": {
+        "architecture": "vgg13",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "91afc5b40a57dd293778a98502fe6a1132ce033ac284ff89382d733b322d8046",
+      "provenance": {
+        "repository": "laniusnan/KD",
+        "release": "model-backup-20261027",
+        "archive": "teacher-models-000.tar.gz",
+        "archive_sha256": "b6905e3fad86d2fb261114aa865f149c31fc6cc58dd9e764d2aeeca046deadf9",
+        "asset_id": 680347085,
+        "original_path": "CIFAR-100/Model_Pth/best_model_weights_vgg13.pth",
+        "source_sha256": "91afc5b40a57dd293778a98502fe6a1132ce033ac284ff89382d733b322d8046",
+        "source_bytes": 37893421
+      },
+      "config_file": "teacher_vgg13_cifar100.json",
+      "filled_legacy_buffers": [
+        "block0.1.num_batches_tracked",
+        "block0.4.num_batches_tracked",
+        "block1.1.num_batches_tracked",
+        "block1.4.num_batches_tracked",
+        "block2.1.num_batches_tracked",
+        "block2.4.num_batches_tracked",
+        "block3.1.num_batches_tracked",
+        "block3.4.num_batches_tracked",
+        "block4.1.num_batches_tracked",
+        "block4.4.num_batches_tracked"
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "filename": "ci_kd_res32x4_res8x4_s2051_e240.json",
+      "sha256": "ed9bc67542ee61dbe363290a200183943ed5d7651f69dd592df0eadf950da161",
+      "size_bytes": 669
+    },
+    {
+      "filename": "ci_etf_kd_res32x4_res8x4_s2051_e240.json",
+      "sha256": "d0605e0c1adcd692a3ac79cb2b27797a0b33ecb7a785f8164ef749cab2a77627",
+      "size_bytes": 668
+    },
+    {
+      "filename": "kd_res32x4_res8x4_s2051_e240.json",
+      "sha256": "5cb0e477c255f1bcc828d8d433a2e2a4735ca7279a4bb5ef28022fa9346815f0",
+      "size_bytes": 661
+    },
+    {
+      "filename": "ci_kd_vgg13_vgg8_s2051_e240.json",
+      "sha256": "ef50e0da9ff3c72603551000baee0dd3c2ca50171babe4a4c4af9683dbc8d430",
+      "size_bytes": 655
+    },
+    {
+      "filename": "kd_vgg13_vgg8_s2051_e240.json",
+      "sha256": "f4fc3ff2ce0914edf6f090504989d6e9e2b605805d44eacc14077d4537bda492",
+      "size_bytes": 647
+    },
+    {
+      "filename": "ci_kd_res50_mv1_s2101_e240.json",
+      "sha256": "7edd9d321b7c740b25e45c98de9d74109373c772069bc74c27c7ecc24612b5f5",
+      "size_bytes": 664
+    },
+    {
+      "filename": "ci_etf_kd_res50_mv1_s2101_e240.json",
+      "sha256": "fe1e030b68114be3ff817cb79abc85996bde0c05fabd917e3fe761287c15087e",
+      "size_bytes": 663
+    },
+    {
+      "filename": "ci_kd_vgg13_mv1_s2101_e240.json",
+      "sha256": "f06ae2b5b7b5d79eb2a3d16191f7eaf5bc8d6f218ed0ecea306a339fb687da0f",
+      "size_bytes": 661
+    },
+    {
+      "filename": "ci_etf_kd_vgg13_mv1_s2101_e240.json",
+      "sha256": "c729e3c35813129e05d3b0fc428d7254bc41e97e554c7eb85eb881007724e52f",
+      "size_bytes": 660
+    },
+    {
+      "filename": "ci_kd_wrn402_sv1_s2101_e240.json",
+      "sha256": "64c7efdf67ec2405dcd17216371a91921964cc2553eed614e6370894c0bbd7ea",
+      "size_bytes": 666
+    },
+    {
+      "filename": "ci_etf_kd_wrn402_sv1_s2101_e240.json",
+      "sha256": "4a797bcaa95a432eec90078dcff39e4d2464cbcb136a0bac6eb4b0350eb5c7a2",
+      "size_bytes": 665
+    },
+    {
+      "filename": "teacher_vgg13_cifar100.json",
+      "sha256": "56f5e4dfc4c32e3f3ee41342baa494f0392e0522d5804dbec4a812d561326c7c",
+      "size_bytes": 606
+    }
+  ],
+  "teacher_dependencies": [
+    {
+      "filename": "teacher_resnet32x4_cifar100.pth",
+      "sha256": "a11f9a1a95f8eae0d09bd4660ba1c91eded8d20c874ff56c9a496cd040d7b5ea",
+      "size_bytes": 29845491,
+      "model_config": {
+        "architecture": "resnet32x4",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet32x4.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "d945c5ab454814944c42dd027abd89b05e89648d80771bae89334e1a1a2bc64d",
+      "release": "cifar100-rerun-20261116",
+      "download_base_url": "https://github.com/laniusnan/ACD/releases/download/cifar100-rerun-20261116"
+    },
+    {
+      "filename": "teacher_resnet50_cifar100.pth",
+      "sha256": "d9365973e091567e5c607dd4142d71c3a2283453cf82a28b40a91ef473fd2b0b",
+      "size_bytes": 95140907,
+      "model_config": {
+        "architecture": "resnet50",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "85fbaa4269f3344abb2a9a505bcce57afb88af025b2b02f2621a9c9b60f6c9c7",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_resnet50.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "85fbaa4269f3344abb2a9a505bcce57afb88af025b2b02f2621a9c9b60f6c9c7",
+      "release": "cifar100-rerun-20261116",
+      "download_base_url": "https://github.com/laniusnan/ACD/releases/download/cifar100-rerun-20261116"
+    },
+    {
+      "filename": "teacher_wrn_40_2_cifar100.pth",
+      "sha256": "10aab78a3be2fbae831df1e039264831a414cfd6a8c9db506a2c07db16658bb9",
+      "size_bytes": 9121819,
+      "model_config": {
+        "architecture": "wrn_40_2",
+        "dataset": "cifar100",
+        "angular": false,
+        "scale": null
+      },
+      "provenance": {
+        "sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491",
+        "release": "model-backup-20261027",
+        "original_path": "reproductions/head_transfer_20261021/frozen/teachers/best_model_weights_wrn_40_2.pth"
+      },
+      "role": "teacher",
+      "resumable": false,
+      "source_sha256": "7a30af552dc86071705a4578975653d2ebc7c23955c693422b3cf8073703a491",
+      "release": "cifar100-rerun-20261116",
+      "download_base_url": "https://github.com/laniusnan/ACD/releases/download/cifar100-rerun-20261116"
+    }
+  ]
+}
