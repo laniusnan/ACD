@@ -28,6 +28,18 @@ The scale is fixed and directions remain trainable. Thus ACI is an interface cho
 \end{equation}
 It changes only the initial condition. A separate rotating-ETF control learns a $d\times(C-1)$ orthonormal frame, projects its gradient onto the Stiefel tangent space, and retracts after each update; only this control preserves the simplex Gram geometry throughout training.
 
+\begin{table}[h]
+\centering
+\caption{Classifier-head variants used in the controlled study.}
+\label{tab:heads}
+\begin{tabular}{lll}\toprule
+Variant & Initialization & Constraint after initialization \\\midrule
+Cosine & normalized generic weight & directions freely trainable \\
+Cosine + ETF init & simplex ETF directions & directions freely trainable \\
+Rotating ETF & simplex ETF directions & Stiefel-frame retraction preserves ETF Gram \\\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Standardized conditional distillation}
 For each sample, logits are standardized across all classes using sample standard deviation,
 \begin{equation}
