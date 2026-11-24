@@ -10,6 +10,7 @@ supplement without altering that manuscript.
   its repository evidence.
 - `ASSETS.md` selects figures and tables with caption-ready scope limits.
 - `REPRODUCIBILITY.md` gives table-verification and figure-provenance commands.
+- `CLAIM_MAP.md` connects manuscript claims to the evidence that can support them.
 
 The draft is restricted to reproducible facts: released assets, the completed
 seven-arm ResNet32x4-to-ResNet8x4 comparison, and frozen CIFAR-100 reruns.
