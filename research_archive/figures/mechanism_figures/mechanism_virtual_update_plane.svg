@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="690" viewBox="0 0 1600 690" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="690" viewBox="0 0 2000 690" role="img">
 <title>Raw KD can pull a student along a parameterization-sensitive force</title><desc>Local virtual-update view  /  same fixed sample, checkpoint, teacher target, and student feature state  /  arrows are −∇ₕL</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#627381"/></marker></defs>
-<rect width="1600" height="100%" fill="white"/>
+<rect width="2000" height="100%" fill="white"/>
 <text x="45" y="45" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#172B3A">Raw KD can pull a student along a parameterization-sensitive force</text>
 <text x="45" y="75" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#627381">Local virtual-update view  /  same fixed sample, checkpoint, teacher target, and student feature state  /  arrows are −∇ₕL</text>
 <text x="45" y="124" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#172B3A">(a) Measured-gradient construction</text>
@@ -37,7 +37,7 @@
 <rect x="720" y="570" width="700" height="48" rx="8" fill="#FFF6F6" stroke="none"/>
 <text x="740" y="592" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#B94D58">Measured local result: raw logits are ≈14.7× stronger</text>
 <text x="740" y="612" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#B94D58">than the standardized reference on average.</text>
-<line x1="45" y1="579" x2="1555" y2="579" stroke="#DCE3E8" stroke-width="1.5"/>
+<line x1="45" y1="579" x2="1955" y2="579" stroke="#DCE3E8" stroke-width="1.5"/>
 <text x="45" y="599" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">This is not a full-training trajectory: it is a one-state virtual-gradient diagnostic with no parameter update committed.</text>
 <text x="45" y="622" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">The selected sample is the median raw/reference cosine on the fixed probe—not chosen by accuracy or visual effect.</text>
 <text x="45" y="645" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#627381">A future multi-checkpoint trajectory figure must separately show whether ACD changes these forces over training.</text>

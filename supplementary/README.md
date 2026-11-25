@@ -19,9 +19,9 @@ are not presented as new verified results.
 
 ## Overleaf use
 
-Copy `supplementary.tex` into Overleaf.  It compiles without figures.  To add
-approved figures, upload their PDFs from `../figs/` or `../research_archive/`
-and enable the commented figure blocks.  A standard LaTex installation with
+Copy `supplementary.tex` into Overleaf. Upload the two PDFs listed in
+`ASSETS.md` under the same relative filenames, or update their two
+`\includegraphics` paths after upload. A standard LaTex installation with
 `article`, `amsmath`, `booktabs`, and `hyperref` is sufficient; no bibliography
 file is required.
 

@@ -9,14 +9,14 @@ HERE=Path(__file__).resolve().parent; OUT=HERE/'mechanism_figures'; DATA=OUT/'pa
 INK,MUTED,LINE='#172B3A','#627381','#DCE3E8'; ORANGE,BLUE,GREEN,RED,PURPLE='#D88A2D','#357DB2','#23856D','#B94D58','#8B71AB'
 class S:
  def __init__(self,title,subtitle,h=690):
-  self.h=h;self.a=[f'<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="{h}" viewBox="0 0 1600 {h}" role="img">',f'<title>{escape(title)}</title><desc>{escape(subtitle)}</desc>','<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#627381"/></marker></defs>','<rect width="1600" height="100%" fill="white"/>'];self.t(45,45,title,29,INK,700);self.t(45,75,subtitle,17,MUTED)
+  self.h=h;self.a=[f'<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="{h}" viewBox="0 0 2000 {h}" role="img">',f'<title>{escape(title)}</title><desc>{escape(subtitle)}</desc>','<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#627381"/></marker></defs>','<rect width="2000" height="100%" fill="white"/>'];self.t(45,45,title,29,INK,700);self.t(45,75,subtitle,17,MUTED)
  def t(self,x,y,v,sz=19,c=INK,w=400,a='start'):self.a.append(f'<text x="{x}" y="{y}" font-family="DejaVu Sans, sans-serif" font-size="{sz}" font-weight="{w}" text-anchor="{a}" fill="{c}">{escape(str(v))}</text>')
  def rect(self,x,y,w,h,fill='white',stroke='none',r=8):self.a.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{fill}" stroke="{stroke}"/>')
  def line(self,x1,y1,x2,y2,c=LINE,w=1.5,dash=False,arrow=False):self.a.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{c}" stroke-width="{w}"'+(' stroke-dasharray="6 5"' if dash else '')+(' marker-end="url(#arrow)"' if arrow else '')+'/>')
  def path(self,pts,c=BLUE,w=2,dash=False):self.a.append('<path d="M '+' L '.join(f'{x:.2f} {y:.2f}' for x,y in pts)+f'" fill="none" stroke="{c}" stroke-width="{w}"'+(' stroke-dasharray="6 5"' if dash else '')+'/>')
  def circ(self,x,y,r,c):self.a.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c}"/>')
  def footer(self,lines):
-  y=self.h-45-23*(len(lines)-1);self.line(45,y-20,1555,y-20)
+  y=self.h-45-23*(len(lines)-1);self.line(45,y-20,1955,y-20)
   for i,v in enumerate(lines):self.t(45,y+23*i,v,16,MUTED)
  def save(self,name):
   p=OUT/(name+'.svg');v='\n'.join(self.a+['</svg>'])+'\n';ET.fromstring(v);p.write_text(v);return p
@@ -27,8 +27,8 @@ def force(d):
  s.rect(70,286,186,91,'#FFF5E9');s.rect(274,286,220,91,'#F3EEF8')
  s.t(163,319,'Scale / norms',19,ORANGE,700,'middle');s.t(163,350,'r, aₖ change pₖ',17,INK,400,'middle');s.t(384,319,'Bias',19,PURPLE,700,'middle');s.t(384,350,'bₖ changes pₖ',17,INK,400,'middle')
  s.t(70,403,'aₖ also rescales each gradient basis vector uₖ.',17,MUTED)
- s.t(584,124,'(b) Fixed directions → output deformation',22,INK,700);s.t(584,151,'Hold ĥ and ŵₖ fixed; continuously inject r·aₖ and bₖ.',17,MUTED)
- x0,y0,w,h=620,389,430,178
+ s.t(620,124,'(b) Fixed directions → output deformation',22,INK,700);s.t(620,151,'Hold ĥ and ŵₖ fixed; continuously inject r·aₖ and bₖ.',17,MUTED)
+ x0,y0,w,h=655,389,430,178
  s.line(x0,y0-h,x0,y0);s.line(x0,y0,x0+w,y0)
  for v in (0,.1,.2):
   y=y0-v/.25*h;s.line(x0-5,y,x0,y);s.t(x0-12,y+6,f'{v:.1f}',16,MUTED,400,'end')
@@ -36,14 +36,14 @@ def force(d):
  bars=[('angular → scale',d['distribution_deformation']['angular_to_scale_tv'],ORANGE),('scale → raw bias',d['distribution_deformation']['scale_to_raw_bias_tv'],PURPLE),('angular → raw',d['distribution_deformation']['angular_to_raw_tv'],RED)]
  for i,(lab,v,c) in enumerate(bars):
   x=x0+95+i*140;bh=v/.25*h;s.rect(x-25,y0-bh,50,bh,c,r=3);s.t(x,y0-bh-11,f'{v:.3f}',17,c,700,'middle');s.t(x,y0+27,lab,14,MUTED,400,'middle')
- s.t(1108,124,'(c) Raw gradient force is not only rescaled',22,INK,700);s.t(1108,151,'Cosine to standardized-logit reference; mean over 128 images.',17,MUTED)
- x0,y0,w=1140,389,360;s.line(x0,y0-178,x0,y0);s.line(x0,y0,x0+w,y0)
+ s.t(1250,124,'(c) Raw force differs in direction and norm',22,INK,700);s.t(1250,151,'Cosine to standardized-logit reference; mean over 128 images.',17,MUTED)
+ x0,y0,w=1285,389,360;s.line(x0,y0-178,x0,y0);s.line(x0,y0,x0+w,y0)
  for v in (0,.25,.5,.75):
   y=y0-v/.8*178;s.line(x0-5,y,x0,y);s.t(x0-12,y+6,f'{v:.2f}',16,MUTED,400,'end')
  for i,key in enumerate(['angular','scale_only','bias_only','raw']):
   v=d['gradient_statistics'][key]['mean_cosine_to_standardized_reference'];x=x0+55+i*87;bh=v/.8*178;c={'angular':BLUE,'scale_only':ORANGE,'bias_only':PURPLE,'raw':RED}[key]
   s.rect(x-19,y0-bh,38,bh,c,r=2);s.t(x,y0-bh-10,f'{v:.2f}',16,c,700,'middle');s.t(x,y0+28,{'angular':'angular','scale_only':'scale','bias_only':'bias','raw':'raw'}[key],14,MUTED,400,'middle')
- s.t(1140,444,'Raw force norm / reference = %.1f×'%d['gradient_statistics']['raw']['mean_norm_ratio_to_reference'],17,RED,700)
+ s.t(1285,444,'Raw force norm / reference = %.1f×'%d['gradient_statistics']['raw']['mean_norm_ratio_to_reference'],17,RED,700)
  s.footer(['Mathematical claim: scale/norms and bias enter pₖ; class norms also enter the gradient basis. No claim that they rotate θₖ.', 'Measured: this checkpoint probe shows substantial scale-driven conditional-distribution deformation; its bias contribution is small here.', 'The standardized-logit gradient is a diagnostic reference, not semantic ground truth or proof of globally conflicting optimization.'])
  return s.save('mechanism_parameterization_force')
 def pull(d):
@@ -68,7 +68,7 @@ def export(svg):
  load=f(r,'rsvg_handle_new_from_file',[C.c_char_p,C.POINTER(P)],P);render=f(r,'rsvg_handle_render_cairo',[P,P],I);png=f(c,'cairo_image_surface_create',[I,I,I],P);pdf=f(c,'cairo_pdf_surface_create',[C.c_char_p,D,D],P);ctx=f(c,'cairo_create',[P],P);scale=f(c,'cairo_scale',[P,D,D],None);write=f(c,'cairo_surface_write_to_png',[P,C.c_char_p],I);destroy=f(c,'cairo_destroy',[P],None);finish=f(c,'cairo_surface_finish',[P],None);free=f(c,'cairo_surface_destroy',[P],None);status=f(c,'cairo_surface_status',[P],I);unref=f(g,'g_object_unref',[P],None)
  err=P();h=load(str(svg).encode(),C.byref(err));height=int(ET.parse(svg).getroot().attrib['height'])
  for ext,k in [('png',2.),('pdf',.315)]:
-  out=svg.with_suffix('.'+ext);surf=png(0,3200,height*2) if ext=='png' else pdf(str(out).encode(),504,height*k);cr=ctx(surf);scale(cr,k,k);assert render(h,cr); 
+  width=int(ET.parse(svg).getroot().attrib['width']);out=svg.with_suffix('.'+ext);surf=png(0,width*2,height*2) if ext=='png' else pdf(str(out).encode(),width*k,height*k);cr=ctx(surf);scale(cr,k,k);assert render(h,cr);
   if ext=='png':assert not write(surf,str(out).encode())
   destroy(cr);finish(surf);assert not status(surf);free(surf)
  unref(h)

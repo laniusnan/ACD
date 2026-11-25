@@ -3,7 +3,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,booktabs}
 \usepackage[hidelinks]{hyperref}
-% \usepackage{graphicx} % Enable after uploading selected PDFs to Overleaf.
+\usepackage{graphicx}
 \newcommand{\ACI}{\mathrm{ACI}}
 \newcommand{\SICD}{\mathrm{SICD}}
 \newcommand{\KL}{\mathrm{KL}}
@@ -109,13 +109,23 @@ The scalar is an oracle diagnostic that accesses teacher logits and is never use
 
 On the complete CIFAR-100 test set for the archived linear checkpoint (seed 2051, epoch 240), mean reported divergence changes from 1.2198 before calibration to 0.5575 afterwards; the ratio of means is 45.7\%. The calculation uses the same fixed teacher target before and after calibration, has no boundary-$\alpha=0$ solutions, and never increases an individual sample's objective. This demonstrates that per-image scalar rescaling does not fully account for discrepancy at that checkpoint. It does not identify the source of the residual.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{../research_archive/figures/analysis_20261116/fig_output_mismatch_cifar100_seed2051.pdf}
+\caption{Output mismatch beyond scalar confidence. For a frozen CIFAR-100 endpoint (ResNet32$\times$4 teacher, ResNet8$\times$4 student, linear KD, seed 2051, epoch 240), independent per-image nonnegative logit scaling reduces mean $8D_{\mathrm{KL}}$ at $T=4$ from 1.2198 to 0.5575. The score-density panel retains all 1,000,000 image--class pairs after centering each logit vector; centering removes a softmax-invariant shift and does not standardize scores. This oracle diagnostic uses teacher outputs and is not a training or deployment procedure.}
+\label{fig:supp-oracle}
+\end{figure}
+
 \subsection{Suggested supplementary figure set}
-The final selection should favor figures whose data and caption limits are recorded in the repository: (i) the oracle-calibration ECDF and paired-density panels, (ii) the fixed-direction parameterization/distribution/gradient diagnostic, and (iii) the matched seven-arm table. The Grad-CAM asset in the archive compares CE and KD baselines, so it requires that label and belongs only in a diagnostic supplement. Figure captions should state checkpoint identity, data split, and whether the visual is a fixed-state diagnostic or an end-to-end endpoint.
+Figure~\ref{fig:supp-force} gives a complementary fixed-checkpoint diagnostic. It separates the exact dependence of a raw KD gradient on score parameterization from its empirical measurement on one VGG13-to-MobileNetV1 checkpoint. The Grad-CAM asset in the archive compares CE and KD baselines, so it requires that label and belongs only in a diagnostic supplement. Figure captions should state checkpoint identity, data split, and whether the visual is a fixed-state diagnostic or an end-to-end endpoint.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{../research_archive/figures/mechanism_figures/mechanism_parameterization_force.pdf}
+\caption{Fixed-state parameterization diagnostic. Panel (a) shows that feature magnitude, class norms, and biases enter the KD gradient through probabilities, while class norms also rescale the gradient basis. Panels (b--c) use a read-only VGG13$\rightarrow$MobileNetV1 linear-KD checkpoint (seed 2102) and 128 fixed official CIFAR-100 test images: fixing feature and class directions while restoring scale/norm and bias terms changes the non-target conditional distribution and the local feature-gradient direction and norm. The standardized-logit gradient is a diagnostic reference; this is neither an end-to-end training comparison nor evidence of universal optimization behavior.}
+\label{fig:supp-force}
+\end{figure}
 
 No verified new ImageNet or detection endpoint is included. Strict ETF requires $d\ge C-1$; low-dimensional CIFAR students require a shared feature lift for ETF controls and must be labeled as lifted architectures. Gradient-norm matching adds an autograd computation during training, so unchanged inference structure does not imply equal training cost. Future multi-seed tables should report individual endpoints, configurations, seed, selection rule, sample count, and checkpoint hash.
 
-% Enable only after the final paper figure selection:
-% \begin{figure}[t]\centering
-% \includegraphics[width=\linewidth]{method.pdf}
-% \caption{ACI and SICD schematic; verify ETF wording before use.}\end{figure}
 \end{document}
