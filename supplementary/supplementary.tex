@@ -49,6 +49,13 @@ The target logit participates in this standardization. With ground-truth class $
 \begin{equation}
 L_{\SICD}=\frac{\tau^2}{B}\sum_i(1-p_{t,i,y_i})\,\KL\!\left(\operatorname{softmax}(N(z_{t,i})_{\neg y_i}/\tau)\middle\|\operatorname{softmax}(N(z_{s,i})_{\neg y_i}/\tau)\right).
 \end{equation}
+For distributions $p$ and $q$, define $\widetilde p_{\neg y}=p_{\neg y}/(1-p_y)$ and analogously $\widetilde q_{\neg y}$. The exact decomposition is
+\begin{align}
+\KL(p\|q)={}&\KL\!\left([p_y,1-p_y]\middle\|[q_y,1-q_y]\right)\\
+&+(1-p_y)\KL\!\left(\widetilde p_{\neg y}\middle\|\widetilde q_{\neg y}\right).
+\end{align}
+SICD optimizes the second term after dual-side standardization. It removes the explicit binary target-confidence term, while retaining target dependence through the all-class standardization and the teacher non-target mass.
+
 Teacher logits are detached. The standardized full-KL reference uses the same normalization and temperature but retains all classes. For full ACD, gradient norms are measured over trainable backbone parameters, excluding the final classifier and including any shared feature lift. With $L_{\rm full}^{\rm std}$ denoting standardized full KL,
 \begin{align}
 r&=\operatorname{stopgrad}\left(\frac{\lVert\nabla_{\theta_b}L_{\rm full}^{\rm std}\rVert_2}{\max(\lVert\nabla_{\theta_b}L_{\SICD}\rVert_2,10^{-12})}\right),\\
