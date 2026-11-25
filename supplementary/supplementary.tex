@@ -32,11 +32,14 @@ It changes only the initial condition. A separate rotating-ETF control learns a 
 \centering
 \caption{Classifier-head variants used in the controlled study.}
 \label{tab:heads}
-\begin{tabular}{lll}\toprule
-Variant & Initialization & Constraint after initialization \\\midrule
+\begin{tabular}{lll}
+\toprule
+Variant & Initialization & Constraint after initialization \\
+\midrule
 Cosine & normalized generic weight & directions freely trainable \\
 Cosine + ETF init & simplex ETF directions & directions freely trainable \\
-Rotating ETF & simplex ETF directions & Stiefel-frame retraction preserves ETF Gram \\\bottomrule
+Rotating ETF & simplex ETF directions & Stiefel-frame retraction preserves ETF Gram \\
+\bottomrule
 \end{tabular}
 \end{table}
 
@@ -72,8 +75,10 @@ All Table~\ref{tab:seven} students use the same teacher, seed 3301, epoch-240 en
 \centering
 \caption{Shared configuration for the seven-arm formal comparison.}
 \label{tab:seven-config}
-\begin{tabular}{ll}\toprule
-Item & Value \\\midrule
+\begin{tabular}{ll}
+\toprule
+Item & Value \\
+\midrule
 Dataset / official evaluation & CIFAR-100 / 10,000 test images \\
 Teacher / student & ResNet32$\times$4 / ResNet8$\times$4 \\
 Formal seed / endpoint & 3301 / epoch 240 \\
@@ -82,22 +87,26 @@ Weight decay / learning rate & $5\times10^{-4}$ / 0.01 \\
 Milestones / decay & 150, 180, 210 / factor 0.1 \\
 CE / distillation weights & 0.5 / 0.5 \\
 Temperature / cosine scale & 4 / 30 \\
-Augmentation / numeric mode & weak--strong double view / FP32, TF32 off \\\bottomrule
+Augmentation / numeric mode & weak--strong double view / FP32, TF32 off \\
+\bottomrule
 \end{tabular}
 \end{table}
 \begin{table}[h]
 \centering
 \caption{Official CIFAR-100 Top-1 (\%) for a matched single-seed study.}
 \label{tab:seven}
-\begin{tabular}{lr}\toprule
-Student classifier and objective & Top-1 \\\midrule
+\begin{tabular}{lr}
+\toprule
+Student classifier and objective & Top-1 \\
+\midrule
 Affine classifier + KD & 74.76 \\
 Cosine classifier + KD & 77.30 \\
 Cosine classifier, ETF initialization + KD & 77.07 \\
 Rotating ETF classifier + KD & 76.72 \\
 Cosine classifier + SICD & 76.58 \\
 Cosine classifier, ETF initialization + SICD & 77.50 \\
-Rotating ETF classifier + SICD & 77.37 \\\bottomrule
+Rotating ETF classifier + SICD & 77.37 \\
+\bottomrule
 \end{tabular}
 \end{table}
 The default cosine classifier changes Top-1 by $+2.54$ points versus affine KD. SICD changes Top-1 by $-0.72$, $+0.43$, and $+0.65$ points for default cosine, ETF-initialized cosine, and rotating ETF, respectively. The best endpoint (77.50\%) is 0.20 points above cosine KD. These mixed effects suggest an initialization-dependent interaction in this pair, not a uniformly additive benefit from each component. Replication across seeds and pairs is required.
@@ -108,15 +117,18 @@ Table~\ref{tab:reruns} lists evaluation-ready ACD endpoints from the seed-3201 f
 \centering
 \caption{Released seed-3201 ACD endpoints, official CIFAR-100 Top-1 (\%).}
 \label{tab:reruns}
-\begin{tabular}{llr}\toprule
-Teacher & Student & Top-1 \\\midrule
+\begin{tabular}{llr}
+\toprule
+Teacher & Student & Top-1 \\
+\midrule
 ResNet110 & ResNet32 & 73.51 \\
 ResNet32$\times$4 & ShuffleNetV1 & 78.74 \\
 ResNet32$\times$4 & ShuffleNetV2 & 80.07 \\
 CIFAR ResNet50 & MobileNetV1 & 69.45 \\
 ResNet56 & ResNet20 & 71.08 \\
 WRN40-2 & WRN16-2 & 75.67 \\
-WRN40-2 & WRN40-1 & 74.67 \\\bottomrule
+WRN40-2 & WRN40-1 & 74.67 \\
+\bottomrule
 \end{tabular}
 \end{table}
 The rerun is a frozen reconstruction, not a bitwise recovery of historical SICD training source. Its portable weights omit optimizer and scheduler state and are evaluation artifacts, not resumable training checkpoints.
@@ -129,7 +141,7 @@ For a frozen teacher distribution $q_i=\operatorname{softmax}(z_{t,i}/4)$ and fr
 \begin{equation}
  \alpha_i^*=\arg\min_{\alpha\geq0}\;8\,\KL\!\left(q_i\middle\|\operatorname{softmax}(\alpha z_{s,i}/4)\right).
 \end{equation}
-The scalar is an oracle diagnostic that accesses teacher logits and is never used for training or deployment. The archived computation brackets the derivative on $[0,64]$, performs 40 bracket-expansion iterations if necessary and 60 bisection iterations, and checks the interior derivative residual. The positive constant 8 does not change $\alpha_i^*$.
+The scalar is an oracle diagnostic that accesses teacher logits and is never used for training or deployment. The archived computation initializes the derivative bracket at $[0,1]$, doubles its upper endpoint for at most 40 iterations until a bracket is found, then performs 60 bisection iterations and checks the interior derivative residual. The positive constant 8 does not change $\alpha_i^*$.
 
 On the complete CIFAR-100 test set for the archived linear checkpoint (seed 2051, epoch 240), mean reported divergence changes from 1.2198 before calibration to 0.5575 afterwards; the ratio of means is 45.7\%. The calculation uses the same fixed teacher target before and after calibration, has no boundary-$\alpha=0$ solutions, and never increases an individual sample's objective. This demonstrates that per-image scalar rescaling does not fully account for discrepancy at that checkpoint. It does not identify the source of the residual.
 
