@@ -26,15 +26,17 @@
     {
       "id": "mechanism_figures",
       "scope": "fixed-checkpoint diagnostics",
-      "sources": ["../research_archive/figures/README.md"],
+      "sources": ["../research_archive/figures/README.md", "../research_archive/figures/mechanism_figures/mechanism_parameterization_force.pdf"],
       "status": "diagnostic_only",
+      "supplement_pdf_sha256": "d45bede5b280fb4a6d7f0ec1f27826d7aee21659c91e63e8d3968db183e5b6b2",
       "caveat": "They do not establish end-to-end causality or universal accuracy gains."
     },
     {
       "id": "oracle_scalar_calibration",
       "scope": "seed-2051 frozen linear checkpoint, all 10,000 CIFAR-100 test images",
-      "sources": ["../research_archive/figures/analysis_20261116/probe_cifar100_same_state.py", "../research_archive/figures/analysis_20261116/fig_oracle_calib_seed2051.json"],
+      "sources": ["../research_archive/figures/analysis_20261116/probe_cifar100_same_state.py", "../research_archive/figures/analysis_20261116/fig_oracle_calib_seed2051.json", "../research_archive/figures/analysis_20261116/fig_output_mismatch_cifar100_seed2051.pdf"],
       "status": "diagnostic_only",
+      "supplement_pdf_sha256": "52a56a9377a36ef28fe462cacef0030ed1d3765085ff4ead1810e9417ead0187",
       "reported_definition": "8 * KL at temperature 4, independently minimized over alpha >= 0 for each image",
       "before_mean": 1.2198129667053796,
       "after_mean": 0.5574744676439393,
