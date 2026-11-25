@@ -4,6 +4,8 @@
 \usepackage{amsmath,amssymb,booktabs}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \newcommand{\ACI}{\mathrm{ACI}}
 \newcommand{\SICD}{\mathrm{SICD}}
 \newcommand{\KL}{\mathrm{KL}}
@@ -141,7 +143,38 @@ For a frozen teacher distribution $q_i=\operatorname{softmax}(z_{t,i}/4)$ and fr
 \begin{equation}
  \alpha_i^*=\arg\min_{\alpha\geq0}\;8\,\KL\!\left(q_i\middle\|\operatorname{softmax}(\alpha z_{s,i}/4)\right).
 \end{equation}
-The scalar is an oracle diagnostic that accesses teacher logits and is never used for training or deployment. The archived computation initializes the derivative bracket at $[0,1]$, doubles its upper endpoint for at most 40 iterations until a bracket is found, then performs 60 bisection iterations and checks the interior derivative residual. The positive constant 8 does not change $\alpha_i^*$.
+The scalar is an oracle diagnostic that accesses teacher logits and is never used for training or deployment. Algorithm~\ref{alg:oracle_calibration} initializes the derivative bracket at $[0,1]$, doubles its upper endpoint for at most 40 iterations until a bracket is found, then performs 60 bisection iterations and checks the interior derivative residual. The positive constant 8 does not change $\alpha_i^*$.
+
+\begin{algorithm}[t]
+\caption{Per-image oracle scalar calibration used only for diagnosis.}
+\label{alg:oracle_calibration}
+\begin{algorithmic}[1]
+\Require frozen teacher distribution $q$, student scores $a=z_s/4$
+\State $m\gets\sum_k q_k a_k$; \quad $d(\alpha)\gets\sum_k\operatorname{softmax}(\alpha a)_k a_k-m$
+\State $\ell\gets0$; $u\gets1$
+\If{$d(\ell)\geq0$}
+  \State \Return $\alpha^*\gets0$ \Comment{boundary solution}
+\EndIf
+\For{$k\gets1$ \textbf{to} $40$}
+  \If{$d(u)\geq0$}
+    \State \textbf{break}
+  \EndIf
+  \State $u\gets2u$
+\EndFor
+\If{$d(u)<0$}
+  \State \textbf{fail} \Comment{minimum not bracketed}
+\EndIf
+\For{$j\gets1$ \textbf{to} $60$}
+  \State $c\gets(\ell+u)/2$
+  \If{$d(c)\geq0$}
+    \State $u\gets c$
+  \Else
+    \State $\ell\gets c$
+  \EndIf
+\EndFor
+\State \Return $\alpha^*\gets(\ell+u)/2$
+\end{algorithmic}
+\end{algorithm}
 
 On the complete CIFAR-100 test set for the archived linear checkpoint (seed 2051, epoch 240), mean reported divergence changes from 1.2198 before calibration to 0.5575 afterwards; the ratio of means is 45.7\%. The calculation uses the same fixed teacher target before and after calibration, has no boundary-$\alpha=0$ solutions, and never increases an individual sample's objective. This demonstrates that per-image scalar rescaling does not fully account for discrepancy at that checkpoint. It does not identify the source of the residual.
 
