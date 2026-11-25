@@ -70,6 +70,23 @@ Formal seven-arm runs use 240 epochs, batch size 64, SGD momentum 0.9, weight de
 All Table~\ref{tab:seven} students use the same teacher, seed 3301, epoch-240 endpoint, data ordering, augmentation, and selected recipe ($\mathrm{lr}=0.01$, $w_{\rm CE}/w_{\rm KD}=0.5/0.5$). Portable weights, configuration files, source hashes, and full-test verification are released.
 \begin{table}[h]
 \centering
+\caption{Shared configuration for the seven-arm formal comparison.}
+\label{tab:seven-config}
+\begin{tabular}{ll}\toprule
+Item & Value \\\midrule
+Dataset / official evaluation & CIFAR-100 / 10,000 test images \\
+Teacher / student & ResNet32$\times$4 / ResNet8$\times$4 \\
+Formal seed / endpoint & 3301 / epoch 240 \\
+Batch size / optimizer & 64 / SGD, momentum 0.9 \\
+Weight decay / learning rate & $5\times10^{-4}$ / 0.01 \\
+Milestones / decay & 150, 180, 210 / factor 0.1 \\
+CE / distillation weights & 0.5 / 0.5 \\
+Temperature / cosine scale & 4 / 30 \\
+Augmentation / numeric mode & weak--strong double view / FP32, TF32 off \\\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering
 \caption{Official CIFAR-100 Top-1 (\%) for a matched single-seed study.}
 \label{tab:seven}
 \begin{tabular}{lr}\toprule
